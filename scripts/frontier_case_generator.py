@@ -3,7 +3,8 @@
 Programmatically generate frontier eval cases from the taxonomy.
 
 Produces cases in the same dict format as TEST_CASES in frontier_temporal_eval.py,
-ensuring even coverage across fact types, volatility levels, and oracle actions.
+covering the taxonomy's fact types and volatility levels while preserving
+templates that imply clarification or memory-retrieval behavior.
 
 Usage:
     python scripts/frontier_case_generator.py --num-per-type 15 --output data/frontier_eval_cases_v2.json
@@ -21,7 +22,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 
 from temporal_llm.data.taxonomy import (
     FACT_TYPES, FACT_TYPE_MAP, Volatility,
-    oracle_action, seconds_to_human,
+    oracle_action,
 )
 from temporal_llm.data.templates import TEMPLATE_MAP, sample_slots, fill_template
 
@@ -50,26 +51,49 @@ VOLATILITY_CATEGORY = {
 }
 
 
+TIME_UNITS_TO_SECONDS = {
+    "second": 1,
+    "seconds": 1,
+    "minute": 60,
+    "minutes": 60,
+    "hour": 3600,
+    "hours": 3600,
+    "day": 86400,
+    "days": 86400,
+    "week": 604800,
+    "weeks": 604800,
+    "month": 2592000,
+    "months": 2592000,
+    "year": 31536000,
+    "years": 31536000,
+}
+
+
+def _elapsed_text_to_seconds(text: str) -> int:
+    """Parse strings like '5 minutes ago' into seconds."""
+    amount, unit, *_ = text.split()
+    return int(amount) * TIME_UNITS_TO_SECONDS[unit]
+
+
+def _infer_fixed_action(template) -> str | None:
+    """Detect templates that should always map to a non-default action."""
+    description = template.description.lower()
+    if "contradictory" in description or "conflicting" in description:
+        return "ask_clarify"
+    if "memory" in description:
+        return "retrieve_memory"
+    return None
+
+
 def generate_case(fact_type, template, slots, fresh_time, stale_time, case_idx, rng):
     """Generate a single frontier eval case dict."""
-    # Build context from template history
-    context_parts = []
-    for turn in template.history:
-        if turn.is_observation:
-            context_parts.append(fill_template(turn.content, slots))
-        else:
-            context_parts.append(fill_template(turn.content, slots))
-
+    # Preserve the full dialogue so contradictory and memory-sensitive
+    # scenarios stay visible in the generated benchmark.
     context = " ".join(
-        fill_template(turn.content, slots)
+        f"{'User' if turn.role == 'user' else 'Assistant'}: "
+        f"{fill_template(turn.content, slots)}"
         for turn in template.history
-        if turn.is_observation
     )
-    if not context:
-        context = " ".join(
-            fill_template(turn.content, slots)
-            for turn in template.history
-        )
 
     # Add a prefix like "You checked/looked up..."
     prefixes = [
@@ -85,13 +109,24 @@ def generate_case(fact_type, template, slots, fresh_time, stale_time, case_idx, 
     query = fill_template(query, slots)
 
     # Determine correct actions
-    vol = fact_type.volatility
-    if vol == Volatility.STABLE:
-        fresh_correct = "answer_directly"
-        stale_correct = "answer_directly"
+    fixed_action = _infer_fixed_action(template)
+    if fixed_action is not None:
+        fresh_correct = fixed_action
+        stale_correct = fixed_action
     else:
-        fresh_correct = "answer_directly"
-        stale_correct = "refresh"
+        fresh_correct = oracle_action(
+            elapsed_seconds=_elapsed_text_to_seconds(fresh_time),
+            fact_type=fact_type,
+            has_memory=False,
+            has_refresh_tool=True,
+        ).value
+        stale_correct = oracle_action(
+            elapsed_seconds=_elapsed_text_to_seconds(stale_time),
+            fact_type=fact_type,
+            has_memory=False,
+            has_refresh_tool=True,
+        ).value
+    vol = fact_type.volatility
 
     case_id = f"{fact_type.name}_{case_idx}"
 

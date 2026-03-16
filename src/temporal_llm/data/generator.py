@@ -107,6 +107,15 @@ class DatasetGenerator:
         query = template.sample_query(rng=self.rng)
         return fill_template(query, slots)
 
+    def _scenario_signature(self, fact_type: str, conversation: str, query: str) -> str:
+        """Visible prompt signature used to prevent split leakage."""
+        payload = {
+            "fact_type": fact_type,
+            "conversation": conversation,
+            "query": query,
+        }
+        return json.dumps(payload, sort_keys=True)
+
     def _generate_memories(
         self, template: ConversationTemplate, slots: dict,
         elapsed_seconds: float, fact_type_obj,
@@ -270,14 +279,13 @@ class DatasetGenerator:
         for i, bias in enumerate(biases):
             elapsed = sample_elapsed_time(fact_type.volatility, bias=bias, rng=self.rng)
 
-            # Scale memory ages proportionally to elapsed time
+            # Keep memory ages fixed within a counterfactual group so the
+            # only changing temporal variable is the top-level elapsed time.
             memories = []
             for mem_tmpl in group_memories_template:
-                age_ratio = mem_tmpl.age_seconds / representative_elapsed if representative_elapsed > 0 else 1.0
-                scaled_age = elapsed * age_ratio
                 memories.append(MemoryEntry(
                     content=mem_tmpl.content,
-                    age_seconds=scaled_age,
+                    age_seconds=mem_tmpl.age_seconds,
                     source=mem_tmpl.source,
                     volatility=mem_tmpl.volatility,
                 ))
@@ -342,6 +350,7 @@ class DatasetGenerator:
         answer_directly regardless of elapsed time.
         """
         all_groups: list[list[Example]] = []
+        seen_signatures: set[str] = set()
 
         for fact_type in FACT_TYPES:
             templates = TEMPLATE_MAP.get(fact_type.name, [])
@@ -353,13 +362,33 @@ class DatasetGenerator:
                 groups_needed = max(5, examples_per_fact_type // 4)
             else:
                 groups_needed = examples_per_fact_type
-            for g in range(groups_needed):
-                template_idx = g % len(templates)
+
+            groups_created = 0
+            attempts = 0
+            max_attempts = max(groups_needed * 50, 100)
+
+            while groups_created < groups_needed:
+                template_idx = attempts % len(templates)
                 group = self.generate_counterfactual_group(
                     fact_type.name, template_idx=template_idx,
                 )
+                attempts += 1
                 if group:
+                    signature = self._scenario_signature(
+                        fact_type.name,
+                        group[0].conversation_text,
+                        group[0].query_text,
+                    )
+                    if signature in seen_signatures:
+                        if attempts >= max_attempts:
+                            raise RuntimeError(
+                                f"Could not generate {groups_needed} unique groups for "
+                                f"{fact_type.name}; only produced {groups_created}."
+                            )
+                        continue
+                    seen_signatures.add(signature)
                     all_groups.append(group)
+                    groups_created += 1
 
         # Shuffle groups
         self.rng.shuffle(all_groups)

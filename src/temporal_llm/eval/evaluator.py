@@ -419,30 +419,27 @@ class TemporalEvaluator:
         # Shuffled-time predictions: shuffle elapsed times across examples
         shuffled_times = [ex["elapsed_seconds"] for ex in examples]
         rng.shuffle(shuffled_times)
+        shuffled_memory_ages = [
+            mem.get("age_seconds", 0)
+            for ex in examples
+            for mem in ex.get("memories", [])
+        ]
+        rng.shuffle(shuffled_memory_ages)
+        memory_cursor = 0
 
         shuffled_texts = []
         for ex, new_time in zip(examples, shuffled_times):
             text = self._get_input_text(ex, variant)
-            if variant == "text_time":
-                old_time = f"{seconds_to_human(ex['elapsed_seconds'])} ago"
-                new_time_str = f"{seconds_to_human(new_time)} ago"
-                text = text.replace(old_time, new_time_str)
-            else:
-                old_token = ex["elapsed_token"]
-                new_token = seconds_to_token(new_time)
-                text = text.replace(old_token, new_token)
-            # Also replace memory-age tokens/text so the full temporal
-            # signal is disrupted, not just the top-level elapsed time
-            if ex.get("memories"):
-                for mem in ex["memories"]:
-                    mem_age = mem.get("age_seconds", 0)
-                    if variant in ("time_tokens", "time_memory"):
-                        old_mem_token = f"<dt_{seconds_to_bucket(mem_age)}>"
-                        new_mem_token = seconds_to_token(new_time * 0.7)  # arbitrary shift
-                        text = text.replace(old_mem_token, new_mem_token, 1)
-                    old_mem_human = seconds_to_human(mem_age)
-                    new_mem_human = seconds_to_human(new_time * 0.7)
-                    text = text.replace(old_mem_human, new_mem_human, 1)
+            text = self._replace_elapsed_mentions(
+                text, ex["elapsed_seconds"], new_time, variant,
+            )
+            if variant == "time_memory" and ex.get("memories"):
+                old_ages = [mem.get("age_seconds", 0) for mem in ex["memories"]]
+                new_ages = shuffled_memory_ages[
+                    memory_cursor: memory_cursor + len(old_ages)
+                ]
+                memory_cursor += len(old_ages)
+                text = self._replace_memory_mentions(text, old_ages, new_ages)
             shuffled_texts.append(text)
 
         shuffled_preds = self._predict_all(shuffled_texts)
@@ -490,26 +487,30 @@ class TemporalEvaluator:
         # then reverse the time assignments
         # Build a map from example id to swapped elapsed seconds
         swapped_times = {}
+        swapped_memory_ages = {}
         for group_id, group_exs in groups.items():
             sorted_exs = sorted(group_exs, key=lambda x: x["elapsed_seconds"])
-            times = [ex["elapsed_seconds"] for ex in sorted_exs]
-            reversed_times = list(reversed(times))
-            for ex, new_time in zip(sorted_exs, reversed_times):
-                swapped_times[ex["id"]] = new_time
+            reversed_exs = list(reversed(sorted_exs))
+            for ex, partner in zip(sorted_exs, reversed_exs):
+                swapped_times[ex["id"]] = partner["elapsed_seconds"]
+                swapped_memory_ages[ex["id"]] = [
+                    mem.get("age_seconds", 0)
+                    for mem in partner.get("memories", [])
+                ]
 
         # Build swapped texts
         swapped_texts = []
         for ex in examples:
             text = self._get_input_text(ex, variant)
             new_time = swapped_times.get(ex["id"], ex["elapsed_seconds"])
-            if variant == "text_time":
-                old_time = f"{seconds_to_human(ex['elapsed_seconds'])} ago"
-                new_time_str = f"{seconds_to_human(new_time)} ago"
-                swapped_texts.append(text.replace(old_time, new_time_str))
-            else:
-                old_token = ex["elapsed_token"]
-                new_token = seconds_to_token(new_time)
-                swapped_texts.append(text.replace(old_token, new_token))
+            text = self._replace_elapsed_mentions(
+                text, ex["elapsed_seconds"], new_time, variant,
+            )
+            if variant == "time_memory" and ex.get("memories"):
+                old_ages = [mem.get("age_seconds", 0) for mem in ex["memories"]]
+                new_ages = swapped_memory_ages.get(ex["id"], old_ages)
+                text = self._replace_memory_mentions(text, old_ages, new_ages)
+            swapped_texts.append(text)
 
         swapped_preds = self._predict_all(swapped_texts)
         swapped_acc = accuracy_score(oracles, swapped_preds)
@@ -927,6 +928,40 @@ class TemporalEvaluator:
     # -------------------------------------------------------------------
     # Helpers
     # -------------------------------------------------------------------
+
+    @staticmethod
+    def _replace_elapsed_mentions(
+        text: str,
+        old_seconds: float,
+        new_seconds: float,
+        variant: str,
+    ) -> str:
+        """Replace the top-level elapsed-time representation in a prompt."""
+        old_human = seconds_to_human(old_seconds)
+        new_human = seconds_to_human(new_seconds)
+        if variant == "text_time":
+            return text.replace(f"{old_human} ago", f"{new_human} ago", 1)
+
+        old_token = seconds_to_token(old_seconds)
+        new_token = seconds_to_token(new_seconds)
+        text = text.replace(old_token, new_token, 1)
+        return text.replace(old_human, new_human, 1)
+
+    @staticmethod
+    def _replace_memory_mentions(
+        text: str,
+        old_ages: list[float],
+        new_ages: list[float],
+    ) -> str:
+        """Replace memory-age tokens and human-readable ages in order."""
+        for old_age, new_age in zip(old_ages, new_ages):
+            old_token = seconds_to_token(old_age)
+            new_token = seconds_to_token(new_age)
+            old_human = seconds_to_human(old_age)
+            new_human = seconds_to_human(new_age)
+            text = text.replace(old_token, new_token, 1)
+            text = text.replace(old_human, new_human, 1)
+        return text
 
     @staticmethod
     def _get_input_text(ex: dict, variant: str) -> str:

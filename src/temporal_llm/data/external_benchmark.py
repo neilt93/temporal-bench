@@ -7,6 +7,7 @@ with the existing TemporalEvaluator.
 """
 
 import json
+import re
 from dataclasses import dataclass, asdict
 from pathlib import Path
 from typing import Optional
@@ -32,6 +33,8 @@ class ExternalExample:
     # Formatted inputs
     input_baseline: str = ""
     input_text_time: str = ""
+    input_time_tokens: str = ""
+    input_time_memory: str = ""
 
 
 def load_external_benchmark(path: str | Path) -> list[dict]:
@@ -43,6 +46,53 @@ def load_external_benchmark(path: str | Path) -> list[dict]:
             if line:
                 examples.append(json.loads(line))
     return examples
+
+
+def _derive_counterfactual_group(example_id: str) -> str:
+    """Map paired ids like foo_fresh/foo_stale onto the same group id."""
+    return re.sub(r"_(fresh|stale)$", "", example_id)
+
+
+def _format_input_text_time(context: str, query: str, elapsed_human: str,
+                            fact_type_name: str, volatility: str) -> str:
+    return (
+        f"Given the following conversation, decide the best action.\n\n"
+        f"Conversation:\nAssistant: {context}\n\n"
+        f"Time since last information: {elapsed_human} ago\n"
+        f"Fact type: {fact_type_name} ({volatility} volatility)\n\n"
+        f"User: {query}\n\n"
+        f"Actions: answer_directly, refresh, retrieve_memory, ask_clarify, abstain\n\n"
+        f"Action:"
+    )
+
+
+def _format_input_time_tokens(context: str, query: str, elapsed_token: str,
+                              elapsed_human: str, fact_type_name: str,
+                              volatility: str) -> str:
+    return (
+        f"Given the following conversation, decide the best action.\n\n"
+        f"Conversation:\nAssistant: {context}\n\n"
+        f"Time since last information: {elapsed_token} ({elapsed_human})\n"
+        f"Fact type: {fact_type_name} ({volatility} volatility)\n\n"
+        f"User: {query}\n\n"
+        f"Actions: answer_directly, refresh, retrieve_memory, ask_clarify, abstain\n\n"
+        f"Action:"
+    )
+
+
+def _format_input_time_memory(context: str, query: str, elapsed_token: str,
+                              elapsed_human: str, fact_type_name: str,
+                              volatility: str) -> str:
+    return (
+        f"Given the following conversation and memory, decide the best action.\n\n"
+        f"Conversation:\nAssistant: {context}\n\n"
+        f"Time since last information: {elapsed_token} ({elapsed_human})\n"
+        f"Fact type: {fact_type_name} ({volatility} volatility)\n\n"
+        f"Memory entries:\n  (no memories available)\n\n"
+        f"User: {query}\n\n"
+        f"Actions: answer_directly, refresh, retrieve_memory, ask_clarify, abstain\n\n"
+        f"Action:"
+    )
 
 
 def format_external_example(
@@ -87,14 +137,15 @@ def format_external_example(
     )
 
     elapsed_human = seconds_to_human(elapsed)
-    input_text_time = (
-        f"Given the following conversation, decide the best action.\n\n"
-        f"Conversation:\nAssistant: {context}\n\n"
-        f"Time since last information: {elapsed_human} ago\n"
-        f"Fact type: {fact_type_name} ({volatility} volatility)\n\n"
-        f"User: {query}\n\n"
-        f"Actions: answer_directly, refresh, retrieve_memory, ask_clarify, abstain\n\n"
-        f"Action:"
+    elapsed_token = seconds_to_token(elapsed)
+    input_text_time = _format_input_text_time(
+        context, query, elapsed_human, fact_type_name, volatility,
+    )
+    input_time_tokens = _format_input_time_tokens(
+        context, query, elapsed_token, elapsed_human, fact_type_name, volatility,
+    )
+    input_time_memory = _format_input_time_memory(
+        context, query, elapsed_token, elapsed_human, fact_type_name, volatility,
     )
 
     return {
@@ -113,11 +164,11 @@ def format_external_example(
         "deadline_seconds": None,
         "memories": [],
         "correct_action": correct,
-        "counterfactual_group": f"ext_{raw['id']}",
+        "counterfactual_group": _derive_counterfactual_group(raw["id"]),
         "input_baseline": input_baseline,
         "input_text_time": input_text_time,
-        "input_time_tokens": input_text_time,  # Use text_time format
-        "input_time_memory": input_text_time,
+        "input_time_tokens": input_time_tokens,
+        "input_time_memory": input_time_memory,
     }
 
 

@@ -690,6 +690,36 @@ SLOT_FILLERS = {
     "capital": ["Paris", "Tokyo", "Brasília", "Cairo", "Canberra", "Ottawa"],
 }
 
+STRUCTURED_SLOT_FILLERS = {
+    "contact_info": [
+        {
+            "contact_name": "Sarah",
+            "contact_type": "email",
+            "contact_value": "sarah@example.com",
+        },
+        {
+            "contact_name": "Dr. Smith",
+            "contact_type": "email",
+            "contact_value": "dr.smith@clinic.com",
+        },
+        {
+            "contact_name": "the plumber",
+            "contact_type": "phone number",
+            "contact_value": "555-0123",
+        },
+        {
+            "contact_name": "my dentist",
+            "contact_type": "phone number",
+            "contact_value": "555-9876",
+        },
+        {
+            "contact_name": "Alex",
+            "contact_type": "address",
+            "contact_value": "100 Main St",
+        },
+    ],
+}
+
 
 def fill_template(template_str: str, slot_values: dict[str, str]) -> str:
     """Fill a template string with slot values, leaving unfilled slots as-is."""
@@ -708,7 +738,6 @@ CORRELATED_SLOTS = {
     "preference_statement": ["preference_topic"],
     "constant_name": ["constant_value"],
     "team_a": ["team_b", "score_a", "score_b", "game_time"],
-    "contact_name": ["contact_value"],
     "ticker": ["price", "change"],
 }
 
@@ -739,6 +768,14 @@ def sample_slots(fact_type: str, rng=None) -> dict[str, str]:
     values = {}
     # Track which slots have been filled via correlation
     filled = set()
+
+    # Fact types with structured records need field-level consistency.
+    if fact_type in STRUCTURED_SLOT_FILLERS:
+        record = rng.choice(STRUCTURED_SLOT_FILLERS[fact_type])
+        for slot, value in record.items():
+            if slot in needed_slots:
+                values[slot] = value
+                filled.add(slot)
 
     # First pass: fill correlated slot groups together
     for primary, dependents in CORRELATED_SLOTS.items():

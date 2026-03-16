@@ -253,8 +253,8 @@ TEST_CASES = [
         "category": "memory",
         "context": "Three months ago, the user mentioned they're vegetarian. Last week, they said they started eating fish again.",
         "query": "Can you recommend a restaurant for me?",
-        "fresh_time": "N/A",
-        "stale_time": "N/A",
+        "fresh_time": "1 day ago",
+        "stale_time": "6 months ago",
         "fresh_correct": "retrieve_memory",
         "stale_correct": "retrieve_memory",
         "fact_type": "user_preference",
@@ -568,10 +568,6 @@ def run_eval(models: list[str], conditions: list[str], cases: list[dict],
                     count += 1
                     correct = case['stale_correct'] if is_stale else case['fresh_correct']
 
-                    # Skip memory cases for no_time (no time dimension)
-                    if case['category'] == 'memory' and condition_name in ['no_time']:
-                        continue
-
                     # Skip if already in checkpoint
                     key = (model_name, condition_name, case['id'], is_stale)
                     if key in completed_keys:
@@ -667,8 +663,7 @@ def compute_metrics(results: list[EvalResult]) -> dict:
                 fresh = [r for r in case_results if not r.is_stale]
                 stale = [r for r in case_results if r.is_stale]
                 if fresh and stale:
-                    case_data = next(c for c in TEST_CASES if c['id'] == cid)
-                    if case_data['fresh_correct'] != case_data['stale_correct']:
+                    if fresh[0].correct_action != stale[0].correct_action:
                         should_switch += 1
                         if fresh[0].predicted_action != stale[0].predicted_action:
                             switches += 1
