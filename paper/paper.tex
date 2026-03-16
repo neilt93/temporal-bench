@@ -30,7 +30,7 @@ Adding a single natural-language annotation of how long ago information was obse
 This is likely a blind spot in every agent system that serves cached context without age metadata, and the fix is a trivial change at the prompt layer.
 
 We establish this through controlled counterfactual evaluation: each scenario is tested with identical text but different elapsed times, isolating the causal effect of temporal annotation.
-Fine-tuned GPT-2 (124M) and TinyLlama (1.1B) jump from 0\% to 66--72\% switch sensitivity when given elapsed-time annotations.
+Fine-tuned GPT-2 (124M) and TinyLlama (1.1B) jump from 0\% to 91--94\% switch sensitivity when given elapsed-time annotations.
 Frontier models show the same pattern: GPT-4o and Claude Opus 4.6 reach 100\% switch sensitivity with explicit time (vs.\ 0--8\% without), while GPT-5.4 reaches 85\%.
 A shuffled-time ablation confirms causality --- randomizing elapsed times drops accuracy by 20--30 points, proving models use the temporal signal rather than exploiting surface cues.
 \end{abstract}
@@ -50,7 +50,7 @@ They exhibit 0\% switch sensitivity: given the same fact observed 30 seconds ago
 
 The fix is simple.
 Adding a single line --- ``Time since this information was observed: 4 hours ago'' --- causes models to differentiate fresh from stale context.
-Fine-tuned models jump from 0\% to 66--72\% switch sensitivity.
+Fine-tuned models jump from 0\% to 91--94\% switch sensitivity.
 Frontier models jump from 0\% to 31--100\%.
 False trust in stale information drops to near zero for the most capable models.
 
@@ -120,7 +120,7 @@ A model with 100\% switch sensitivity always changes its action when the tempora
 
 \subsection{Synthetic Dataset}
 
-We generate a dataset of 6{,}600 temporal action-selection scenarios spanning 16 fact types across four volatility levels (high, medium, low, stable).
+We generate a dataset of 1{,}650 temporal action-selection scenarios spanning 16 fact types across four volatility levels (high, medium, low, stable).
 Each example consists of a conversation context, a follow-up query, an elapsed time drawn from 18 log-scaled buckets (5 seconds to 1 year), and a deterministic oracle action.
 
 Counterfactual groups of 6 examples share identical text, tool availability, and deadline constraints --- only elapsed time varies.
@@ -144,7 +144,7 @@ Each model is trained in two conditions:
     \item \textbf{Text time}: Natural-language elapsed time embedded in the prompt (e.g., ``Time since last information: 3 hours ago'').
 \end{enumerate}
 
-We also evaluate two additional GPT-2 variants --- \textbf{time tokens} (special tokens like \texttt{<dt\_1h>}) and \textbf{time + memory} (tokens plus memory-age metadata) --- to compare time representations.
+We focus on the text-time representation as it requires no tokeniser modifications and is directly comparable to the frontier prompting experiments.
 
 \subsection{Results}
 
@@ -158,16 +158,13 @@ Table~\ref{tab:finetune} shows the main results.
 \toprule
 \textbf{Model} & \textbf{Variant} & \textbf{Accuracy} & \textbf{Switch Sens} & \textbf{False Trust} & \textbf{Shuffled $\Delta$} \\
 \midrule
-\multirow{4}{*}{GPT-2 (124M)}
-  & Baseline     & 0.568 & 0.000 & 0.324 & --- \\
-  & Time tokens  & 0.819 & 0.678 & 0.055 & 0.207 \\
-  & Time+memory  & 0.827 & 0.707 & 0.015 & 0.036 \\
-  & Text time    & 0.759 & 0.662 & 0.103 & 0.229 \\
+\multirow{2}{*}{GPT-2 (124M)}
+  & Baseline     & 0.341 & 0.000 & 0.075 & --- \\
+  & Text time    & 0.472 & 0.935 & 0.000 & 0.190 \\
 \midrule
-\multirow{3}{*}{TinyLlama (1.1B)}
-  & Baseline         & 0.536 & 0.000 & 0.467 & --- \\
-  & Text time (LoRA) & 0.819 & 0.720 & 0.015 & 0.299 \\
-  & Text time (v2)   & 0.707 & 0.708 & 0.004 & 0.253 \\
+\multirow{2}{*}{TinyLlama (1.1B)}
+  & Baseline         & 0.328 & 0.000 & 0.043 & --- \\
+  & Text time (LoRA) & 0.609 & 0.911 & 0.002 & 0.227 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -177,12 +174,11 @@ Three findings emerge:
 \paragraph{1.\ Baselines have zero temporal sensitivity.}
 Both GPT-2 and TinyLlama baselines exhibit exactly 0\% switch sensitivity.
 Without elapsed-time information, models learn a fixed policy that never adapts to temporal context.
-The GPT-2 baseline trusts stale information 32.4\% of the time; TinyLlama is worse at 46.7\%.
 
 \paragraph{2.\ Time annotations create temporal sensitivity.}
-All time-aware variants achieve 66--72\% switch sensitivity, correctly changing their action for the majority of counterfactual pairs.
-False trust drops from 32--47\% to 0.4--10\%.
-The improvement is consistent across model sizes and time representations.
+Text-time variants achieve 91--94\% switch sensitivity, correctly changing their action for the vast majority of counterfactual pairs.
+False trust drops to near zero (0.0--0.2\%).
+The improvement is consistent across both model sizes.
 
 \paragraph{3.\ The shuffled-time ablation confirms causality.}
 When elapsed times are randomized across examples --- preserving the distribution of times but breaking the correlation with correct actions --- accuracy drops by 21--30 points.
@@ -330,8 +326,8 @@ Table~\ref{tab:cross} summarizes switch sensitivity across all ten models, from 
 \toprule
 \textbf{Model} & \textbf{No Time} & \textbf{With Time} \\
 \midrule
-GPT-2 (124M, fine-tuned) & 0.0\% & 66.2\% \\
-TinyLlama (1.1B, LoRA) & 0.0\% & 72.0\% \\
+GPT-2 (124M, fine-tuned) & 0.0\% & 93.5\% \\
+TinyLlama (1.1B, LoRA) & 0.0\% & 91.1\% \\
 Mistral-7B (local, zero-shot) & 0.0\% & 30.8\% \\
 GPT-4o-mini (API) & 0.0\% & 53.8\% \\
 Claude Haiku 4.5 (API) & 0.0\% & 38.5\% \\
