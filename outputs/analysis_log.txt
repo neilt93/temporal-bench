@@ -1,0 +1,336 @@
+Analysis started at 2026-03-15 12:58:57.666541
+
+[12:58:57] Found model: gpt2_baseline at outputs/gpt2_baseline_lr0.0005/best
+[12:58:57] Found model: gpt2_time_tokens at outputs/gpt2_time_tokens_lr0.0005/best
+[12:58:57] Found model: gpt2_text_time at outputs/gpt2_text_time/best
+[12:58:57] Found model: tinyllama_fullft_baseline at outputs/tinyllama_fullft_baseline/best
+[12:58:57] Found model: tinyllama_fullft_time_tokens at outputs/tinyllama_fullft_time_tokens/best
+[12:58:57] Found model: tinyllama_fullft_text_time at outputs/tinyllama_fullft_text_time/best
+[12:58:57] Found model: tinyllama_lora_midlr at outputs/tinyllama_lora_midlr_text_time_savemods/best
+[12:58:57] Found model: tinyllama_lora_highlr at outputs/tinyllama_lora_highlr_text_time_savemods/best
+[12:58:57] 
+======================================================================
+[12:58:57]   PHASE 1: COLLECTING PREDICTIONS
+[12:58:57] ======================================================================
+[12:58:57] 
+Model: gpt2_baseline
+[12:58:57]   Loading model gpt2_baseline from outputs/gpt2_baseline_lr0.0005/best...
+[12:59:01]   Saved 498 predictions for gpt2_baseline
+[12:59:01] 
+Model: gpt2_time_tokens
+[12:59:01]   Loading model gpt2_time_tokens from outputs/gpt2_time_tokens_lr0.0005/best...
+[12:59:05]   Saved 498 predictions for gpt2_time_tokens
+[12:59:05] 
+Model: gpt2_text_time
+[12:59:05]   Loading model gpt2_text_time from outputs/gpt2_text_time/best...
+[12:59:08]   Saved 498 predictions for gpt2_text_time
+[12:59:08] 
+Model: tinyllama_fullft_baseline
+[12:59:08]   Loading model tinyllama_fullft_baseline from outputs/tinyllama_fullft_baseline/best...
+[12:59:19]   Saved 498 predictions for tinyllama_fullft_baseline
+[12:59:19] 
+Model: tinyllama_fullft_time_tokens
+[12:59:19]   Loading model tinyllama_fullft_time_tokens from outputs/tinyllama_fullft_time_tokens/best...
+[12:59:29]   Saved 498 predictions for tinyllama_fullft_time_tokens
+[12:59:29] 
+Model: tinyllama_fullft_text_time
+[12:59:29]   Loading model tinyllama_fullft_text_time from outputs/tinyllama_fullft_text_time/best...
+[12:59:39]   Saved 498 predictions for tinyllama_fullft_text_time
+[12:59:39] 
+Model: tinyllama_lora_midlr
+[12:59:39]   Loading model tinyllama_lora_midlr from outputs/tinyllama_lora_midlr_text_time_savemods/best...
+[12:59:56]   Saved 498 predictions for tinyllama_lora_midlr
+[12:59:56] 
+Model: tinyllama_lora_highlr
+[12:59:56]   Loading model tinyllama_lora_highlr from outputs/tinyllama_lora_highlr_text_time_savemods/best...
+[13:00:09]   Saved 498 predictions for tinyllama_lora_highlr
+[13:00:09] 
+======================================================================
+[13:00:09]   PHASE 2: RUNNING ANALYSES
+[13:00:09] ======================================================================
+[13:00:09] Running Analysis 1: Per-class confusion matrices
+[13:00:09] 
+  gpt2_baseline confusion matrix:
+[13:00:09]                          answer_d    refresh   retrieve   ask_clar    abstain
+[13:00:09]        answer_directly        131         68          0          0          0
+[13:00:09]                refresh         76        152          0          0          0
+[13:00:09]        retrieve_memory         14          5          0          0          0
+[13:00:09]            ask_clarify          1          7          0          0          0
+[13:00:09]                abstain         12         32          0          0          0
+[13:00:09]   Per-class F1:
+[13:00:09]          answer_directly: P=0.560 R=0.658 F1=0.605 (n=199.0)
+[13:00:09]                  refresh: P=0.576 R=0.667 F1=0.618 (n=228.0)
+[13:00:09]          retrieve_memory: P=0.000 R=0.000 F1=0.000 (n=19.0)
+[13:00:09]              ask_clarify: P=0.000 R=0.000 F1=0.000 (n=8.0)
+[13:00:09]                  abstain: P=0.000 R=0.000 F1=0.000 (n=44.0)
+[13:00:09] 
+  gpt2_time_tokens confusion matrix:
+[13:00:09]                          answer_d    refresh   retrieve   ask_clar    abstain
+[13:00:09]        answer_directly        194          5          0          0          0
+[13:00:09]                refresh         14        214          0          0          0
+[13:00:09]        retrieve_memory         19          0          0          0          0
+[13:00:09]            ask_clarify          2          6          0          0          0
+[13:00:09]                abstain          1         43          0          0          0
+[13:00:09]   Per-class F1:
+[13:00:09]          answer_directly: P=0.843 R=0.975 F1=0.904 (n=199.0)
+[13:00:09]                  refresh: P=0.799 R=0.939 F1=0.863 (n=228.0)
+[13:00:09]          retrieve_memory: P=0.000 R=0.000 F1=0.000 (n=19.0)
+[13:00:09]              ask_clarify: P=0.000 R=0.000 F1=0.000 (n=8.0)
+[13:00:09]                  abstain: P=0.000 R=0.000 F1=0.000 (n=44.0)
+[13:00:09] 
+  gpt2_text_time confusion matrix:
+[13:00:09]                          answer_d    refresh   retrieve   ask_clar    abstain
+[13:00:09]        answer_directly        177         22          0          0          0
+[13:00:09]                refresh         27        201          0          0          0
+[13:00:09]        retrieve_memory         13          6          0          0          0
+[13:00:09]            ask_clarify          2          6          0          0          0
+[13:00:09]                abstain          1         43          0          0          0
+[13:00:09]   Per-class F1:
+[13:00:09]          answer_directly: P=0.805 R=0.889 F1=0.845 (n=199.0)
+[13:00:09]                  refresh: P=0.723 R=0.882 F1=0.794 (n=228.0)
+[13:00:09]          retrieve_memory: P=0.000 R=0.000 F1=0.000 (n=19.0)
+[13:00:09]              ask_clarify: P=0.000 R=0.000 F1=0.000 (n=8.0)
+[13:00:09]                  abstain: P=0.000 R=0.000 F1=0.000 (n=44.0)
+[13:00:09] 
+  tinyllama_fullft_baseline confusion matrix:
+[13:00:09]                          answer_d    refresh   retrieve   ask_clar    abstain
+[13:00:09]        answer_directly        146         53          0          0          0
+[13:00:09]                refresh        107        121          0          0          0
+[13:00:09]        retrieve_memory         16          3          0          0          0
+[13:00:09]            ask_clarify          5          3          0          0          0
+[13:00:09]                abstain         20         24          0          0          0
+[13:00:09]   Per-class F1:
+[13:00:09]          answer_directly: P=0.497 R=0.734 F1=0.592 (n=199.0)
+[13:00:09]                  refresh: P=0.593 R=0.531 F1=0.560 (n=228.0)
+[13:00:09]          retrieve_memory: P=0.000 R=0.000 F1=0.000 (n=19.0)
+[13:00:09]              ask_clarify: P=0.000 R=0.000 F1=0.000 (n=8.0)
+[13:00:09]                  abstain: P=0.000 R=0.000 F1=0.000 (n=44.0)
+[13:00:09] 
+  tinyllama_fullft_time_tokens confusion matrix:
+[13:00:09]                          answer_d    refresh   retrieve   ask_clar    abstain
+[13:00:09]        answer_directly        194          5          0          0          0
+[13:00:09]                refresh        196         32          0          0          0
+[13:00:09]        retrieve_memory         19          0          0          0          0
+[13:00:09]            ask_clarify          7          1          0          0          0
+[13:00:09]                abstain         36          8          0          0          0
+[13:00:09]   Per-class F1:
+[13:00:09]          answer_directly: P=0.429 R=0.975 F1=0.596 (n=199.0)
+[13:00:09]                  refresh: P=0.696 R=0.140 F1=0.234 (n=228.0)
+[13:00:09]          retrieve_memory: P=0.000 R=0.000 F1=0.000 (n=19.0)
+[13:00:09]              ask_clarify: P=0.000 R=0.000 F1=0.000 (n=8.0)
+[13:00:09]                  abstain: P=0.000 R=0.000 F1=0.000 (n=44.0)
+[13:00:09] 
+  tinyllama_fullft_text_time confusion matrix:
+[13:00:09]                          answer_d    refresh   retrieve   ask_clar    abstain
+[13:00:09]        answer_directly        135         64          0          0          0
+[13:00:09]                refresh         83        145          0          0          0
+[13:00:09]        retrieve_memory         13          6          0          0          0
+[13:00:09]            ask_clarify          3          5          0          0          0
+[13:00:09]                abstain         15         29          0          0          0
+[13:00:09]   Per-class F1:
+[13:00:09]          answer_directly: P=0.542 R=0.678 F1=0.603 (n=199.0)
+[13:00:09]                  refresh: P=0.582 R=0.636 F1=0.608 (n=228.0)
+[13:00:09]          retrieve_memory: P=0.000 R=0.000 F1=0.000 (n=19.0)
+[13:00:09]              ask_clarify: P=0.000 R=0.000 F1=0.000 (n=8.0)
+[13:00:09]                  abstain: P=0.000 R=0.000 F1=0.000 (n=44.0)
+[13:00:09] 
+  tinyllama_lora_midlr confusion matrix:
+[13:00:09]                          answer_d    refresh   retrieve   ask_clar    abstain
+[13:00:09]        answer_directly        184         15          0          0          0
+[13:00:09]                refresh          4        224          0          0          0
+[13:00:09]        retrieve_memory         14          5          0          0          0
+[13:00:09]            ask_clarify          2          6          0          0          0
+[13:00:09]                abstain          0         44          0          0          0
+[13:00:09]   Per-class F1:
+[13:00:09]          answer_directly: P=0.902 R=0.925 F1=0.913 (n=199.0)
+[13:00:09]                  refresh: P=0.762 R=0.982 F1=0.858 (n=228.0)
+[13:00:09]          retrieve_memory: P=0.000 R=0.000 F1=0.000 (n=19.0)
+[13:00:09]              ask_clarify: P=0.000 R=0.000 F1=0.000 (n=8.0)
+[13:00:09]                  abstain: P=0.000 R=0.000 F1=0.000 (n=44.0)
+[13:00:09] 
+  tinyllama_lora_highlr confusion matrix:
+[13:00:09]                          answer_d    refresh   retrieve   ask_clar    abstain
+[13:00:09]        answer_directly        185         14          0          0          0
+[13:00:09]                refresh         40        188          0          0          0
+[13:00:09]        retrieve_memory         19          0          0          0          0
+[13:00:09]            ask_clarify          3          5          0          0          0
+[13:00:09]                abstain          6         38          0          0          0
+[13:00:09]   Per-class F1:
+[13:00:09]          answer_directly: P=0.731 R=0.930 F1=0.819 (n=199.0)
+[13:00:09]                  refresh: P=0.767 R=0.825 F1=0.795 (n=228.0)
+[13:00:09]          retrieve_memory: P=0.000 R=0.000 F1=0.000 (n=19.0)
+[13:00:09]              ask_clarify: P=0.000 R=0.000 F1=0.000 (n=8.0)
+[13:00:09]                  abstain: P=0.000 R=0.000 F1=0.000 (n=44.0)
+[13:00:09]   Saved outputs\analysis\confusion_matrices.json
+[13:00:09] Running Analysis 2: Balanced evaluation slices
+[13:00:09]   gpt2_baseline: full_acc=0.568 bal_acc=0.300 bal_f1=0.172 (n_per_class=8)
+[13:00:09]   gpt2_time_tokens: full_acc=0.819 bal_acc=0.400 bal_f1=0.230 (n_per_class=8)
+[13:00:09]   gpt2_text_time: full_acc=0.759 bal_acc=0.300 bal_f1=0.177 (n_per_class=8)
+[13:00:09]   tinyllama_fullft_baseline: full_acc=0.536 bal_acc=0.275 bal_f1=0.158 (n_per_class=8)
+[13:00:09]   tinyllama_fullft_time_tokens: full_acc=0.454 bal_acc=0.225 bal_f1=0.106 (n_per_class=8)
+[13:00:09]   tinyllama_fullft_text_time: full_acc=0.562 bal_acc=0.275 bal_f1=0.157 (n_per_class=8)
+[13:00:09]   tinyllama_lora_midlr: full_acc=0.819 bal_acc=0.350 bal_f1=0.203 (n_per_class=8)
+[13:00:09]   tinyllama_lora_highlr: full_acc=0.749 bal_acc=0.375 bal_f1=0.214 (n_per_class=8)
+[13:00:09]   Saved outputs\analysis\balanced_slices.json
+[13:00:09] Running Analysis 3: Volatile vs stable facts
+[13:00:09] 
+  Model                              High   Medium      Low   Stable
+[13:00:09]   --------------------------------------------------------------
+[13:00:09]   gpt2_baseline                     0.565    0.505    0.562    1.000
+[13:00:09]   gpt2_time_tokens                  0.833    0.785    0.802    1.000
+[13:00:09]   gpt2_text_time                    0.742    0.780    0.750    0.767
+[13:00:09]   tinyllama_fullft_baseline         0.559    0.425    0.562    1.000
+[13:00:09]   tinyllama_fullft_time_tokens      0.435    0.328    0.562    1.000
+[13:00:09]   tinyllama_fullft_text_time        0.559    0.522    0.510    1.000
+[13:00:09]   tinyllama_lora_midlr              0.839    0.801    0.760    1.000
+[13:00:09]   tinyllama_lora_highlr             0.737    0.726    0.740    1.000
+[13:00:09] 
+  Temporal gain over baseline (accuracy delta):
+[13:00:09]   gpt2_time_tokens                 +0.269   +0.280   +0.240   +0.000
+[13:00:09]   gpt2_text_time                   +0.177   +0.274   +0.188   -0.233
+[13:00:09]   tinyllama_fullft_time_tokens     -0.124   -0.097   +0.000   +0.000
+[13:00:09]   tinyllama_fullft_text_time       +0.000   +0.097   -0.052   +0.000
+[13:00:09]   tinyllama_lora_midlr             +0.280   +0.376   +0.198   +0.000
+[13:00:09]   tinyllama_lora_highlr            +0.177   +0.301   +0.177   +0.000
+[13:00:09]   Saved outputs\analysis\volatile_vs_stable.json
+[13:00:09] Running Analysis 4: Counterfactual threshold curves
+[13:00:09] 
+  gpt2_baseline: 0 switch points
+[13:00:09]   Action distribution by time bucket:
+[13:00:09]   Bucket         answer_d    refresh   retrieve   ask_clar    abstain      n
+[13:00:09]   0-1m              0.500      0.500      0.000      0.000      0.000     24
+[13:00:09]   1-5m              0.357      0.643      0.000      0.000      0.000     28
+[13:00:09]   5-30m             0.373      0.627      0.000      0.000      0.000     59
+[13:00:09]   30m-1h            0.263      0.737      0.000      0.000      0.000     19
+[13:00:09]   1-6h              0.385      0.615      0.000      0.000      0.000     65
+[13:00:09]   6-24h             0.387      0.613      0.000      0.000      0.000     75
+[13:00:09]   1-7d              0.317      0.683      0.000      0.000      0.000    101
+[13:00:09]   1w-1mo            0.611      0.389      0.000      0.000      0.000     72
+[13:00:09]   1mo+              1.000      0.000      0.000      0.000      0.000     55
+[13:00:09] 
+  gpt2_time_tokens: 73 switch points
+[13:00:09]   Action distribution by time bucket:
+[13:00:09]   Bucket         answer_d    refresh   retrieve   ask_clar    abstain      n
+[13:00:09]   0-1m              1.000      0.000      0.000      0.000      0.000     24
+[13:00:09]   1-5m              0.964      0.036      0.000      0.000      0.000     28
+[13:00:09]   5-30m             0.627      0.373      0.000      0.000      0.000     59
+[13:00:09]   30m-1h            0.368      0.632      0.000      0.000      0.000     19
+[13:00:09]   1-6h              0.600      0.400      0.000      0.000      0.000     65
+[13:00:09]   6-24h             0.360      0.640      0.000      0.000      0.000     75
+[13:00:09]   1-7d              0.069      0.931      0.000      0.000      0.000    101
+[13:00:09]   1w-1mo            0.472      0.528      0.000      0.000      0.000     72
+[13:00:09]   1mo+              0.509      0.491      0.000      0.000      0.000     55
+[13:00:09]   Top transitions:
+[13:00:09]     answer_directly -> refresh: 72
+[13:00:09]     refresh -> answer_directly: 1
+[13:00:09] 
+  gpt2_text_time: 77 switch points
+[13:00:09]   Action distribution by time bucket:
+[13:00:09]   Bucket         answer_d    refresh   retrieve   ask_clar    abstain      n
+[13:00:09]   0-1m              1.000      0.000      0.000      0.000      0.000     24
+[13:00:09]   1-5m              0.964      0.036      0.000      0.000      0.000     28
+[13:00:09]   5-30m             0.712      0.288      0.000      0.000      0.000     59
+[13:00:09]   30m-1h            0.526      0.474      0.000      0.000      0.000     19
+[13:00:09]   1-6h              0.677      0.323      0.000      0.000      0.000     65
+[13:00:09]   6-24h             0.427      0.573      0.000      0.000      0.000     75
+[13:00:09]   1-7d              0.069      0.931      0.000      0.000      0.000    101
+[13:00:09]   1w-1mo            0.472      0.528      0.000      0.000      0.000     72
+[13:00:09]   1mo+              0.000      1.000      0.000      0.000      0.000     55
+[13:00:09]   Top transitions:
+[13:00:09]     answer_directly -> refresh: 77
+[13:00:09] 
+  tinyllama_fullft_baseline: 0 switch points
+[13:00:09]   Action distribution by time bucket:
+[13:00:09]   Bucket         answer_d    refresh   retrieve   ask_clar    abstain      n
+[13:00:09]   0-1m              0.375      0.625      0.000      0.000      0.000     24
+[13:00:09]   1-5m              0.500      0.500      0.000      0.000      0.000     28
+[13:00:09]   5-30m             0.288      0.712      0.000      0.000      0.000     59
+[13:00:09]   30m-1h            0.368      0.632      0.000      0.000      0.000     19
+[13:00:09]   1-6h              0.631      0.369      0.000      0.000      0.000     65
+[13:00:09]   6-24h             0.480      0.520      0.000      0.000      0.000     75
+[13:00:09]   1-7d              0.535      0.465      0.000      0.000      0.000    101
+[13:00:09]   1w-1mo            0.847      0.153      0.000      0.000      0.000     72
+[13:00:09]   1mo+              1.000      0.000      0.000      0.000      0.000     55
+[13:00:09] 
+  tinyllama_fullft_time_tokens: 7 switch points
+[13:00:09]   Action distribution by time bucket:
+[13:00:09]   Bucket         answer_d    refresh   retrieve   ask_clar    abstain      n
+[13:00:09]   0-1m              0.875      0.125      0.000      0.000      0.000     24
+[13:00:09]   1-5m              0.929      0.071      0.000      0.000      0.000     28
+[13:00:09]   5-30m             0.864      0.136      0.000      0.000      0.000     59
+[13:00:09]   30m-1h            0.789      0.211      0.000      0.000      0.000     19
+[13:00:09]   1-6h              0.969      0.031      0.000      0.000      0.000     65
+[13:00:09]   6-24h             0.813      0.187      0.000      0.000      0.000     75
+[13:00:09]   1-7d              0.881      0.119      0.000      0.000      0.000    101
+[13:00:09]   1w-1mo            0.986      0.014      0.000      0.000      0.000     72
+[13:00:09]   1mo+              1.000      0.000      0.000      0.000      0.000     55
+[13:00:09]   Top transitions:
+[13:00:09]     answer_directly -> refresh: 6
+[13:00:09]     refresh -> answer_directly: 1
+[13:00:09] 
+  tinyllama_fullft_text_time: 9 switch points
+[13:00:09]   Action distribution by time bucket:
+[13:00:09]   Bucket         answer_d    refresh   retrieve   ask_clar    abstain      n
+[13:00:09]   0-1m              0.458      0.542      0.000      0.000      0.000     24
+[13:00:09]   1-5m              0.429      0.571      0.000      0.000      0.000     28
+[13:00:09]   5-30m             0.356      0.644      0.000      0.000      0.000     59
+[13:00:09]   30m-1h            0.263      0.737      0.000      0.000      0.000     19
+[13:00:09]   1-6h              0.538      0.462      0.000      0.000      0.000     65
+[13:00:09]   6-24h             0.387      0.613      0.000      0.000      0.000     75
+[13:00:09]   1-7d              0.416      0.584      0.000      0.000      0.000    101
+[13:00:09]   1w-1mo            0.625      0.375      0.000      0.000      0.000     72
+[13:00:09]   1mo+              0.891      0.109      0.000      0.000      0.000     55
+[13:00:09]   Top transitions:
+[13:00:09]     answer_directly -> refresh: 6
+[13:00:09]     refresh -> answer_directly: 3
+[13:00:09] 
+  tinyllama_lora_midlr: 74 switch points
+[13:00:09]   Action distribution by time bucket:
+[13:00:09]   Bucket         answer_d    refresh   retrieve   ask_clar    abstain      n
+[13:00:09]   0-1m              1.000      0.000      0.000      0.000      0.000     24
+[13:00:09]   1-5m              0.929      0.071      0.000      0.000      0.000     28
+[13:00:09]   5-30m             0.627      0.373      0.000      0.000      0.000     59
+[13:00:09]   30m-1h            0.316      0.684      0.000      0.000      0.000     19
+[13:00:09]   1-6h              0.569      0.431      0.000      0.000      0.000     65
+[13:00:09]   6-24h             0.333      0.667      0.000      0.000      0.000     75
+[13:00:09]   1-7d              0.069      0.931      0.000      0.000      0.000    101
+[13:00:09]   1w-1mo            0.472      0.528      0.000      0.000      0.000     72
+[13:00:09]   1mo+              0.145      0.855      0.000      0.000      0.000     55
+[13:00:09]   Top transitions:
+[13:00:09]     answer_directly -> refresh: 73
+[13:00:09]     refresh -> answer_directly: 1
+[13:00:09] 
+  tinyllama_lora_highlr: 66 switch points
+[13:00:09]   Action distribution by time bucket:
+[13:00:09]   Bucket         answer_d    refresh   retrieve   ask_clar    abstain      n
+[13:00:09]   0-1m              1.000      0.000      0.000      0.000      0.000     24
+[13:00:09]   1-5m              0.821      0.179      0.000      0.000      0.000     28
+[13:00:09]   5-30m             0.525      0.475      0.000      0.000      0.000     59
+[13:00:09]   30m-1h            0.368      0.632      0.000      0.000      0.000     19
+[13:00:09]   1-6h              0.723      0.277      0.000      0.000      0.000     65
+[13:00:09]   6-24h             0.493      0.507      0.000      0.000      0.000     75
+[13:00:09]   1-7d              0.059      0.941      0.000      0.000      0.000    101
+[13:00:09]   1w-1mo            0.611      0.389      0.000      0.000      0.000     72
+[13:00:09]   1mo+              0.618      0.382      0.000      0.000      0.000     55
+[13:00:09]   Top transitions:
+[13:00:09]     answer_directly -> refresh: 60
+[13:00:09]     refresh -> answer_directly: 6
+[13:00:09]   Saved outputs\analysis\threshold_curves.json
+[13:00:09] Running Analysis 5: Per-fact-type breakdown
+[13:00:09] 
+  Accuracy by fact type:
+[13:00:09]   Model                            company_info   contact_info   flight_statu      geography   historical_f     live_score   math_constan   meeting_sche   package_trac   personal_pre   project_stat   restaurant_a    stock_price        traffic   weather_fore    weather_now
+[13:00:09]   --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[13:00:09]   gpt2_baseline                           0.500          0.389          0.458          1.000          1.000          0.667          1.000          0.433          0.528          0.648          0.476          0.639          0.639          0.625          0.452          0.444
+[13:00:09]   gpt2_time_tokens                        0.958          0.778          0.917          1.000          1.000          0.833          1.000          0.700          0.750          0.741          0.952          0.750          0.778          0.833          0.738          0.833
+[13:00:09]   gpt2_text_time                          0.958          0.778          0.875          0.667          0.750          0.812          0.833          0.700          0.750          0.648          0.976          0.778          0.778          0.708          0.667          0.611
+[13:00:09]   tinyllama_fullft_baseline               0.500          0.389          0.458          1.000          1.000          0.667          1.000          0.333          0.444          0.648          0.476          0.444          0.639          0.625          0.405          0.426
+[13:00:09]   tinyllama_fullft_time_tokens            0.500          0.389          0.500          1.000          1.000          0.250          1.000          0.333          0.250          0.648          0.476          0.222          0.639          0.458          0.333          0.426
+[13:00:09]   tinyllama_fullft_text_time              0.500          0.389          0.458          1.000          1.000          0.667          1.000          0.467          0.528          0.556          0.500          0.639          0.639          0.625          0.476          0.426
+[13:00:09]   tinyllama_lora_midlr                    0.958          0.778          0.917          1.000          1.000          0.812          1.000          0.733          0.778          0.667          0.976          0.722          0.778          0.917          0.762          0.833
+[13:00:09]   tinyllama_lora_highlr                   0.917          0.778          0.833          1.000          1.000          0.771          1.000          0.667          0.528          0.648          0.929          0.750          0.750          0.792          0.714          0.630
+[13:00:09]   Saved outputs\analysis\fact_type_breakdown.json
+[13:00:09] 
+======================================================================
+[13:00:09]   COMPLETE — Total time: 1.2 minutes
+[13:00:09] ======================================================================

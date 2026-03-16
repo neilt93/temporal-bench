@@ -1,0 +1,658 @@
+{
+  "gpt2_baseline": {
+    "company_info": {
+      "accuracy": 0.5,
+      "f1_macro": 0.13333333333333333,
+      "n": 24
+    },
+    "contact_info": {
+      "accuracy": 0.3888888888888889,
+      "f1_macro": 0.11200000000000002,
+      "n": 18
+    },
+    "flight_status": {
+      "accuracy": 0.4583333333333333,
+      "f1_macro": 0.12571428571428572,
+      "n": 24
+    },
+    "geography": {
+      "accuracy": 1.0,
+      "f1_macro": 0.2,
+      "n": 6
+    },
+    "historical_fact": {
+      "accuracy": 1.0,
+      "f1_macro": 0.2,
+      "n": 12
+    },
+    "live_score": {
+      "accuracy": 0.6666666666666666,
+      "f1_macro": 0.16,
+      "n": 48
+    },
+    "math_constant": {
+      "accuracy": 1.0,
+      "f1_macro": 0.2,
+      "n": 12
+    },
+    "meeting_schedule": {
+      "accuracy": 0.43333333333333335,
+      "f1_macro": 0.14807692307692308,
+      "n": 30
+    },
+    "package_tracking": {
+      "accuracy": 0.5277777777777778,
+      "f1_macro": 0.13818181818181818,
+      "n": 36
+    },
+    "personal_preference": {
+      "accuracy": 0.6481481481481481,
+      "f1_macro": 0.15730337078651685,
+      "n": 54
+    },
+    "project_status": {
+      "accuracy": 0.47619047619047616,
+      "f1_macro": 0.16587301587301587,
+      "n": 42
+    },
+    "restaurant_availability": {
+      "accuracy": 0.6388888888888888,
+      "f1_macro": 0.15593220338983052,
+      "n": 36
+    },
+    "stock_price": {
+      "accuracy": 0.6388888888888888,
+      "f1_macro": 0.15593220338983052,
+      "n": 36
+    },
+    "traffic": {
+      "accuracy": 0.625,
+      "f1_macro": 0.15384615384615385,
+      "n": 24
+    },
+    "weather_forecast": {
+      "accuracy": 0.4523809523809524,
+      "f1_macro": 0.12459016393442623,
+      "n": 42
+    },
+    "weather_now": {
+      "accuracy": 0.4444444444444444,
+      "f1_macro": 0.18135746606334843,
+      "n": 54
+    }
+  },
+  "gpt2_time_tokens": {
+    "company_info": {
+      "accuracy": 0.9583333333333334,
+      "f1_macro": 0.391304347826087,
+      "n": 24
+    },
+    "contact_info": {
+      "accuracy": 0.7777777777777778,
+      "f1_macro": 0.35,
+      "n": 18
+    },
+    "flight_status": {
+      "accuracy": 0.9166666666666666,
+      "f1_macro": 0.3833333333333333,
+      "n": 24
+    },
+    "geography": {
+      "accuracy": 1.0,
+      "f1_macro": 0.2,
+      "n": 6
+    },
+    "historical_fact": {
+      "accuracy": 1.0,
+      "f1_macro": 0.2,
+      "n": 12
+    },
+    "live_score": {
+      "accuracy": 0.8333333333333334,
+      "f1_macro": 0.3666165413533834,
+      "n": 48
+    },
+    "math_constant": {
+      "accuracy": 1.0,
+      "f1_macro": 0.2,
+      "n": 12
+    },
+    "meeting_schedule": {
+      "accuracy": 0.7,
+      "f1_macro": 0.3065217391304348,
+      "n": 30
+    },
+    "package_tracking": {
+      "accuracy": 0.75,
+      "f1_macro": 0.32999999999999996,
+      "n": 36
+    },
+    "personal_preference": {
+      "accuracy": 0.7407407407407407,
+      "f1_macro": 0.2936746987951807,
+      "n": 54
+    },
+    "project_status": {
+      "accuracy": 0.9523809523809523,
+      "f1_macro": 0.3853488372093023,
+      "n": 42
+    },
+    "restaurant_availability": {
+      "accuracy": 0.75,
+      "f1_macro": 0.3361344537815126,
+      "n": 36
+    },
+    "stock_price": {
+      "accuracy": 0.7777777777777778,
+      "f1_macro": 0.35218855218855216,
+      "n": 36
+    },
+    "traffic": {
+      "accuracy": 0.8333333333333334,
+      "f1_macro": 0.3431372549019608,
+      "n": 24
+    },
+    "weather_forecast": {
+      "accuracy": 0.7380952380952381,
+      "f1_macro": 0.3351906158357771,
+      "n": 42
+    },
+    "weather_now": {
+      "accuracy": 0.8333333333333334,
+      "f1_macro": 0.36359183673469386,
+      "n": 54
+    }
+  },
+  "gpt2_text_time": {
+    "company_info": {
+      "accuracy": 0.9583333333333334,
+      "f1_macro": 0.391304347826087,
+      "n": 24
+    },
+    "contact_info": {
+      "accuracy": 0.7777777777777778,
+      "f1_macro": 0.35,
+      "n": 18
+    },
+    "flight_status": {
+      "accuracy": 0.875,
+      "f1_macro": 0.3652173913043478,
+      "n": 24
+    },
+    "geography": {
+      "accuracy": 0.6666666666666666,
+      "f1_macro": 0.16,
+      "n": 6
+    },
+    "historical_fact": {
+      "accuracy": 0.75,
+      "f1_macro": 0.17142857142857143,
+      "n": 12
+    },
+    "live_score": {
+      "accuracy": 0.8125,
+      "f1_macro": 0.35034246575342465,
+      "n": 48
+    },
+    "math_constant": {
+      "accuracy": 0.8333333333333334,
+      "f1_macro": 0.18181818181818182,
+      "n": 12
+    },
+    "meeting_schedule": {
+      "accuracy": 0.7,
+      "f1_macro": 0.3053221288515406,
+      "n": 30
+    },
+    "package_tracking": {
+      "accuracy": 0.75,
+      "f1_macro": 0.3388704318936877,
+      "n": 36
+    },
+    "personal_preference": {
+      "accuracy": 0.6481481481481481,
+      "f1_macro": 0.26939843068875324,
+      "n": 54
+    },
+    "project_status": {
+      "accuracy": 0.9761904761904762,
+      "f1_macro": 0.3951219512195122,
+      "n": 42
+    },
+    "restaurant_availability": {
+      "accuracy": 0.7777777777777778,
+      "f1_macro": 0.35218855218855216,
+      "n": 36
+    },
+    "stock_price": {
+      "accuracy": 0.7777777777777778,
+      "f1_macro": 0.34397759103641457,
+      "n": 36
+    },
+    "traffic": {
+      "accuracy": 0.7083333333333334,
+      "f1_macro": 0.2955165692007797,
+      "n": 24
+    },
+    "weather_forecast": {
+      "accuracy": 0.6666666666666666,
+      "f1_macro": 0.3,
+      "n": 42
+    },
+    "weather_now": {
+      "accuracy": 0.6111111111111112,
+      "f1_macro": 0.2571428571428571,
+      "n": 54
+    }
+  },
+  "tinyllama_fullft_baseline": {
+    "company_info": {
+      "accuracy": 0.5,
+      "f1_macro": 0.13333333333333333,
+      "n": 24
+    },
+    "contact_info": {
+      "accuracy": 0.3888888888888889,
+      "f1_macro": 0.11200000000000002,
+      "n": 18
+    },
+    "flight_status": {
+      "accuracy": 0.4583333333333333,
+      "f1_macro": 0.12571428571428572,
+      "n": 24
+    },
+    "geography": {
+      "accuracy": 1.0,
+      "f1_macro": 0.2,
+      "n": 6
+    },
+    "historical_fact": {
+      "accuracy": 1.0,
+      "f1_macro": 0.2,
+      "n": 12
+    },
+    "live_score": {
+      "accuracy": 0.6666666666666666,
+      "f1_macro": 0.16,
+      "n": 48
+    },
+    "math_constant": {
+      "accuracy": 1.0,
+      "f1_macro": 0.2,
+      "n": 12
+    },
+    "meeting_schedule": {
+      "accuracy": 0.3333333333333333,
+      "f1_macro": 0.13949579831932774,
+      "n": 30
+    },
+    "package_tracking": {
+      "accuracy": 0.4444444444444444,
+      "f1_macro": 0.192992992992993,
+      "n": 36
+    },
+    "personal_preference": {
+      "accuracy": 0.6481481481481481,
+      "f1_macro": 0.15730337078651685,
+      "n": 54
+    },
+    "project_status": {
+      "accuracy": 0.47619047619047616,
+      "f1_macro": 0.12903225806451613,
+      "n": 42
+    },
+    "restaurant_availability": {
+      "accuracy": 0.4444444444444444,
+      "f1_macro": 0.1635933806146572,
+      "n": 36
+    },
+    "stock_price": {
+      "accuracy": 0.6388888888888888,
+      "f1_macro": 0.15593220338983052,
+      "n": 36
+    },
+    "traffic": {
+      "accuracy": 0.625,
+      "f1_macro": 0.15384615384615385,
+      "n": 24
+    },
+    "weather_forecast": {
+      "accuracy": 0.40476190476190477,
+      "f1_macro": 0.168,
+      "n": 42
+    },
+    "weather_now": {
+      "accuracy": 0.42592592592592593,
+      "f1_macro": 0.18169491525423728,
+      "n": 54
+    }
+  },
+  "tinyllama_fullft_time_tokens": {
+    "company_info": {
+      "accuracy": 0.5,
+      "f1_macro": 0.13333333333333333,
+      "n": 24
+    },
+    "contact_info": {
+      "accuracy": 0.3888888888888889,
+      "f1_macro": 0.11200000000000002,
+      "n": 18
+    },
+    "flight_status": {
+      "accuracy": 0.5,
+      "f1_macro": 0.1627450980392157,
+      "n": 24
+    },
+    "geography": {
+      "accuracy": 1.0,
+      "f1_macro": 0.2,
+      "n": 6
+    },
+    "historical_fact": {
+      "accuracy": 1.0,
+      "f1_macro": 0.2,
+      "n": 12
+    },
+    "live_score": {
+      "accuracy": 0.25,
+      "f1_macro": 0.10095238095238095,
+      "n": 48
+    },
+    "math_constant": {
+      "accuracy": 1.0,
+      "f1_macro": 0.2,
+      "n": 12
+    },
+    "meeting_schedule": {
+      "accuracy": 0.3333333333333333,
+      "f1_macro": 0.1,
+      "n": 30
+    },
+    "package_tracking": {
+      "accuracy": 0.25,
+      "f1_macro": 0.08,
+      "n": 36
+    },
+    "personal_preference": {
+      "accuracy": 0.6481481481481481,
+      "f1_macro": 0.15730337078651685,
+      "n": 54
+    },
+    "project_status": {
+      "accuracy": 0.47619047619047616,
+      "f1_macro": 0.12903225806451613,
+      "n": 42
+    },
+    "restaurant_availability": {
+      "accuracy": 0.2222222222222222,
+      "f1_macro": 0.09278752436647172,
+      "n": 36
+    },
+    "stock_price": {
+      "accuracy": 0.6388888888888888,
+      "f1_macro": 0.2043859649122807,
+      "n": 36
+    },
+    "traffic": {
+      "accuracy": 0.4583333333333333,
+      "f1_macro": 0.18791423001949317,
+      "n": 24
+    },
+    "weather_forecast": {
+      "accuracy": 0.3333333333333333,
+      "f1_macro": 0.1,
+      "n": 42
+    },
+    "weather_now": {
+      "accuracy": 0.42592592592592593,
+      "f1_macro": 0.11948051948051948,
+      "n": 54
+    }
+  },
+  "tinyllama_fullft_text_time": {
+    "company_info": {
+      "accuracy": 0.5,
+      "f1_macro": 0.13333333333333333,
+      "n": 24
+    },
+    "contact_info": {
+      "accuracy": 0.3888888888888889,
+      "f1_macro": 0.11200000000000002,
+      "n": 18
+    },
+    "flight_status": {
+      "accuracy": 0.4583333333333333,
+      "f1_macro": 0.12571428571428572,
+      "n": 24
+    },
+    "geography": {
+      "accuracy": 1.0,
+      "f1_macro": 0.2,
+      "n": 6
+    },
+    "historical_fact": {
+      "accuracy": 1.0,
+      "f1_macro": 0.2,
+      "n": 12
+    },
+    "live_score": {
+      "accuracy": 0.6666666666666666,
+      "f1_macro": 0.16,
+      "n": 48
+    },
+    "math_constant": {
+      "accuracy": 1.0,
+      "f1_macro": 0.2,
+      "n": 12
+    },
+    "meeting_schedule": {
+      "accuracy": 0.4666666666666667,
+      "f1_macro": 0.19456521739130433,
+      "n": 30
+    },
+    "package_tracking": {
+      "accuracy": 0.5277777777777778,
+      "f1_macro": 0.13818181818181818,
+      "n": 36
+    },
+    "personal_preference": {
+      "accuracy": 0.5555555555555556,
+      "f1_macro": 0.18215102974828373,
+      "n": 54
+    },
+    "project_status": {
+      "accuracy": 0.5,
+      "f1_macro": 0.17246963562753037,
+      "n": 42
+    },
+    "restaurant_availability": {
+      "accuracy": 0.6388888888888888,
+      "f1_macro": 0.15593220338983052,
+      "n": 36
+    },
+    "stock_price": {
+      "accuracy": 0.6388888888888888,
+      "f1_macro": 0.15593220338983052,
+      "n": 36
+    },
+    "traffic": {
+      "accuracy": 0.625,
+      "f1_macro": 0.15384615384615385,
+      "n": 24
+    },
+    "weather_forecast": {
+      "accuracy": 0.47619047619047616,
+      "f1_macro": 0.20959520239880058,
+      "n": 42
+    },
+    "weather_now": {
+      "accuracy": 0.42592592592592593,
+      "f1_macro": 0.11948051948051948,
+      "n": 54
+    }
+  },
+  "tinyllama_lora_midlr": {
+    "company_info": {
+      "accuracy": 0.9583333333333334,
+      "f1_macro": 0.391304347826087,
+      "n": 24
+    },
+    "contact_info": {
+      "accuracy": 0.7777777777777778,
+      "f1_macro": 0.35,
+      "n": 18
+    },
+    "flight_status": {
+      "accuracy": 0.9166666666666666,
+      "f1_macro": 0.3833333333333333,
+      "n": 24
+    },
+    "geography": {
+      "accuracy": 1.0,
+      "f1_macro": 0.2,
+      "n": 6
+    },
+    "historical_fact": {
+      "accuracy": 1.0,
+      "f1_macro": 0.2,
+      "n": 12
+    },
+    "live_score": {
+      "accuracy": 0.8125,
+      "f1_macro": 0.35034246575342465,
+      "n": 48
+    },
+    "math_constant": {
+      "accuracy": 1.0,
+      "f1_macro": 0.2,
+      "n": 12
+    },
+    "meeting_schedule": {
+      "accuracy": 0.7333333333333333,
+      "f1_macro": 0.32121212121212117,
+      "n": 30
+    },
+    "package_tracking": {
+      "accuracy": 0.7777777777777778,
+      "f1_macro": 0.3418875927889714,
+      "n": 36
+    },
+    "personal_preference": {
+      "accuracy": 0.6666666666666666,
+      "f1_macro": 0.2761904761904762,
+      "n": 54
+    },
+    "project_status": {
+      "accuracy": 0.9761904761904762,
+      "f1_macro": 0.3951219512195122,
+      "n": 42
+    },
+    "restaurant_availability": {
+      "accuracy": 0.7222222222222222,
+      "f1_macro": 0.30841750841750837,
+      "n": 36
+    },
+    "stock_price": {
+      "accuracy": 0.7777777777777778,
+      "f1_macro": 0.35218855218855216,
+      "n": 36
+    },
+    "traffic": {
+      "accuracy": 0.9166666666666666,
+      "f1_macro": 0.3875,
+      "n": 24
+    },
+    "weather_forecast": {
+      "accuracy": 0.7619047619047619,
+      "f1_macro": 0.3466666666666667,
+      "n": 42
+    },
+    "weather_now": {
+      "accuracy": 0.8333333333333334,
+      "f1_macro": 0.36359183673469386,
+      "n": 54
+    }
+  },
+  "tinyllama_lora_highlr": {
+    "company_info": {
+      "accuracy": 0.9166666666666666,
+      "f1_macro": 0.3746376811594203,
+      "n": 24
+    },
+    "contact_info": {
+      "accuracy": 0.7777777777777778,
+      "f1_macro": 0.35,
+      "n": 18
+    },
+    "flight_status": {
+      "accuracy": 0.8333333333333334,
+      "f1_macro": 0.34923076923076923,
+      "n": 24
+    },
+    "geography": {
+      "accuracy": 1.0,
+      "f1_macro": 0.2,
+      "n": 6
+    },
+    "historical_fact": {
+      "accuracy": 1.0,
+      "f1_macro": 0.2,
+      "n": 12
+    },
+    "live_score": {
+      "accuracy": 0.7708333333333334,
+      "f1_macro": 0.31352380952380954,
+      "n": 48
+    },
+    "math_constant": {
+      "accuracy": 1.0,
+      "f1_macro": 0.2,
+      "n": 12
+    },
+    "meeting_schedule": {
+      "accuracy": 0.6666666666666666,
+      "f1_macro": 0.291005291005291,
+      "n": 30
+    },
+    "package_tracking": {
+      "accuracy": 0.5277777777777778,
+      "f1_macro": 0.2381231671554252,
+      "n": 36
+    },
+    "personal_preference": {
+      "accuracy": 0.6481481481481481,
+      "f1_macro": 0.15730337078651685,
+      "n": 54
+    },
+    "project_status": {
+      "accuracy": 0.9285714285714286,
+      "f1_macro": 0.376046511627907,
+      "n": 42
+    },
+    "restaurant_availability": {
+      "accuracy": 0.75,
+      "f1_macro": 0.32727272727272727,
+      "n": 36
+    },
+    "stock_price": {
+      "accuracy": 0.75,
+      "f1_macro": 0.32727272727272727,
+      "n": 36
+    },
+    "traffic": {
+      "accuracy": 0.7916666666666666,
+      "f1_macro": 0.3168831168831169,
+      "n": 24
+    },
+    "weather_forecast": {
+      "accuracy": 0.7142857142857143,
+      "f1_macro": 0.3220779220779221,
+      "n": 42
+    },
+    "weather_now": {
+      "accuracy": 0.6296296296296297,
+      "f1_macro": 0.2682539682539683,
+      "n": 54
+    }
+  }
+}

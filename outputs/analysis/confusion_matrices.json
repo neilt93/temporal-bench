@@ -1,0 +1,634 @@
+{
+  "gpt2_baseline": {
+    "confusion_matrix": [
+      [
+        131,
+        68,
+        0,
+        0,
+        0
+      ],
+      [
+        76,
+        152,
+        0,
+        0,
+        0
+      ],
+      [
+        14,
+        5,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        7,
+        0,
+        0,
+        0
+      ],
+      [
+        12,
+        32,
+        0,
+        0,
+        0
+      ]
+    ],
+    "labels": [
+      "answer_directly",
+      "refresh",
+      "retrieve_memory",
+      "ask_clarify",
+      "abstain"
+    ],
+    "per_class": {
+      "answer_directly": {
+        "precision": 0.5598290598290598,
+        "recall": 0.6582914572864321,
+        "f1": 0.605080831408776,
+        "support": 199.0
+      },
+      "refresh": {
+        "precision": 0.5757575757575758,
+        "recall": 0.6666666666666666,
+        "f1": 0.6178861788617886,
+        "support": 228.0
+      },
+      "retrieve_memory": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 19.0
+      },
+      "ask_clarify": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 8.0
+      },
+      "abstain": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 44.0
+      }
+    },
+    "accuracy": 0.5682730923694779
+  },
+  "gpt2_time_tokens": {
+    "confusion_matrix": [
+      [
+        194,
+        5,
+        0,
+        0,
+        0
+      ],
+      [
+        14,
+        214,
+        0,
+        0,
+        0
+      ],
+      [
+        19,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        6,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        43,
+        0,
+        0,
+        0
+      ]
+    ],
+    "labels": [
+      "answer_directly",
+      "refresh",
+      "retrieve_memory",
+      "ask_clarify",
+      "abstain"
+    ],
+    "per_class": {
+      "answer_directly": {
+        "precision": 0.8434782608695652,
+        "recall": 0.9748743718592965,
+        "f1": 0.9044289044289044,
+        "support": 199.0
+      },
+      "refresh": {
+        "precision": 0.7985074626865671,
+        "recall": 0.9385964912280702,
+        "f1": 0.8629032258064516,
+        "support": 228.0
+      },
+      "retrieve_memory": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 19.0
+      },
+      "ask_clarify": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 8.0
+      },
+      "abstain": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 44.0
+      }
+    },
+    "accuracy": 0.8192771084337349
+  },
+  "gpt2_text_time": {
+    "confusion_matrix": [
+      [
+        177,
+        22,
+        0,
+        0,
+        0
+      ],
+      [
+        27,
+        201,
+        0,
+        0,
+        0
+      ],
+      [
+        13,
+        6,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        6,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        43,
+        0,
+        0,
+        0
+      ]
+    ],
+    "labels": [
+      "answer_directly",
+      "refresh",
+      "retrieve_memory",
+      "ask_clarify",
+      "abstain"
+    ],
+    "per_class": {
+      "answer_directly": {
+        "precision": 0.8045454545454546,
+        "recall": 0.8894472361809045,
+        "f1": 0.8448687350835322,
+        "support": 199.0
+      },
+      "refresh": {
+        "precision": 0.7230215827338129,
+        "recall": 0.881578947368421,
+        "f1": 0.7944664031620553,
+        "support": 228.0
+      },
+      "retrieve_memory": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 19.0
+      },
+      "ask_clarify": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 8.0
+      },
+      "abstain": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 44.0
+      }
+    },
+    "accuracy": 0.7590361445783133
+  },
+  "tinyllama_fullft_baseline": {
+    "confusion_matrix": [
+      [
+        146,
+        53,
+        0,
+        0,
+        0
+      ],
+      [
+        107,
+        121,
+        0,
+        0,
+        0
+      ],
+      [
+        16,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        5,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        20,
+        24,
+        0,
+        0,
+        0
+      ]
+    ],
+    "labels": [
+      "answer_directly",
+      "refresh",
+      "retrieve_memory",
+      "ask_clarify",
+      "abstain"
+    ],
+    "per_class": {
+      "answer_directly": {
+        "precision": 0.4965986394557823,
+        "recall": 0.7336683417085427,
+        "f1": 0.592292089249493,
+        "support": 199.0
+      },
+      "refresh": {
+        "precision": 0.5931372549019608,
+        "recall": 0.5307017543859649,
+        "f1": 0.5601851851851852,
+        "support": 228.0
+      },
+      "retrieve_memory": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 19.0
+      },
+      "ask_clarify": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 8.0
+      },
+      "abstain": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 44.0
+      }
+    },
+    "accuracy": 0.536144578313253
+  },
+  "tinyllama_fullft_time_tokens": {
+    "confusion_matrix": [
+      [
+        194,
+        5,
+        0,
+        0,
+        0
+      ],
+      [
+        196,
+        32,
+        0,
+        0,
+        0
+      ],
+      [
+        19,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        7,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        36,
+        8,
+        0,
+        0,
+        0
+      ]
+    ],
+    "labels": [
+      "answer_directly",
+      "refresh",
+      "retrieve_memory",
+      "ask_clarify",
+      "abstain"
+    ],
+    "per_class": {
+      "answer_directly": {
+        "precision": 0.42920353982300885,
+        "recall": 0.9748743718592965,
+        "f1": 0.5960061443932412,
+        "support": 199.0
+      },
+      "refresh": {
+        "precision": 0.6956521739130435,
+        "recall": 0.14035087719298245,
+        "f1": 0.23357664233576642,
+        "support": 228.0
+      },
+      "retrieve_memory": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 19.0
+      },
+      "ask_clarify": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 8.0
+      },
+      "abstain": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 44.0
+      }
+    },
+    "accuracy": 0.4538152610441767
+  },
+  "tinyllama_fullft_text_time": {
+    "confusion_matrix": [
+      [
+        135,
+        64,
+        0,
+        0,
+        0
+      ],
+      [
+        83,
+        145,
+        0,
+        0,
+        0
+      ],
+      [
+        13,
+        6,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        5,
+        0,
+        0,
+        0
+      ],
+      [
+        15,
+        29,
+        0,
+        0,
+        0
+      ]
+    ],
+    "labels": [
+      "answer_directly",
+      "refresh",
+      "retrieve_memory",
+      "ask_clarify",
+      "abstain"
+    ],
+    "per_class": {
+      "answer_directly": {
+        "precision": 0.5421686746987951,
+        "recall": 0.678391959798995,
+        "f1": 0.6026785714285714,
+        "support": 199.0
+      },
+      "refresh": {
+        "precision": 0.5823293172690763,
+        "recall": 0.6359649122807017,
+        "f1": 0.6079664570230608,
+        "support": 228.0
+      },
+      "retrieve_memory": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 19.0
+      },
+      "ask_clarify": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 8.0
+      },
+      "abstain": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 44.0
+      }
+    },
+    "accuracy": 0.5622489959839357
+  },
+  "tinyllama_lora_midlr": {
+    "confusion_matrix": [
+      [
+        184,
+        15,
+        0,
+        0,
+        0
+      ],
+      [
+        4,
+        224,
+        0,
+        0,
+        0
+      ],
+      [
+        14,
+        5,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        6,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        44,
+        0,
+        0,
+        0
+      ]
+    ],
+    "labels": [
+      "answer_directly",
+      "refresh",
+      "retrieve_memory",
+      "ask_clarify",
+      "abstain"
+    ],
+    "per_class": {
+      "answer_directly": {
+        "precision": 0.9019607843137255,
+        "recall": 0.9246231155778895,
+        "f1": 0.913151364764268,
+        "support": 199.0
+      },
+      "refresh": {
+        "precision": 0.7619047619047619,
+        "recall": 0.9824561403508771,
+        "f1": 0.8582375478927203,
+        "support": 228.0
+      },
+      "retrieve_memory": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 19.0
+      },
+      "ask_clarify": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 8.0
+      },
+      "abstain": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 44.0
+      }
+    },
+    "accuracy": 0.8192771084337349
+  },
+  "tinyllama_lora_highlr": {
+    "confusion_matrix": [
+      [
+        185,
+        14,
+        0,
+        0,
+        0
+      ],
+      [
+        40,
+        188,
+        0,
+        0,
+        0
+      ],
+      [
+        19,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        5,
+        0,
+        0,
+        0
+      ],
+      [
+        6,
+        38,
+        0,
+        0,
+        0
+      ]
+    ],
+    "labels": [
+      "answer_directly",
+      "refresh",
+      "retrieve_memory",
+      "ask_clarify",
+      "abstain"
+    ],
+    "per_class": {
+      "answer_directly": {
+        "precision": 0.7312252964426877,
+        "recall": 0.9296482412060302,
+        "f1": 0.8185840707964602,
+        "support": 199.0
+      },
+      "refresh": {
+        "precision": 0.7673469387755102,
+        "recall": 0.8245614035087719,
+        "f1": 0.7949260042283298,
+        "support": 228.0
+      },
+      "retrieve_memory": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 19.0
+      },
+      "ask_clarify": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 8.0
+      },
+      "abstain": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 44.0
+      }
+    },
+    "accuracy": 0.748995983935743
+  }
+}

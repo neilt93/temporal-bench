@@ -1,0 +1,85 @@
+{
+  "counterfactual_sensitivity": {
+    "total_pairs": 1281,
+    "correct_switches": 0,
+    "incorrect_static": 760,
+    "correct_static": 521,
+    "incorrect_switches": 0,
+    "switch_sensitivity": 0.0,
+    "switch_specificity": 1.0,
+    "switch_accuracy": 0.4067135050741608
+  },
+  "stale_calibration": {
+    "overall_accuracy": 0.463855421686747,
+    "f1_macro": 0.18613230640023762,
+    "refresh_precision": 0.5816326530612245,
+    "refresh_recall": 0.25,
+    "refresh_f1": 0.3496932515337423,
+    "false_trust_rate": 0.40160642570281124,
+    "false_trust_count": 200,
+    "unnecessary_refresh_rate": 0.050200803212851405,
+    "unnecessary_refresh_count": 25,
+    "n": 498
+  },
+  "memory_retrieval": {
+    "accuracy": 0.44299674267100975,
+    "retrieve_precision": 0,
+    "retrieve_recall": 0.0,
+    "retrieve_f1": 0,
+    "accuracy_by_memory_age": {
+      "5s": 1.0,
+      "30m": 0.25,
+      "15m": 0.5714285714285714,
+      "6h": 0.3333333333333333,
+      "1w": 0.3548387096774194,
+      "1mo": 0.2608695652173913,
+      "3h": 0.45,
+      "3d": 0.24,
+      "1y": 0.2,
+      "3mo": 0.4166666666666667,
+      "12h": 0.47368421052631576,
+      "2w": 0.47368421052631576,
+      "1h": 0.4375,
+      "5m": 1.0,
+      "1m": 0.7,
+      "30s": 1.0,
+      "1d": 0.25806451612903225,
+      "6mo": 0.3333333333333333
+    },
+    "n": 307
+  },
+  "deadline_awareness": {
+    "overall_accuracy": 0.43820224719101125,
+    "tight_deadline_accuracy": 0.45714285714285713,
+    "relaxed_deadline_accuracy": 0.42592592592592593,
+    "tight_refresh_rate": 0.17142857142857143,
+    "relaxed_refresh_rate": 0.09259259259259259,
+    "n_tight": 35,
+    "n_relaxed": 54,
+    "n": 89
+  },
+  "ablations": {
+    "volatility_split": {
+      "high": {
+        "accuracy": 0.40860215053763443,
+        "f1_macro": 0.17521222410865875,
+        "n": 186
+      },
+      "medium": {
+        "accuracy": 0.4032258064516129,
+        "f1_macro": 0.17507978449607084,
+        "n": 186
+      },
+      "low": {
+        "accuracy": 0.5625,
+        "f1_macro": 0.144,
+        "n": 96
+      },
+      "stable": {
+        "accuracy": 1.0,
+        "f1_macro": 0.2,
+        "n": 30
+      }
+    }
+  }
+}

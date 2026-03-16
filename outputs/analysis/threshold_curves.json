@@ -1,0 +1,1067 @@
+{
+  "gpt2_baseline": {
+    "action_by_time_bucket": {
+      "0-1m": {
+        "counts": {
+          "refresh": 12,
+          "answer_directly": 12
+        },
+        "fractions": {
+          "answer_directly": 0.5,
+          "refresh": 0.5,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 24
+      },
+      "1-5m": {
+        "counts": {
+          "refresh": 18,
+          "answer_directly": 10
+        },
+        "fractions": {
+          "answer_directly": 0.35714285714285715,
+          "refresh": 0.6428571428571429,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 28
+      },
+      "5-30m": {
+        "counts": {
+          "refresh": 37,
+          "answer_directly": 22
+        },
+        "fractions": {
+          "answer_directly": 0.3728813559322034,
+          "refresh": 0.6271186440677966,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 59
+      },
+      "30m-1h": {
+        "counts": {
+          "refresh": 14,
+          "answer_directly": 5
+        },
+        "fractions": {
+          "answer_directly": 0.2631578947368421,
+          "refresh": 0.7368421052631579,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 19
+      },
+      "1-6h": {
+        "counts": {
+          "refresh": 40,
+          "answer_directly": 25
+        },
+        "fractions": {
+          "answer_directly": 0.38461538461538464,
+          "refresh": 0.6153846153846154,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 65
+      },
+      "6-24h": {
+        "counts": {
+          "refresh": 46,
+          "answer_directly": 29
+        },
+        "fractions": {
+          "answer_directly": 0.38666666666666666,
+          "refresh": 0.6133333333333333,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 75
+      },
+      "1-7d": {
+        "counts": {
+          "refresh": 69,
+          "answer_directly": 32
+        },
+        "fractions": {
+          "answer_directly": 0.31683168316831684,
+          "refresh": 0.6831683168316832,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 101
+      },
+      "1w-1mo": {
+        "counts": {
+          "answer_directly": 44,
+          "refresh": 28
+        },
+        "fractions": {
+          "answer_directly": 0.6111111111111112,
+          "refresh": 0.3888888888888889,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 72
+      },
+      "1mo+": {
+        "counts": {
+          "answer_directly": 55
+        },
+        "fractions": {
+          "answer_directly": 1.0,
+          "refresh": 0.0,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 55
+      }
+    },
+    "n_switch_points": 0,
+    "transition_counts": {}
+  },
+  "gpt2_time_tokens": {
+    "action_by_time_bucket": {
+      "0-1m": {
+        "counts": {
+          "answer_directly": 24
+        },
+        "fractions": {
+          "answer_directly": 1.0,
+          "refresh": 0.0,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 24
+      },
+      "1-5m": {
+        "counts": {
+          "answer_directly": 27,
+          "refresh": 1
+        },
+        "fractions": {
+          "answer_directly": 0.9642857142857143,
+          "refresh": 0.03571428571428571,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 28
+      },
+      "5-30m": {
+        "counts": {
+          "answer_directly": 37,
+          "refresh": 22
+        },
+        "fractions": {
+          "answer_directly": 0.6271186440677966,
+          "refresh": 0.3728813559322034,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 59
+      },
+      "30m-1h": {
+        "counts": {
+          "refresh": 12,
+          "answer_directly": 7
+        },
+        "fractions": {
+          "answer_directly": 0.3684210526315789,
+          "refresh": 0.631578947368421,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 19
+      },
+      "1-6h": {
+        "counts": {
+          "refresh": 26,
+          "answer_directly": 39
+        },
+        "fractions": {
+          "answer_directly": 0.6,
+          "refresh": 0.4,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 65
+      },
+      "6-24h": {
+        "counts": {
+          "refresh": 48,
+          "answer_directly": 27
+        },
+        "fractions": {
+          "answer_directly": 0.36,
+          "refresh": 0.64,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 75
+      },
+      "1-7d": {
+        "counts": {
+          "refresh": 94,
+          "answer_directly": 7
+        },
+        "fractions": {
+          "answer_directly": 0.06930693069306931,
+          "refresh": 0.9306930693069307,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 101
+      },
+      "1w-1mo": {
+        "counts": {
+          "answer_directly": 34,
+          "refresh": 38
+        },
+        "fractions": {
+          "answer_directly": 0.4722222222222222,
+          "refresh": 0.5277777777777778,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 72
+      },
+      "1mo+": {
+        "counts": {
+          "refresh": 27,
+          "answer_directly": 28
+        },
+        "fractions": {
+          "answer_directly": 0.509090909090909,
+          "refresh": 0.4909090909090909,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 55
+      }
+    },
+    "n_switch_points": 73,
+    "transition_counts": {
+      "answer_directly -> refresh": 72,
+      "refresh -> answer_directly": 1
+    }
+  },
+  "gpt2_text_time": {
+    "action_by_time_bucket": {
+      "0-1m": {
+        "counts": {
+          "answer_directly": 24
+        },
+        "fractions": {
+          "answer_directly": 1.0,
+          "refresh": 0.0,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 24
+      },
+      "1-5m": {
+        "counts": {
+          "answer_directly": 27,
+          "refresh": 1
+        },
+        "fractions": {
+          "answer_directly": 0.9642857142857143,
+          "refresh": 0.03571428571428571,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 28
+      },
+      "5-30m": {
+        "counts": {
+          "refresh": 17,
+          "answer_directly": 42
+        },
+        "fractions": {
+          "answer_directly": 0.711864406779661,
+          "refresh": 0.288135593220339,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 59
+      },
+      "30m-1h": {
+        "counts": {
+          "refresh": 9,
+          "answer_directly": 10
+        },
+        "fractions": {
+          "answer_directly": 0.5263157894736842,
+          "refresh": 0.47368421052631576,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 19
+      },
+      "1-6h": {
+        "counts": {
+          "refresh": 21,
+          "answer_directly": 44
+        },
+        "fractions": {
+          "answer_directly": 0.676923076923077,
+          "refresh": 0.3230769230769231,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 65
+      },
+      "6-24h": {
+        "counts": {
+          "refresh": 43,
+          "answer_directly": 32
+        },
+        "fractions": {
+          "answer_directly": 0.4266666666666667,
+          "refresh": 0.5733333333333334,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 75
+      },
+      "1-7d": {
+        "counts": {
+          "refresh": 94,
+          "answer_directly": 7
+        },
+        "fractions": {
+          "answer_directly": 0.06930693069306931,
+          "refresh": 0.9306930693069307,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 101
+      },
+      "1w-1mo": {
+        "counts": {
+          "answer_directly": 34,
+          "refresh": 38
+        },
+        "fractions": {
+          "answer_directly": 0.4722222222222222,
+          "refresh": 0.5277777777777778,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 72
+      },
+      "1mo+": {
+        "counts": {
+          "refresh": 55
+        },
+        "fractions": {
+          "answer_directly": 0.0,
+          "refresh": 1.0,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 55
+      }
+    },
+    "n_switch_points": 77,
+    "transition_counts": {
+      "answer_directly -> refresh": 77
+    }
+  },
+  "tinyllama_fullft_baseline": {
+    "action_by_time_bucket": {
+      "0-1m": {
+        "counts": {
+          "refresh": 15,
+          "answer_directly": 9
+        },
+        "fractions": {
+          "answer_directly": 0.375,
+          "refresh": 0.625,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 24
+      },
+      "1-5m": {
+        "counts": {
+          "answer_directly": 14,
+          "refresh": 14
+        },
+        "fractions": {
+          "answer_directly": 0.5,
+          "refresh": 0.5,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 28
+      },
+      "5-30m": {
+        "counts": {
+          "refresh": 42,
+          "answer_directly": 17
+        },
+        "fractions": {
+          "answer_directly": 0.288135593220339,
+          "refresh": 0.711864406779661,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 59
+      },
+      "30m-1h": {
+        "counts": {
+          "refresh": 12,
+          "answer_directly": 7
+        },
+        "fractions": {
+          "answer_directly": 0.3684210526315789,
+          "refresh": 0.631578947368421,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 19
+      },
+      "1-6h": {
+        "counts": {
+          "refresh": 24,
+          "answer_directly": 41
+        },
+        "fractions": {
+          "answer_directly": 0.6307692307692307,
+          "refresh": 0.36923076923076925,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 65
+      },
+      "6-24h": {
+        "counts": {
+          "refresh": 39,
+          "answer_directly": 36
+        },
+        "fractions": {
+          "answer_directly": 0.48,
+          "refresh": 0.52,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 75
+      },
+      "1-7d": {
+        "counts": {
+          "refresh": 47,
+          "answer_directly": 54
+        },
+        "fractions": {
+          "answer_directly": 0.5346534653465347,
+          "refresh": 0.46534653465346537,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 101
+      },
+      "1w-1mo": {
+        "counts": {
+          "answer_directly": 61,
+          "refresh": 11
+        },
+        "fractions": {
+          "answer_directly": 0.8472222222222222,
+          "refresh": 0.1527777777777778,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 72
+      },
+      "1mo+": {
+        "counts": {
+          "answer_directly": 55
+        },
+        "fractions": {
+          "answer_directly": 1.0,
+          "refresh": 0.0,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 55
+      }
+    },
+    "n_switch_points": 0,
+    "transition_counts": {}
+  },
+  "tinyllama_fullft_time_tokens": {
+    "action_by_time_bucket": {
+      "0-1m": {
+        "counts": {
+          "answer_directly": 21,
+          "refresh": 3
+        },
+        "fractions": {
+          "answer_directly": 0.875,
+          "refresh": 0.125,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 24
+      },
+      "1-5m": {
+        "counts": {
+          "answer_directly": 26,
+          "refresh": 2
+        },
+        "fractions": {
+          "answer_directly": 0.9285714285714286,
+          "refresh": 0.07142857142857142,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 28
+      },
+      "5-30m": {
+        "counts": {
+          "answer_directly": 51,
+          "refresh": 8
+        },
+        "fractions": {
+          "answer_directly": 0.864406779661017,
+          "refresh": 0.13559322033898305,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 59
+      },
+      "30m-1h": {
+        "counts": {
+          "answer_directly": 15,
+          "refresh": 4
+        },
+        "fractions": {
+          "answer_directly": 0.7894736842105263,
+          "refresh": 0.21052631578947367,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 19
+      },
+      "1-6h": {
+        "counts": {
+          "answer_directly": 63,
+          "refresh": 2
+        },
+        "fractions": {
+          "answer_directly": 0.9692307692307692,
+          "refresh": 0.03076923076923077,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 65
+      },
+      "6-24h": {
+        "counts": {
+          "answer_directly": 61,
+          "refresh": 14
+        },
+        "fractions": {
+          "answer_directly": 0.8133333333333334,
+          "refresh": 0.18666666666666668,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 75
+      },
+      "1-7d": {
+        "counts": {
+          "answer_directly": 89,
+          "refresh": 12
+        },
+        "fractions": {
+          "answer_directly": 0.8811881188118812,
+          "refresh": 0.1188118811881188,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 101
+      },
+      "1w-1mo": {
+        "counts": {
+          "answer_directly": 71,
+          "refresh": 1
+        },
+        "fractions": {
+          "answer_directly": 0.9861111111111112,
+          "refresh": 0.013888888888888888,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 72
+      },
+      "1mo+": {
+        "counts": {
+          "answer_directly": 55
+        },
+        "fractions": {
+          "answer_directly": 1.0,
+          "refresh": 0.0,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 55
+      }
+    },
+    "n_switch_points": 7,
+    "transition_counts": {
+      "refresh -> answer_directly": 1,
+      "answer_directly -> refresh": 6
+    }
+  },
+  "tinyllama_fullft_text_time": {
+    "action_by_time_bucket": {
+      "0-1m": {
+        "counts": {
+          "refresh": 13,
+          "answer_directly": 11
+        },
+        "fractions": {
+          "answer_directly": 0.4583333333333333,
+          "refresh": 0.5416666666666666,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 24
+      },
+      "1-5m": {
+        "counts": {
+          "answer_directly": 12,
+          "refresh": 16
+        },
+        "fractions": {
+          "answer_directly": 0.42857142857142855,
+          "refresh": 0.5714285714285714,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 28
+      },
+      "5-30m": {
+        "counts": {
+          "refresh": 38,
+          "answer_directly": 21
+        },
+        "fractions": {
+          "answer_directly": 0.3559322033898305,
+          "refresh": 0.6440677966101694,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 59
+      },
+      "30m-1h": {
+        "counts": {
+          "refresh": 14,
+          "answer_directly": 5
+        },
+        "fractions": {
+          "answer_directly": 0.2631578947368421,
+          "refresh": 0.7368421052631579,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 19
+      },
+      "1-6h": {
+        "counts": {
+          "refresh": 30,
+          "answer_directly": 35
+        },
+        "fractions": {
+          "answer_directly": 0.5384615384615384,
+          "refresh": 0.46153846153846156,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 65
+      },
+      "6-24h": {
+        "counts": {
+          "refresh": 46,
+          "answer_directly": 29
+        },
+        "fractions": {
+          "answer_directly": 0.38666666666666666,
+          "refresh": 0.6133333333333333,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 75
+      },
+      "1-7d": {
+        "counts": {
+          "refresh": 59,
+          "answer_directly": 42
+        },
+        "fractions": {
+          "answer_directly": 0.4158415841584158,
+          "refresh": 0.5841584158415841,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 101
+      },
+      "1w-1mo": {
+        "counts": {
+          "answer_directly": 45,
+          "refresh": 27
+        },
+        "fractions": {
+          "answer_directly": 0.625,
+          "refresh": 0.375,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 72
+      },
+      "1mo+": {
+        "counts": {
+          "answer_directly": 49,
+          "refresh": 6
+        },
+        "fractions": {
+          "answer_directly": 0.8909090909090909,
+          "refresh": 0.10909090909090909,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 55
+      }
+    },
+    "n_switch_points": 9,
+    "transition_counts": {
+      "answer_directly -> refresh": 6,
+      "refresh -> answer_directly": 3
+    }
+  },
+  "tinyllama_lora_midlr": {
+    "action_by_time_bucket": {
+      "0-1m": {
+        "counts": {
+          "answer_directly": 24
+        },
+        "fractions": {
+          "answer_directly": 1.0,
+          "refresh": 0.0,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 24
+      },
+      "1-5m": {
+        "counts": {
+          "answer_directly": 26,
+          "refresh": 2
+        },
+        "fractions": {
+          "answer_directly": 0.9285714285714286,
+          "refresh": 0.07142857142857142,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 28
+      },
+      "5-30m": {
+        "counts": {
+          "refresh": 22,
+          "answer_directly": 37
+        },
+        "fractions": {
+          "answer_directly": 0.6271186440677966,
+          "refresh": 0.3728813559322034,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 59
+      },
+      "30m-1h": {
+        "counts": {
+          "refresh": 13,
+          "answer_directly": 6
+        },
+        "fractions": {
+          "answer_directly": 0.3157894736842105,
+          "refresh": 0.6842105263157895,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 19
+      },
+      "1-6h": {
+        "counts": {
+          "refresh": 28,
+          "answer_directly": 37
+        },
+        "fractions": {
+          "answer_directly": 0.5692307692307692,
+          "refresh": 0.4307692307692308,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 65
+      },
+      "6-24h": {
+        "counts": {
+          "refresh": 50,
+          "answer_directly": 25
+        },
+        "fractions": {
+          "answer_directly": 0.3333333333333333,
+          "refresh": 0.6666666666666666,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 75
+      },
+      "1-7d": {
+        "counts": {
+          "refresh": 94,
+          "answer_directly": 7
+        },
+        "fractions": {
+          "answer_directly": 0.06930693069306931,
+          "refresh": 0.9306930693069307,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 101
+      },
+      "1w-1mo": {
+        "counts": {
+          "answer_directly": 34,
+          "refresh": 38
+        },
+        "fractions": {
+          "answer_directly": 0.4722222222222222,
+          "refresh": 0.5277777777777778,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 72
+      },
+      "1mo+": {
+        "counts": {
+          "refresh": 47,
+          "answer_directly": 8
+        },
+        "fractions": {
+          "answer_directly": 0.14545454545454545,
+          "refresh": 0.8545454545454545,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 55
+      }
+    },
+    "n_switch_points": 74,
+    "transition_counts": {
+      "answer_directly -> refresh": 73,
+      "refresh -> answer_directly": 1
+    }
+  },
+  "tinyllama_lora_highlr": {
+    "action_by_time_bucket": {
+      "0-1m": {
+        "counts": {
+          "answer_directly": 24
+        },
+        "fractions": {
+          "answer_directly": 1.0,
+          "refresh": 0.0,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 24
+      },
+      "1-5m": {
+        "counts": {
+          "answer_directly": 23,
+          "refresh": 5
+        },
+        "fractions": {
+          "answer_directly": 0.8214285714285714,
+          "refresh": 0.17857142857142858,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 28
+      },
+      "5-30m": {
+        "counts": {
+          "refresh": 28,
+          "answer_directly": 31
+        },
+        "fractions": {
+          "answer_directly": 0.5254237288135594,
+          "refresh": 0.4745762711864407,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 59
+      },
+      "30m-1h": {
+        "counts": {
+          "refresh": 12,
+          "answer_directly": 7
+        },
+        "fractions": {
+          "answer_directly": 0.3684210526315789,
+          "refresh": 0.631578947368421,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 19
+      },
+      "1-6h": {
+        "counts": {
+          "refresh": 18,
+          "answer_directly": 47
+        },
+        "fractions": {
+          "answer_directly": 0.7230769230769231,
+          "refresh": 0.27692307692307694,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 65
+      },
+      "6-24h": {
+        "counts": {
+          "refresh": 38,
+          "answer_directly": 37
+        },
+        "fractions": {
+          "answer_directly": 0.49333333333333335,
+          "refresh": 0.5066666666666667,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 75
+      },
+      "1-7d": {
+        "counts": {
+          "refresh": 95,
+          "answer_directly": 6
+        },
+        "fractions": {
+          "answer_directly": 0.0594059405940594,
+          "refresh": 0.9405940594059405,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 101
+      },
+      "1w-1mo": {
+        "counts": {
+          "answer_directly": 44,
+          "refresh": 28
+        },
+        "fractions": {
+          "answer_directly": 0.6111111111111112,
+          "refresh": 0.3888888888888889,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 72
+      },
+      "1mo+": {
+        "counts": {
+          "refresh": 21,
+          "answer_directly": 34
+        },
+        "fractions": {
+          "answer_directly": 0.6181818181818182,
+          "refresh": 0.38181818181818183,
+          "retrieve_memory": 0.0,
+          "ask_clarify": 0.0,
+          "abstain": 0.0
+        },
+        "n": 55
+      }
+    },
+    "n_switch_points": 66,
+    "transition_counts": {
+      "answer_directly -> refresh": 60,
+      "refresh -> answer_directly": 6
+    }
+  }
+}

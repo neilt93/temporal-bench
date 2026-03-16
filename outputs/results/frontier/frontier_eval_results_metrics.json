@@ -1,0 +1,18 @@
+{
+  "gpt-4o-mini": {
+    "no_time": {
+      "accuracy": 0.618,
+      "false_trust_rate": 1.0,
+      "switch_sensitivity": 0.0,
+      "unnecessary_refresh_rate": 0.0,
+      "n_samples": 34
+    },
+    "explicit": {
+      "accuracy": 0.778,
+      "false_trust_rate": 0.462,
+      "switch_sensitivity": 0.538,
+      "unnecessary_refresh_rate": 0.0,
+      "n_samples": 36
+    }
+  }
+}

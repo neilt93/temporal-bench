@@ -1,0 +1,62 @@
+{
+  "gpt-5.4": {
+    "prompted": {
+      "accuracy": 0.722,
+      "false_trust_rate": 0.0,
+      "switch_sensitivity": 0.462,
+      "unnecessary_refresh_rate": 0.381,
+      "n_samples": 36
+    },
+    "explicit": {
+      "accuracy": 0.861,
+      "false_trust_rate": 0.0,
+      "switch_sensitivity": 0.846,
+      "unnecessary_refresh_rate": 0.095,
+      "n_samples": 36
+    },
+    "no_time": {
+      "accuracy": 0.588,
+      "false_trust_rate": 1.0,
+      "switch_sensitivity": 0.077,
+      "unnecessary_refresh_rate": 0.048,
+      "n_samples": 34
+    },
+    "implicit": {
+      "accuracy": 0.75,
+      "false_trust_rate": 0.0,
+      "switch_sensitivity": 0.538,
+      "unnecessary_refresh_rate": 0.286,
+      "n_samples": 36
+    }
+  },
+  "claude-opus": {
+    "prompted": {
+      "accuracy": 0.806,
+      "false_trust_rate": 0.0,
+      "switch_sensitivity": 0.692,
+      "unnecessary_refresh_rate": 0.238,
+      "n_samples": 36
+    },
+    "explicit": {
+      "accuracy": 0.917,
+      "false_trust_rate": 0.0,
+      "switch_sensitivity": 1.0,
+      "unnecessary_refresh_rate": 0.048,
+      "n_samples": 36
+    },
+    "no_time": {
+      "accuracy": 0.618,
+      "false_trust_rate": 0.846,
+      "switch_sensitivity": 0.0,
+      "unnecessary_refresh_rate": 0.095,
+      "n_samples": 34
+    },
+    "implicit": {
+      "accuracy": 0.639,
+      "false_trust_rate": 0.077,
+      "switch_sensitivity": 0.231,
+      "unnecessary_refresh_rate": 0.476,
+      "n_samples": 36
+    }
+  }
+}

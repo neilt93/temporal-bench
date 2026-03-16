@@ -1,0 +1,32 @@
+{
+  "mistral-local": {
+    "explicit": {
+      "accuracy": 0.583,
+      "false_trust_rate": 0.923,
+      "switch_sensitivity": 0.077,
+      "unnecessary_refresh_rate": 0.0,
+      "n_samples": 36
+    },
+    "implicit": {
+      "accuracy": 0.583,
+      "false_trust_rate": 1.0,
+      "switch_sensitivity": 0.0,
+      "unnecessary_refresh_rate": 0.0,
+      "n_samples": 36
+    },
+    "no_time": {
+      "accuracy": 0.618,
+      "false_trust_rate": 1.0,
+      "switch_sensitivity": 0.0,
+      "unnecessary_refresh_rate": 0.0,
+      "n_samples": 34
+    },
+    "prompted": {
+      "accuracy": 0.389,
+      "false_trust_rate": 0.0,
+      "switch_sensitivity": 0.077,
+      "unnecessary_refresh_rate": 0.952,
+      "n_samples": 36
+    }
+  }
+}

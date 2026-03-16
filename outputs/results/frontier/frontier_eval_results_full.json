@@ -1,0 +1,4262 @@
+[
+  {
+    "model": "gpt-4o",
+    "condition": "no_time",
+    "case_id": "flight_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "no_time",
+    "case_id": "flight_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "no_time",
+    "case_id": "stock_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "abstain",
+    "raw_response": "E) Abstain \u2014 tell the user you're not confident enough to answer.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "no_time",
+    "case_id": "stock_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "abstain",
+    "raw_response": "E) Abstain \u2014 tell the user you're not confident enough to answer.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "no_time",
+    "case_id": "weather",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - Since it's currently sunny in San Francisco, you likely do not need an umbrella today.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "no_time",
+    "case_id": "weather",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - Since it's currently sunny in San Francisco, you likely do not need an umbrella today.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "no_time",
+    "case_id": "traffic",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "no_time",
+    "case_id": "traffic",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "no_time",
+    "case_id": "restaurant_availability",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "no_time",
+    "case_id": "restaurant_availability",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "no_time",
+    "case_id": "crypto_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "abstain",
+    "raw_response": "E) Abstain \u2014 tell the user you're not confident enough to answer.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "no_time",
+    "case_id": "crypto_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "abstain",
+    "raw_response": "E) Abstain \u2014 tell the user you're not confident enough to answer.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "no_time",
+    "case_id": "delivery_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "no_time",
+    "case_id": "delivery_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "no_time",
+    "case_id": "sports_score",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "no_time",
+    "case_id": "sports_score",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "abstain",
+    "raw_response": "E) Abstain \u2014 tell the user you're not confident enough to answer.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "no_time",
+    "case_id": "birthday",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "no_time",
+    "case_id": "birthday",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "no_time",
+    "case_id": "home_address",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "no_time",
+    "case_id": "home_address",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "no_time",
+    "case_id": "capital_city",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "no_time",
+    "case_id": "capital_city",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "no_time",
+    "case_id": "programming_syntax",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "no_time",
+    "case_id": "programming_syntax",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "no_time",
+    "case_id": "ceo_identity",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "no_time",
+    "case_id": "ceo_identity",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "no_time",
+    "case_id": "software_version",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "no_time",
+    "case_id": "software_version",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "no_time",
+    "case_id": "medication_dose",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "no_time",
+    "case_id": "medication_dose",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "no_time",
+    "case_id": "meeting_in_5min",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "no_time",
+    "case_id": "meeting_in_5min",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "no_time",
+    "case_id": "auction_closing",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "abstain",
+    "raw_response": "E) Abstain \u2014 tell the user you're not confident enough to answer.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "no_time",
+    "case_id": "auction_closing",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "abstain",
+    "raw_response": "E) Abstain \u2014 tell the user you're not confident enough to answer.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "implicit",
+    "case_id": "flight_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "implicit",
+    "case_id": "flight_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "implicit",
+    "case_id": "stock_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "implicit",
+    "case_id": "stock_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "implicit",
+    "case_id": "weather",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe context indicates it is currently sunny in San Francisco, so an umbrella is likely not needed.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "implicit",
+    "case_id": "weather",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "implicit",
+    "case_id": "traffic",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "implicit",
+    "case_id": "traffic",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "implicit",
+    "case_id": "restaurant_availability",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "implicit",
+    "case_id": "restaurant_availability",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "implicit",
+    "case_id": "crypto_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "implicit",
+    "case_id": "crypto_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "implicit",
+    "case_id": "delivery_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "implicit",
+    "case_id": "delivery_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "abstain",
+    "raw_response": "E) Abstain \u2014 tell the user you're not confident enough to answer.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "implicit",
+    "case_id": "sports_score",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "implicit",
+    "case_id": "sports_score",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "implicit",
+    "case_id": "birthday",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "implicit",
+    "case_id": "birthday",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "implicit",
+    "case_id": "home_address",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "abstain",
+    "raw_response": "E) Abstain \u2014 tell the user you're not confident enough to answer.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "implicit",
+    "case_id": "home_address",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "abstain",
+    "raw_response": "E) Abstain \u2014 tell the user you're not confident enough to answer.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "implicit",
+    "case_id": "capital_city",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "implicit",
+    "case_id": "capital_city",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "implicit",
+    "case_id": "programming_syntax",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "implicit",
+    "case_id": "programming_syntax",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "implicit",
+    "case_id": "ceo_identity",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "implicit",
+    "case_id": "ceo_identity",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "implicit",
+    "case_id": "software_version",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "implicit",
+    "case_id": "software_version",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "implicit",
+    "case_id": "medication_dose",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "implicit",
+    "case_id": "medication_dose",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The context from the previous conversation provides the specific information about the user's prescribed dose.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "implicit",
+    "case_id": "meeting_in_5min",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "implicit",
+    "case_id": "meeting_in_5min",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "implicit",
+    "case_id": "auction_closing",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "implicit",
+    "case_id": "auction_closing",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "implicit",
+    "case_id": "user_preference_old",
+    "is_stale": false,
+    "correct_action": "retrieve_memory",
+    "predicted_action": "ask_clarify",
+    "raw_response": "D) Ask the user a clarifying question.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "implicit",
+    "case_id": "user_preference_old",
+    "is_stale": true,
+    "correct_action": "retrieve_memory",
+    "predicted_action": "ask_clarify",
+    "raw_response": "D) Ask the user a clarifying question.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "explicit",
+    "case_id": "flight_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "explicit",
+    "case_id": "flight_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "explicit",
+    "case_id": "stock_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "explicit",
+    "case_id": "stock_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "explicit",
+    "case_id": "weather",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe current weather information indicates it is sunny, so an umbrella is likely not needed.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "explicit",
+    "case_id": "weather",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "explicit",
+    "case_id": "traffic",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "explicit",
+    "case_id": "traffic",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "explicit",
+    "case_id": "restaurant_availability",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "explicit",
+    "case_id": "restaurant_availability",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "explicit",
+    "case_id": "crypto_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "explicit",
+    "case_id": "crypto_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "explicit",
+    "case_id": "delivery_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "explicit",
+    "case_id": "delivery_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "explicit",
+    "case_id": "sports_score",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "explicit",
+    "case_id": "sports_score",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "explicit",
+    "case_id": "birthday",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "explicit",
+    "case_id": "birthday",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "explicit",
+    "case_id": "home_address",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "explicit",
+    "case_id": "home_address",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "abstain",
+    "raw_response": "E) Abstain \u2014 tell the user you're not confident enough to answer.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "explicit",
+    "case_id": "capital_city",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "explicit",
+    "case_id": "capital_city",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "explicit",
+    "case_id": "programming_syntax",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "explicit",
+    "case_id": "programming_syntax",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "explicit",
+    "case_id": "ceo_identity",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "explicit",
+    "case_id": "ceo_identity",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "explicit",
+    "case_id": "software_version",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "explicit",
+    "case_id": "software_version",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "explicit",
+    "case_id": "medication_dose",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "explicit",
+    "case_id": "medication_dose",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "ask_clarify",
+    "raw_response": "D) Ask the user a clarifying question - It's important to confirm if there have been any changes to the user's medication since the information is a year old.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "explicit",
+    "case_id": "meeting_in_5min",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "explicit",
+    "case_id": "meeting_in_5min",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "explicit",
+    "case_id": "auction_closing",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "explicit",
+    "case_id": "auction_closing",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "abstain",
+    "raw_response": "E) Abstain \u2014 tell the user you're not confident enough to answer",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "explicit",
+    "case_id": "user_preference_old",
+    "is_stale": false,
+    "correct_action": "retrieve_memory",
+    "predicted_action": "ask_clarify",
+    "raw_response": "D) Ask the user a clarifying question.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "explicit",
+    "case_id": "user_preference_old",
+    "is_stale": true,
+    "correct_action": "retrieve_memory",
+    "predicted_action": "ask_clarify",
+    "raw_response": "D) Ask the user a clarifying question.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "prompted",
+    "case_id": "flight_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "prompted",
+    "case_id": "flight_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "prompted",
+    "case_id": "stock_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above. The information is very recent, only 2 minutes old, so it is likely still accurate.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "prompted",
+    "case_id": "stock_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "prompted",
+    "case_id": "weather",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Based on the recent weather information, it is currently sunny in San Francisco, so you likely do not need an umbrella.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "prompted",
+    "case_id": "weather",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "prompted",
+    "case_id": "traffic",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe information about the drive time to the airport is still fresh, as it was checked only 5 minutes ago.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "prompted",
+    "case_id": "traffic",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "prompted",
+    "case_id": "restaurant_availability",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "prompted",
+    "case_id": "restaurant_availability",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "prompted",
+    "case_id": "crypto_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe information is very recent, only 45 seconds old, so it is likely still accurate.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "prompted",
+    "case_id": "crypto_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "prompted",
+    "case_id": "delivery_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "prompted",
+    "case_id": "delivery_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "prompted",
+    "case_id": "sports_score",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe information is only 1 minute old, so it is likely still accurate.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "prompted",
+    "case_id": "sports_score",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "prompted",
+    "case_id": "birthday",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "prompted",
+    "case_id": "birthday",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "prompted",
+    "case_id": "home_address",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "prompted",
+    "case_id": "home_address",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "prompted",
+    "case_id": "capital_city",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "prompted",
+    "case_id": "capital_city",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe capital of France is Paris, and this information is highly unlikely to have changed, so it is safe to answer directly.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "prompted",
+    "case_id": "programming_syntax",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "prompted",
+    "case_id": "programming_syntax",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "prompted",
+    "case_id": "ceo_identity",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "prompted",
+    "case_id": "ceo_identity",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "prompted",
+    "case_id": "software_version",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe information about the latest Python version being 3.12.1 is only 2 days old, so it is unlikely to be outdated.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "prompted",
+    "case_id": "software_version",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "prompted",
+    "case_id": "medication_dose",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe information about the user's blood pressure medication dose is recent and unlikely to have changed in just one week.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "prompted",
+    "case_id": "medication_dose",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "ask_clarify",
+    "raw_response": "D) Ask the user a clarifying question\n\nIt's important to confirm if there have been any changes to the user's prescription since the information is a year old.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "prompted",
+    "case_id": "meeting_in_5min",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "prompted",
+    "case_id": "meeting_in_5min",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "prompted",
+    "case_id": "auction_closing",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "prompted",
+    "case_id": "auction_closing",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "prompted",
+    "case_id": "user_preference_old",
+    "is_stale": false,
+    "correct_action": "retrieve_memory",
+    "predicted_action": "ask_clarify",
+    "raw_response": "D) Ask the user a clarifying question",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o",
+    "condition": "prompted",
+    "case_id": "user_preference_old",
+    "is_stale": true,
+    "correct_action": "retrieve_memory",
+    "predicted_action": "ask_clarify",
+    "raw_response": "D) Ask the user a clarifying question.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "no_time",
+    "case_id": "flight_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe context clearly states that Flight AA123 departs from Gate B22, which directly answers the user's question about their flight's departure gate.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "no_time",
+    "case_id": "flight_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe context clearly states that Flight AA123 departs from Gate B22, which directly answers the user's question about their flight's departure gate.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "no_time",
+    "case_id": "stock_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe context already provides current Apple stock price information that directly answers the user's question.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "no_time",
+    "case_id": "stock_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe context already provides current Apple stock price information that directly answers the user's question.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "no_time",
+    "case_id": "weather",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nSince I just checked the weather and it shows 72\u00b0F and sunny conditions in San Francisco, I have sufficient current information to confidently advise that an umbrella is not needed today.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "no_time",
+    "case_id": "weather",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nSince I just checked the weather and it shows 72\u00b0F and sunny conditions in San Francisco, I have sufficient current information to confidently advise that an umbrella is not needed today.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "no_time",
+    "case_id": "traffic",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe context already provides the specific information the user is asking for - the drive time from their home to the airport with current traffic conditions.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "no_time",
+    "case_id": "traffic",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe context already provides the specific information the user is asking for - the drive time from their home to the airport with current traffic conditions.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "no_time",
+    "case_id": "restaurant_availability",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe context clearly states that the restaurant has a table available for 2 at 7:30 PM tonight, which directly answers the user's question about availability.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "no_time",
+    "case_id": "restaurant_availability",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe context clearly states that the restaurant has a table available for 2 at 7:30 PM tonight, which directly answers the user's question about availability.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "no_time",
+    "case_id": "crypto_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe user is asking for Bitcoin's current price, and I have recent price information from the previous conversation context that directly answers their question.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "no_time",
+    "case_id": "crypto_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe user is asking for Bitcoin's current price, and I have recent price information from the previous conversation context that directly answers their question.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "no_time",
+    "case_id": "delivery_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe context already provides current, specific information about the package status (out for delivery and 3 stops away), so I can directly answer the user's question without needing additional information.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "no_time",
+    "case_id": "delivery_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe context already provides current, specific information about the package status (out for delivery and 3 stops away), so I can directly answer the user's question without needing additional information.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "no_time",
+    "case_id": "sports_score",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe user is asking for the Lakers game score, and I have recent context showing the Lakers are up 87-82 in the 3rd quarter, which directly answers their question.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "no_time",
+    "case_id": "sports_score",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe user is asking for the Lakers game score, and I have recent context showing the Lakers are up 87-82 in the 3rd quarter, which directly answers their question.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "no_time",
+    "case_id": "birthday",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe context clearly states the user's birthday is March 15th, so I can answer directly from the provided information.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "no_time",
+    "case_id": "birthday",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe context clearly states the user's birthday is March 15th, so I can answer directly from the provided information.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "no_time",
+    "case_id": "home_address",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe user previously provided their home address in the conversation context, so I can directly reference that information to answer their question.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "no_time",
+    "case_id": "home_address",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe user previously provided their home address in the conversation context, so I can directly reference that information to answer their question.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "no_time",
+    "case_id": "capital_city",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe context clearly states that I already looked up this information and found that the capital of France is Paris, so I can provide this straightforward factual answer directly.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "no_time",
+    "case_id": "capital_city",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe context clearly states that I already looked up this information and found that the capital of France is Paris, so I can provide this straightforward factual answer directly.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "no_time",
+    "case_id": "programming_syntax",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe context already provides the exact answer to the user's question about getting the length of a list in Python using len().",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "no_time",
+    "case_id": "programming_syntax",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe context already provides the exact answer to the user's question about getting the length of a list in Python using len().",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "no_time",
+    "case_id": "ceo_identity",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nGiven that Twitter/X has undergone significant leadership changes and the context doesn't specify when this information was last verified, it's important to get current information about who currently runs the platform.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "no_time",
+    "case_id": "ceo_identity",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nGiven that Twitter/X has undergone significant leadership changes and the context doesn't specify when this information was last verified, it's important to get current information about who currently runs the platform.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "no_time",
+    "case_id": "software_version",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe context clearly states that I already checked and found the latest Python version is 3.12.1, so I can provide this information directly without needing to look it up again.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "no_time",
+    "case_id": "software_version",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe context clearly states that I already checked and found the latest Python version is 3.12.1, so I can provide this information directly without needing to look it up again.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "no_time",
+    "case_id": "medication_dose",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe context clearly states that the user's doctor prescribed 10mg of lisinopril daily for blood pressure, which directly answers their question about their blood pressure medication dose.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "no_time",
+    "case_id": "medication_dose",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe context clearly states that the user's doctor prescribed 10mg of lisinopril daily for blood pressure, which directly answers their question about their blood pressure medication dose.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "no_time",
+    "case_id": "meeting_in_5min",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe context clearly states that the meeting room is B204, which directly answers the user's question without needing additional information or verification.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "no_time",
+    "case_id": "meeting_in_5min",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe context clearly states that the meeting room is B204, which directly answers the user's question without needing additional information or verification.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "no_time",
+    "case_id": "auction_closing",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nSince the context mentions the auction closes in 10 minutes and eBay bids can change rapidly in the final moments, the bid amount from the previous conversation is likely outdated and needs to be refreshed for accuracy.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "no_time",
+    "case_id": "auction_closing",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nSince the context mentions the auction closes in 10 minutes and eBay bids can change rapidly in the final moments, the bid amount from the previous conversation is likely outdated and needs to be refreshed for accuracy.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "implicit",
+    "case_id": "flight_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe flight gate information (B22) was recently retrieved just 30 seconds ago and gate assignments typically don't change that frequently, so the cached information is reliable enough to answer directly.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "implicit",
+    "case_id": "flight_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe gate information (B22) was recently looked up just 4 hours ago and gate assignments typically don't change that frequently, so the existing information should still be reliable.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "implicit",
+    "case_id": "stock_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nStock prices change constantly throughout trading hours, so information from 2 minutes ago may no longer be accurate and I should get the current price.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "implicit",
+    "case_id": "stock_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nStock prices change constantly throughout trading hours, so information from 6 hours ago would likely be outdated and potentially misleading to provide as current pricing.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "implicit",
+    "case_id": "weather",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nSince the weather was checked just 15 minutes ago and shows sunny conditions at 72\u00b0F, this recent information is sufficient to confidently advise that an umbrella is not needed today.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "implicit",
+    "case_id": "weather",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nThe weather information is 2 days old, and weather conditions can change significantly in that timeframe, so I need current data to give an accurate recommendation about whether an umbrella is needed today.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "implicit",
+    "case_id": "traffic",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nTraffic conditions can change significantly in 5 minutes, so I should check for current traffic information to provide the most accurate travel time estimate.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "implicit",
+    "case_id": "traffic",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nTraffic conditions can change significantly in 3 hours, so the 35-minute estimate from earlier may no longer be accurate and should be updated with current traffic data.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "implicit",
+    "case_id": "restaurant_availability",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nSince the restaurant information is from 1 minute ago, table availability can change quickly and I should verify the current status before confirming the reservation is still possible.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "implicit",
+    "case_id": "restaurant_availability",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nSince the restaurant information is 5 hours old, availability could have changed and I should verify current table availability before confirming.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "implicit",
+    "case_id": "crypto_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nSince the previous price check was 45 seconds ago and Bitcoin prices can change rapidly, I should get current information to provide the most accurate and up-to-date price.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "implicit",
+    "case_id": "crypto_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nThe price information is 8 hours old and Bitcoin prices are highly volatile, so I need current data to provide an accurate answer.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "implicit",
+    "case_id": "delivery_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nSince the previous tracking information is 2 minutes old and the package was only 3 stops away, the delivery status could have changed significantly in that time, so I should get the most current tracking information.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "implicit",
+    "case_id": "delivery_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nThe tracking information is from 1 day ago, so the package status has likely changed and needs to be updated to provide accurate current information.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "implicit",
+    "case_id": "sports_score",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nSince the previous score check was observed 1 minute ago and basketball games have rapidly changing scores, I should get the current updated score rather than provide potentially outdated information.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "implicit",
+    "case_id": "sports_score",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nThe score information is 3 hours old and basketball games typically last around 2-3 hours, so the game has likely progressed significantly or ended since my last check.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "implicit",
+    "case_id": "birthday",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe context clearly states the user mentioned their birthday is March 15th just 1 hour ago, which is recent and reliable information to answer their direct question.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "implicit",
+    "case_id": "birthday",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nSince the birthday information is from 6 months ago, it's better to verify this personal information is still accurate rather than rely on potentially outdated context.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "implicit",
+    "case_id": "home_address",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "abstain",
+    "raw_response": "E) Abstain \u2014 tell the user you're not confident enough to answer\n\nI should not store or recall personal information like home addresses from previous conversations due to privacy and security concerns, even if the user provided it themselves.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "implicit",
+    "case_id": "home_address",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "abstain",
+    "raw_response": "E) Abstain \u2014 tell the user you're not confident enough to answer\n\nPersonal information like home addresses from a 3-month-old conversation should not be recalled and shared, as it could be outdated, misremembered, or pose privacy/security risks.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "implicit",
+    "case_id": "capital_city",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe capital of France is a stable, well-established fact that doesn't change over time, so the information from 10 minutes ago remains accurate and can be used to answer directly.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "implicit",
+    "case_id": "capital_city",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe capital of France is a well-established, unchanging fact, so the information from the previous conversation remains accurate and reliable.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "implicit",
+    "case_id": "programming_syntax",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe context from 5 minutes ago directly answers the user's current question about getting the length of a list in Python using len(), and this information is still accurate and relevant.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "implicit",
+    "case_id": "programming_syntax",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe context clearly states the correct answer (using `len()` to get list length in Python), this is basic Python syntax that hasn't changed, and the 2-year gap doesn't affect the validity of this fundamental programming concept.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "implicit",
+    "case_id": "ceo_identity",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nSince the context is from 1 day ago and CEO/leadership positions can change rapidly, especially at major tech companies, I should verify the current information before providing an answer.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "implicit",
+    "case_id": "ceo_identity",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nSince the context is from 1 year ago and corporate leadership can change frequently, I should verify the current information rather than rely on potentially outdated data.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "implicit",
+    "case_id": "software_version",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nSince the context is from 2 days ago and software versions can change frequently, I should verify the current latest Python version rather than rely on potentially outdated information.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "implicit",
+    "case_id": "software_version",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nSince the context is from 8 months ago, Python versions are updated regularly, and there have likely been newer releases since version 3.12.1, so I should get current information rather than rely on outdated data.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "implicit",
+    "case_id": "medication_dose",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "abstain",
+    "raw_response": "E) Abstain \u2014 tell the user you're not confident enough to answer\n\nMedical dosage information from a week-old conversation context is too critical and potentially outdated for me to relay without verification, as medication changes are common and errors could be harmful.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "implicit",
+    "case_id": "medication_dose",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "abstain",
+    "raw_response": "E) Abstain \u2014 tell the user you're not confident enough to answer\n\nMedical information from a year ago may have changed, and providing potentially outdated medication dosage information could be harmful to the user's health.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "implicit",
+    "case_id": "meeting_in_5min",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe information about the meeting room (B204) was just checked 30 seconds ago and is still current and reliable for answering the user's question.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "implicit",
+    "case_id": "meeting_in_5min",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nSince the context is from 2 hours ago and meetings can change, be cancelled, or rescheduled, I should verify the current information rather than rely on potentially outdated data.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "implicit",
+    "case_id": "auction_closing",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nThe context is 20 seconds old and eBay auction bids can change rapidly, especially in the final minutes before closing, so the current bid of $234 may no longer be accurate.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "implicit",
+    "case_id": "auction_closing",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nThe context is 45 minutes old and the auction was closing in 10 minutes at that time, so the information is now outdated and potentially inaccurate.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "implicit",
+    "case_id": "user_preference_old",
+    "is_stale": false,
+    "correct_action": "retrieve_memory",
+    "predicted_action": "ask_clarify",
+    "raw_response": "D) Ask the user a clarifying question\n\nI should ask about their current dietary preferences and location/cuisine type to provide the most relevant and helpful restaurant recommendation, rather than assuming their pescatarian status from last week still applies or making recommendations without knowing their location and preferences.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "implicit",
+    "case_id": "user_preference_old",
+    "is_stale": true,
+    "correct_action": "retrieve_memory",
+    "predicted_action": "ask_clarify",
+    "raw_response": "D) Ask the user a clarifying question\n\nI should ask about their current dietary preferences and location/cuisine type to provide the most relevant and helpful restaurant recommendation, rather than assuming their pescatarian status from last week still applies or making recommendations without knowing their location and preferences.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "explicit",
+    "case_id": "flight_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe gate information (B22) was just retrieved 30 seconds ago and gate assignments typically don't change that frequently, so the cached information is reliable enough to answer directly.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "explicit",
+    "case_id": "flight_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nGate information can change frequently, and since 4 hours have passed since the last lookup, it's important to verify the current gate assignment before providing potentially outdated information.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "explicit",
+    "case_id": "stock_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe stock price information is only 2 minutes old, which is recent enough to provide an accurate answer for the user's current inquiry about Apple's stock price.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "explicit",
+    "case_id": "stock_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nSince stock prices change frequently throughout trading hours and the information I have is 6 hours old, I should get current data to provide an accurate answer.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "explicit",
+    "case_id": "weather",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe weather information from 15 minutes ago showing 72\u00b0F and sunny conditions is recent enough to confidently advise that an umbrella is not needed today.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "explicit",
+    "case_id": "weather",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nWeather conditions can change significantly in 2 days, so I need current weather information to give an accurate recommendation about whether an umbrella is needed today.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "explicit",
+    "case_id": "traffic",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe traffic information is only 5 minutes old, which is recent enough to provide a reliable answer about the 35-minute drive time to the airport.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "explicit",
+    "case_id": "traffic",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nTraffic conditions change frequently, and 3-hour-old traffic data is likely outdated and unreliable for current travel planning.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "explicit",
+    "case_id": "restaurant_availability",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe information is very recent (only 1 minute old) and directly answers the user's question about table availability for tonight.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "explicit",
+    "case_id": "restaurant_availability",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nSince 5 hours have passed, the restaurant's availability could have changed and that table may no longer be available, so I should get current information before confirming.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "explicit",
+    "case_id": "crypto_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe Bitcoin price information is very recent (45 seconds old) and cryptocurrency prices don't typically change significantly in such a short timeframe, so the existing data is still highly relevant and accurate enough to answer the user's question.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "explicit",
+    "case_id": "crypto_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nSince the Bitcoin price information is 8 hours old and cryptocurrency prices are highly volatile and change constantly, I should get current data rather than provide outdated information.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "explicit",
+    "case_id": "delivery_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nSince the tracking information is very recent (only 2 minutes old) and provides a clear, specific status that directly answers the user's question, there's no need to refresh or look up new information.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "explicit",
+    "case_id": "delivery_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nSince the tracking information is from 1 day ago and the package was only 3 stops away at that time, the delivery status has very likely changed and needs to be updated to provide accurate current information.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "explicit",
+    "case_id": "sports_score",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nSince basketball scores change rapidly during live games and it's been a minute since the last check, I should get the most current score rather than provide potentially outdated information.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "explicit",
+    "case_id": "sports_score",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nThe score information is 3 hours old, and basketball games typically last around 2-3 hours, so the game has likely progressed significantly or even ended since the last check.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "explicit",
+    "case_id": "birthday",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe user's birthday information was provided just 1 hour ago, which is recent enough to confidently answer directly without needing to refresh or verify the information.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "explicit",
+    "case_id": "birthday",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe user's birthday information (March 15th) was clearly stated in the previous conversation and is directly relevant to their current question, so I can confidently provide this information without needing additional verification.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "explicit",
+    "case_id": "home_address",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe user's address was clearly provided just 2 hours ago, which is recent enough to confidently answer their direct question about their home address.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "explicit",
+    "case_id": "home_address",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "abstain",
+    "raw_response": "E) Abstain \u2014 tell the user you're not confident enough to answer\n\nGiven that the address information is 3 months old, it's possible the user has moved or the information may no longer be current, so I should ask them to provide their current address rather than rely on potentially outdated information.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "explicit",
+    "case_id": "capital_city",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe capital of France is a well-established, unchanging fact that was recently confirmed just 10 minutes ago, so there's no need to look it up again.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "explicit",
+    "case_id": "capital_city",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe capital of France is a stable, well-established fact that doesn't change over time, so the information from a year ago remains accurate and reliable.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "explicit",
+    "case_id": "programming_syntax",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe information about using len() to get the length of a list in Python was recently confirmed just 5 minutes ago and is straightforward, so I can confidently answer directly from the existing context.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "explicit",
+    "case_id": "programming_syntax",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe information about using len() to get the length of a list in Python is fundamental and hasn't changed, so the 2-year-old context is still accurate and sufficient to answer the question.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "explicit",
+    "case_id": "ceo_identity",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe information about Elon Musk being the CEO of Twitter is only 1 day old, which is recent enough to provide a reliable answer to the user's question about who runs Twitter.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "explicit",
+    "case_id": "ceo_identity",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nSince the information about Twitter's CEO is 1 year old and corporate leadership can change frequently, I should verify the current status before providing an answer.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "explicit",
+    "case_id": "software_version",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nSince Python versions can be updated frequently and the information is 2 days old, I should verify the current latest version to provide the most accurate and up-to-date information.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "explicit",
+    "case_id": "software_version",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nSince 8 months have passed since the last check, Python likely has newer versions available and the cached information is too outdated to provide an accurate current answer.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "explicit",
+    "case_id": "medication_dose",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe information about the 10mg lisinopril daily prescription is recent (only 1 week old) and directly answers the user's straightforward question about their medication dose.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "explicit",
+    "case_id": "medication_dose",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nSince the medication information is from 1 year ago, the dosage could have been changed by the doctor during that time, so it's important to get current information rather than rely on outdated data.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "explicit",
+    "case_id": "meeting_in_5min",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe information about the meeting room (B204) was just checked 30 seconds ago and is still current and reliable for immediate use.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "explicit",
+    "case_id": "meeting_in_5min",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nSince the calendar information is 2 hours old and the user is asking about \"my meeting\" in present tense, I should check for current/updated meeting information as schedules can change and there may be different meetings now.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "explicit",
+    "case_id": "auction_closing",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nSince the auction closes in 10 minutes and the information is already 20 seconds old, the bid could have changed significantly in a fast-moving auction, so I should get current information rather than provide potentially outdated data.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "explicit",
+    "case_id": "auction_closing",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nThe auction closed 35 minutes ago (since it was closing in 10 minutes and 45 minutes have passed), so the information I have is outdated and the current status would be completely different.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "explicit",
+    "case_id": "user_preference_old",
+    "is_stale": false,
+    "correct_action": "retrieve_memory",
+    "predicted_action": "ask_clarify",
+    "raw_response": "D) Ask the user a clarifying question\n\nSince dietary preferences can change over time and I have conflicting information from different time periods, I should ask about their current dietary preferences to provide the most accurate restaurant recommendation.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "explicit",
+    "case_id": "user_preference_old",
+    "is_stale": true,
+    "correct_action": "retrieve_memory",
+    "predicted_action": "ask_clarify",
+    "raw_response": "D) Ask the user a clarifying question\n\nSince dietary preferences can change over time and I have conflicting information from different time periods, I should ask about their current dietary preferences to provide the most accurate restaurant recommendation.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "prompted",
+    "case_id": "flight_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nFlight gate information looked up just 30 seconds ago is still fresh and reliable, as gate changes typically don't occur within such a short timeframe.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "prompted",
+    "case_id": "flight_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nGate information for flights frequently changes, and 4 hours is long enough that the gate assignment could have been updated, so I should verify the current gate before providing this time-sensitive travel information.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "prompted",
+    "case_id": "stock_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nStock prices change constantly during trading hours, and even 2 minutes can result in significant price movements, so I should get the most current information rather than rely on potentially outdated data.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "prompted",
+    "case_id": "stock_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nStock prices change continuously during trading hours, so information that is 6 hours old could be significantly outdated and misleading to provide without verification.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "prompted",
+    "case_id": "weather",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nWeather conditions typically don't change dramatically in just 15 minutes, and the current sunny conditions at 72\u00b0F strongly suggest no umbrella is needed today.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "prompted",
+    "case_id": "weather",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nWeather information from 2 days ago is too outdated to reliably determine today's conditions for umbrella needs, as weather can change significantly within hours.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "prompted",
+    "case_id": "traffic",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nTraffic conditions can change significantly within minutes, so the 5-minute-old traffic information may no longer be accurate and could lead to the user missing their flight or arriving unnecessarily early.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "prompted",
+    "case_id": "traffic",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nTraffic conditions change frequently throughout the day, so a 3-hour-old traffic estimate is likely outdated and could lead to the user missing their flight or arriving unnecessarily early.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "prompted",
+    "case_id": "restaurant_availability",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nSince the information about the table availability was obtained just 1 minute ago, it's still fresh enough to provide a reliable answer without needing to refresh it.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "prompted",
+    "case_id": "restaurant_availability",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nRestaurant table availability can change rapidly throughout the day, and 5 hours is long enough for that specific table to have been booked by another customer, so I should verify current availability rather than rely on outdated information.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "prompted",
+    "case_id": "crypto_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nSince the Bitcoin price information was checked just 45 seconds ago, it's still fresh enough to provide an accurate answer without needing to refresh the data.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "prompted",
+    "case_id": "crypto_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nBitcoin prices are extremely volatile and change constantly throughout the day, so 8-hour-old price information would likely be significantly outdated and potentially misleading to provide.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "prompted",
+    "case_id": "delivery_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nPackage delivery status can change rapidly (within minutes), and since the package was only 3 stops away 2 minutes ago, it could now be closer, at the door, or even delivered.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "prompted",
+    "case_id": "delivery_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nPackage delivery status changes frequently, and information that is 1 day old about a package being \"out for delivery and 3 stops away\" is very likely to be outdated and no longer accurate.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "prompted",
+    "case_id": "sports_score",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nBasketball scores change rapidly during live games, and even one minute is enough time for significant scoring changes that could make the previous information misleading or incorrect.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "prompted",
+    "case_id": "sports_score",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nBasketball games typically last around 2-3 hours total, so information from 3 hours ago about a score during the 3rd quarter is almost certainly outdated - the game has likely ended by now.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "prompted",
+    "case_id": "birthday",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nPersonal information like someone's birthday doesn't change, and one hour is a very short time frame, so the context information is still completely reliable and fresh.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "prompted",
+    "case_id": "birthday",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nPersonal information like someone's birthday is a fixed fact that doesn't change over time, so the 6-month-old information remains accurate and reliable.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "prompted",
+    "case_id": "home_address",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nA person's home address is stable information that doesn't change frequently, and 2 hours is a very short timeframe, so the previously provided address of 742 Evergreen Terrace, Springfield is still reliable.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "prompted",
+    "case_id": "home_address",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "ask_clarify",
+    "raw_response": "D) Ask the user a clarifying question\n\nSince residential addresses can change over a 3-month period due to moves or relocations, I should confirm with the user whether they still live at the same address rather than assume the information is still current.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "prompted",
+    "case_id": "capital_city",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe capital of France is extremely stable geopolitical information that would not change in 10 minutes, so the recent lookup is still completely reliable.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "prompted",
+    "case_id": "capital_city",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe capital of France being Paris is a fundamental geopolitical fact that has been stable for centuries and is extremely unlikely to have changed in just one year.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "prompted",
+    "case_id": "programming_syntax",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe information about using `len()` to get the length of a list in Python is a fundamental language feature that hasn't changed in decades, and 5 minutes is far too recent for this basic syntax information to become outdated.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "prompted",
+    "case_id": "programming_syntax",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe `len()` function for getting list length is a fundamental Python built-in that has been stable for decades and is extremely unlikely to have changed in just 2 years.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "prompted",
+    "case_id": "ceo_identity",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nGiven the volatile nature of social media company leadership and the fact that Twitter has undergone significant changes recently, information about its leadership could potentially change within a day, so it's safer to verify current information rather than rely on day-old data.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "prompted",
+    "case_id": "ceo_identity",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nGiven that the information about Twitter's leadership is 1 year old and there have been significant changes at the company during that timeframe (including rebranding to \"X\"), this information is likely outdated and needs to be refreshed.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "prompted",
+    "case_id": "software_version",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nPython releases can happen frequently, and 2 days is enough time for a new patch release or update to occur, so I should verify the current latest version rather than rely on potentially outdated information.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "prompted",
+    "case_id": "software_version",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nSince 8 months have passed and Python releases new versions regularly (typically every 12-18 months with patch releases in between), the information that Python 3.12.1 was the latest version is likely outdated and needs to be refreshed to provide accurate current information.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "prompted",
+    "case_id": "medication_dose",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nMedical prescription information from one week ago is still current and reliable, as prescription changes typically occur over longer timeframes and would require a new doctor's visit or explicit communication from the healthcare provider.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "prompted",
+    "case_id": "medication_dose",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "ask_clarify",
+    "raw_response": "D) Ask the user a clarifying question\n\nSince medication dosages can change frequently and this information is a year old, I should ask the user to confirm their current prescription rather than potentially provide outdated medical information.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "prompted",
+    "case_id": "meeting_in_5min",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe meeting room information was checked just 30 seconds ago and meeting room assignments typically don't change at the last minute, so this information is still fresh and reliable.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "prompted",
+    "case_id": "meeting_in_5min",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nSince the meeting information is 2 hours old and meetings can be rescheduled, moved, or cancelled frequently, I should verify the current meeting details to ensure accuracy.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "prompted",
+    "case_id": "auction_closing",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nSince eBay auction bids can change rapidly and the information is already 20 seconds old with only 10 minutes remaining in the auction, the current bid could easily have changed and providing outdated information could mislead the user's bidding decisions.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "prompted",
+    "case_id": "auction_closing",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nThe auction information is 45 minutes old and the auction was supposed to close 35 minutes ago, so the current status and final bid amount would be completely different now.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "prompted",
+    "case_id": "user_preference_old",
+    "is_stale": false,
+    "correct_action": "retrieve_memory",
+    "predicted_action": "ask_clarify",
+    "raw_response": "D) Ask the user a clarifying question\n\nSince dietary preferences can change frequently and the context shows the user's diet has already evolved from vegetarian to pescatarian, I should confirm their current dietary preferences and other restaurant criteria (location, cuisine type, budget) before making recommendations.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-sonnet",
+    "condition": "prompted",
+    "case_id": "user_preference_old",
+    "is_stale": true,
+    "correct_action": "retrieve_memory",
+    "predicted_action": "ask_clarify",
+    "raw_response": "D) Ask the user a clarifying question\n\nSince dietary preferences can change frequently and the context shows the user's diet has already evolved from vegetarian to pescatarian, I should confirm their current dietary preferences and other restaurant criteria (location, cuisine type, budget) before making recommendations.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "no_time",
+    "case_id": "flight_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe information is recent, specific, and directly answers the user's question without any indication that it needs to be refreshed.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "no_time",
+    "case_id": "flight_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe information is recent, specific, and directly answers the user's question without any indication that it needs to be refreshed.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "no_time",
+    "case_id": "stock_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nStock prices change constantly throughout the day, so the previous data may be outdated and I should provide the most current information available.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "no_time",
+    "case_id": "stock_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nStock prices change constantly throughout the day, so the previous data may be outdated and I should provide the most current information available.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "no_time",
+    "case_id": "weather",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nSince the weather information is current and shows sunny conditions with no rain indicated, I can confidently answer that an umbrella is not needed today.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "no_time",
+    "case_id": "weather",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nSince the weather information is current and shows sunny conditions with no rain indicated, I can confidently answer that an umbrella is not needed today.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "no_time",
+    "case_id": "traffic",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe context provides current, specific information (35 minutes with current traffic) that directly answers the user's question.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "no_time",
+    "case_id": "traffic",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe context provides current, specific information (35 minutes with current traffic) that directly answers the user's question.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "no_time",
+    "case_id": "restaurant_availability",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe context already contains current, specific information about table availability that directly answers the user's question.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "no_time",
+    "case_id": "restaurant_availability",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe context already contains current, specific information about table availability that directly answers the user's question.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "no_time",
+    "case_id": "crypto_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nThe context is from a previous conversation and Bitcoin's price changes constantly, so I should provide current data rather than potentially outdated information.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "no_time",
+    "case_id": "crypto_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nThe context is from a previous conversation and Bitcoin's price changes constantly, so I should provide current data rather than potentially outdated information.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "no_time",
+    "case_id": "delivery_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nThe previous tracking information may be outdated, and delivery status changes frequently, so I should verify the current status rather than rely on potentially stale data.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "no_time",
+    "case_id": "delivery_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nThe previous tracking information may be outdated, and delivery status changes frequently, so I should verify the current status rather than rely on potentially stale data.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "no_time",
+    "case_id": "sports_score",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe context provides recent, specific score information that directly answers the user's question, so I can respond immediately without needing to refresh the data.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "no_time",
+    "case_id": "sports_score",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe context provides recent, specific score information that directly answers the user's question, so I can respond immediately without needing to refresh or seek clarification.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "no_time",
+    "case_id": "birthday",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe context clearly states the user's birthday is March 15th, so I can answer directly without needing additional verification.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "no_time",
+    "case_id": "birthday",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe context clearly states the user's birthday is March 15th, so I can answer this straightforward factual question directly.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "no_time",
+    "case_id": "home_address",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The user has already provided their address in the conversation context, so I can answer directly with the information they shared.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "no_time",
+    "case_id": "home_address",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The user has already provided their address in the conversation context, so I can answer directly with the information they shared.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "no_time",
+    "case_id": "capital_city",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe information is already verified in the conversation history, so I can confidently provide the direct answer that Paris is the capital of France.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "no_time",
+    "case_id": "capital_city",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe information is already verified in the conversation history, so I can confidently provide the direct answer that Paris is the capital of France.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "no_time",
+    "case_id": "programming_syntax",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe context already provides accurate, relevant information that directly answers the user's question, so there's no need to refresh or seek additional clarification.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "no_time",
+    "case_id": "programming_syntax",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe context already provides accurate, relevant information that directly answers the user's question, so there's no need to refresh or seek additional clarification.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "no_time",
+    "case_id": "ceo_identity",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nWhile the context states Elon Musk is CEO, this information may be outdated since leadership changes occur, and I should verify current accuracy before answering a factual question about who currently runs Twitter.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "no_time",
+    "case_id": "ceo_identity",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nWhile the context states Elon Musk is CEO, this information may be outdated since leadership changes occur, and I should verify current accuracy before answering a factual question about who currently runs Twitter.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "no_time",
+    "case_id": "software_version",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe context provides recent, specific information (Python 3.12.1) that directly answers the user's question, so there's no need to refresh or seek additional clarification.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "no_time",
+    "case_id": "software_version",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe context provides recent, specific information (Python 3.12.1) that directly answers the user's question, so there's no need to refresh or seek additional clarification.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "no_time",
+    "case_id": "medication_dose",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "abstain",
+    "raw_response": "E) Abstain \u2014 tell the user you're not confident enough to answer\n\nWhile context was provided, I cannot verify this information is current, accurate, or still applies, and medication dosing requires reliable medical information.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "no_time",
+    "case_id": "medication_dose",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "abstain",
+    "raw_response": "E) Abstain \u2014 tell the user you're not confident enough to answer\n\nWhile context was provided, I cannot verify this information is current, accurate, or still applies, and medication dosing requires reliable medical information that should come from their actual medical records or healthcare provider.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "no_time",
+    "case_id": "meeting_in_5min",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe context already provides the specific information needed (meeting room B204), and with only 5 minutes until the meeting, the user needs an immediate answer.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "no_time",
+    "case_id": "meeting_in_5min",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe context already provides the specific meeting room information (B204) that was recently checked, making a direct answer appropriate and efficient given the time-sensitive nature (meeting in 5 minutes).",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "no_time",
+    "case_id": "auction_closing",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nSince auction prices change in real-time and 10 minutes have already passed in the context, the stored information is likely outdated and I should verify the current bid before answering.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "no_time",
+    "case_id": "auction_closing",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nThe context is time-sensitive (auction closes in 10 minutes), so the bid amount may have changed since that information was recorded, and I should verify current data rather than rely on potentially outdated information.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "implicit",
+    "case_id": "flight_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe information is recent (30 seconds old), specific, and directly answers the user's question without ambiguity.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "implicit",
+    "case_id": "flight_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nGate assignments can change, and 4 hours is enough time for a reassignment, so I should verify current information rather than rely on outdated data.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "implicit",
+    "case_id": "stock_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nStock prices change constantly, and 2-minute-old data may be significantly outdated, so I should provide current information rather than potentially stale data.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "implicit",
+    "case_id": "stock_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nStock prices change constantly, and 6-hour-old data could be significantly outdated, so I should provide current information rather than stale data.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "implicit",
+    "case_id": "weather",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nSince the weather was just checked 15 minutes ago showing sunny conditions, that information is recent enough to confidently answer that an umbrella is not needed.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "implicit",
+    "case_id": "weather",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nThe weather context is 2 days old and weather changes daily, so current conditions need to be checked before advising on umbrella necessity.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "implicit",
+    "case_id": "traffic",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nTraffic conditions change frequently, and 5 minutes is enough time for the situation to shift materially, so current data would be more reliable than stale information.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "implicit",
+    "case_id": "traffic",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nTraffic conditions change significantly over 3 hours, so current travel time could differ substantially from the 35-minute estimate from earlier.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "implicit",
+    "case_id": "restaurant_availability",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe information is recent (1 minute old), specific, and directly answers the user's question about table availability tonight.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "implicit",
+    "case_id": "restaurant_availability",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nThe context is 5 hours old and restaurant availability changes frequently, so I should verify current status rather than rely on outdated information.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "implicit",
+    "case_id": "crypto_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nThe data is 45 seconds old in a volatile market, so current price information should be retrieved to provide accurate information rather than relying on stale data.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "implicit",
+    "case_id": "crypto_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nThe price data is 8 hours old and cryptocurrency prices change constantly, so providing stale information could be misleading.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "implicit",
+    "case_id": "delivery_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nThe previous information is 2 minutes old and delivery status can change rapidly, so I should verify the current status rather than rely on potentially outdated data.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "implicit",
+    "case_id": "delivery_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nThe previous information is 1 day old, so the package status has likely changed and needs to be updated to provide accurate current information.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "implicit",
+    "case_id": "sports_score",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nSince the context is from 1 minute ago and sports scores change constantly, I should look up the current score rather than provide potentially outdated information.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "implicit",
+    "case_id": "sports_score",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nThe context is 3 hours old and from the 3rd quarter, so the game has likely concluded or progressed significantly, making current information essential.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "implicit",
+    "case_id": "birthday",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe information is recent (1 hour ago), specific, and directly answers the user's question without ambiguity.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "implicit",
+    "case_id": "birthday",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "abstain",
+    "raw_response": "E) Abstain \u2014 tell the user you're not confident enough to answer\n\nWhile context from 6 months ago mentioned March 15th, I cannot reliably verify this information hasn't changed, and relying on outdated conversational context for personal details risks providing incorrect information.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "implicit",
+    "case_id": "home_address",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "abstain",
+    "raw_response": "E) Abstain \u2014 tell the user you're not confident enough to answer\n\nWhile context was provided, I should not rely on information from a previous conversation as though it were verified fact, since I have no actual memory between conversations and cannot confirm this information's accuracy or currency.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "implicit",
+    "case_id": "home_address",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "abstain",
+    "raw_response": "E) Abstain \u2014 tell the user you're not confident enough to answer\n\nInformation from 3 months ago may be outdated, and I shouldn't rely on stale data for sensitive personal information like home addresses without verification.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "implicit",
+    "case_id": "capital_city",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above.\n\nThe information is recent, reliable, and factual (Paris is definitively the capital of France), so there's no need to refresh or add unnecessary steps.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "implicit",
+    "case_id": "capital_city",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe capital of France is a stable, unchanging fact that was correctly established a year ago, so re-verification is unnecessary.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "implicit",
+    "case_id": "programming_syntax",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The context is recent, accurate, and directly answers the user's question, so I can provide the answer immediately without needing to refresh or seek clarification.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "implicit",
+    "case_id": "programming_syntax",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe information is straightforward, well-established, and hasn't changed in 2 years\u2014using `len()` for list length is fundamental Python that remains constant.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "implicit",
+    "case_id": "ceo_identity",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nSince the context is from 1 day ago and leadership positions can change, I should verify current information rather than rely on potentially outdated data.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "implicit",
+    "case_id": "ceo_identity",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nSince the context is from 1 year ago and leadership changes are common at major companies, I should verify current information rather than rely on outdated data.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "implicit",
+    "case_id": "software_version",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nSoftware versions update frequently, and information from 2 days ago may be outdated, so I should verify the current latest version rather than rely on stale context.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "implicit",
+    "case_id": "software_version",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nSoftware versions change frequently, and 8 months is a significant time gap where multiple new releases could have occurred, making the old information potentially outdated.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "implicit",
+    "case_id": "medication_dose",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "abstain",
+    "raw_response": "E) Abstain \u2014 tell the user you're not confident enough to answer\n\nMedical information changes frequently and a week-old observation could be outdated due to dosage adjustments, medication changes, or other clinical modifications that only their current medical records would reflect.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "implicit",
+    "case_id": "medication_dose",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "abstain",
+    "raw_response": "E) Abstain \u2014 tell the user you're not confident enough to answer.\n\nMedical information changes over time, and a prescription from a year ago may no longer be current due to dosage adjustments, medication changes, or discontinuation.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "implicit",
+    "case_id": "meeting_in_5min",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe information is recent (30 seconds old), specific, and directly answers the user's question without ambiguity.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "implicit",
+    "case_id": "meeting_in_5min",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the calendar again before answering, because the context is 2 hours old and meeting details can change.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "implicit",
+    "case_id": "auction_closing",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nThe context is 20 seconds old and auction bids change frequently, so I should verify current information rather than rely on potentially outdated data.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "implicit",
+    "case_id": "auction_closing",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nThe context is 45 minutes old and an auction that was closing in 10 minutes has almost certainly already concluded, so current information is needed rather than stale data.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "implicit",
+    "case_id": "user_preference_old",
+    "is_stale": false,
+    "correct_action": "retrieve_memory",
+    "predicted_action": "ask_clarify",
+    "raw_response": "D) Ask the user a clarifying question.\n\nThe user's dietary preferences have recently changed, so I should confirm their current eating preferences before recommending a restaurant rather than relying on outdated context.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "implicit",
+    "case_id": "user_preference_old",
+    "is_stale": true,
+    "correct_action": "retrieve_memory",
+    "predicted_action": "ask_clarify",
+    "raw_response": "D) Ask the user a clarifying question.\n\nThe user's dietary preferences have recently changed, so I should confirm their current eating preferences before recommending a restaurant rather than relying on outdated context.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "explicit",
+    "case_id": "flight_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe information is recent (30 seconds old), specific, and directly answers the user's question without any indication that gate assignments have changed.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "explicit",
+    "case_id": "flight_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nGate assignments can change, and 4 hours is enough time for a reassignment, so I should verify the current gate before providing an answer.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "explicit",
+    "case_id": "stock_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nStock prices change constantly, and 2 minutes is enough time for meaningful movement, so providing potentially stale data could mislead the user when they're asking for current information.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "explicit",
+    "case_id": "stock_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nStock prices change constantly, and 6 hours is a significant time gap where the price could have moved materially from the $187.32 recorded earlier.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "explicit",
+    "case_id": "weather",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) The information is 15 minutes old and weather can change; refreshing would provide the most current and reliable answer for the user's planning needs.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "explicit",
+    "case_id": "weather",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) The weather information is 2 days old, so current conditions may have changed significantly and I should refresh the data before advising on whether an umbrella is needed today.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "explicit",
+    "case_id": "traffic",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nTraffic conditions change frequently, and 5 minutes is enough time for the estimate to become outdated, so current information would be more reliable for the user's immediate travel plans.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "explicit",
+    "case_id": "traffic",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nTraffic conditions change significantly over 3 hours, so current travel time could differ substantially from the 35-minute estimate from earlier.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "explicit",
+    "case_id": "restaurant_availability",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "abstain",
+    "raw_response": "E. The information is only 1 minute old but restaurant availability can change rapidly, so I'm not confident enough to confirm the table is still available without refreshing.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "explicit",
+    "case_id": "restaurant_availability",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nSince 5 hours have passed, the availability status may have changed due to other bookings or time constraints (the reservation time may now be very soon or past), so current information should be verified.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "explicit",
+    "case_id": "crypto_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nBitcoin prices change rapidly, and 45 seconds is enough time for meaningful movement, so current data would be more reliable than information that's already stale.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "explicit",
+    "case_id": "crypto_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nBitcoin prices change constantly, and 8 hours is far too long to rely on stale data for a current price query.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "explicit",
+    "case_id": "delivery_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nThe information is only 2 minutes old but delivery status can change rapidly, so a quick refresh ensures I'm providing the most current tracking information.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "explicit",
+    "case_id": "delivery_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nThe delivery status information is 1 day old and package tracking changes frequently, so I should get current information rather than rely on outdated data.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "explicit",
+    "case_id": "sports_score",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nThe score is from 1 minute ago and live sports scores change constantly, so I should get current information rather than provide potentially outdated data.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "explicit",
+    "case_id": "sports_score",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "abstain",
+    "raw_response": "E) Abstain \u2014 tell the user you're not confident enough to answer\n\nThe information is 3 hours old and from the 3rd quarter, so the game has almost certainly concluded and the score has changed significantly.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "explicit",
+    "case_id": "birthday",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe information is recent (1 hour old), straightforward, and directly answers the user's question without requiring verification or clarification.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "explicit",
+    "case_id": "birthday",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe information is straightforward, recent enough to be reliable, and directly answers the user's question without requiring verification.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "explicit",
+    "case_id": "home_address",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "abstain",
+    "raw_response": "E) Abstain \u2014 tell the user you're not confident enough to answer\n\nI should not rely on information from a previous conversation as though it were a verified fact, since I don't have persistent memory across sessions and cannot confirm this information remains current or accurate.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "explicit",
+    "case_id": "home_address",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "abstain",
+    "raw_response": "E) Abstain \u2014 tell the user you're not confident enough to answer\n\nInformation from 3 months ago may be outdated, and sharing address information requires high confidence in current accuracy for safety and privacy reasons.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "explicit",
+    "case_id": "capital_city",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe information is recent (10 minutes old), factually stable (capital cities don't change), and directly answers the user's question.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "explicit",
+    "case_id": "capital_city",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe capital of France is a stable, unchanging fact that doesn't require refreshing even after a year.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "explicit",
+    "case_id": "programming_syntax",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe information is recent (5 minutes old), accurate, and directly answers the user's question without needing verification.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "explicit",
+    "case_id": "programming_syntax",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThis is fundamental Python syntax that hasn't changed in 2 years and is extremely stable, so the cached information is reliable enough to answer immediately.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "explicit",
+    "case_id": "ceo_identity",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nElon Musk's leadership of Twitter has been subject to significant changes (he sold it to a new ownership group in 2024), so information from 1 day ago may be outdated and should be verified.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "explicit",
+    "case_id": "ceo_identity",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nTwitter was rebranded to X in 2023, and significant leadership changes have occurred, making year-old information potentially outdated and unreliable for a current answer.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "explicit",
+    "case_id": "software_version",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nPython releases updates frequently, and information from 2 days ago may be outdated, so I should verify the current latest version before answering.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "explicit",
+    "case_id": "software_version",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nPython releases new versions frequently, and 8 months is enough time for updates beyond 3.12.1 to have been released, so the stored information is likely outdated.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "explicit",
+    "case_id": "medication_dose",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "abstain",
+    "raw_response": "E) Abstain \u2014 tell the user you're not confident enough to answer.\n\nMedical information changes frequently and a week-old prescription detail may no longer be current, so you should encourage the user to verify with their doctor or check their prescription bottle rather than rely on potentially outdated information.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "explicit",
+    "case_id": "medication_dose",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "abstain",
+    "raw_response": "E) Abstain \u2014 tell the user you're not confident enough to answer.\n\nMedication dosages can change over time, and information from a year ago may no longer be accurate due to adjustments by their doctor.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "explicit",
+    "case_id": "meeting_in_5min",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe information is recent (30 seconds old), highly specific, and directly answers the user's question without ambiguity.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "explicit",
+    "case_id": "meeting_in_5min",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nThe information is 2 hours old and meeting details can change; I should verify the current status rather than rely on outdated information.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "explicit",
+    "case_id": "auction_closing",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) The auction closes in 10 minutes and 20 seconds have passed, so the bid may have changed and should be verified before answering.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "explicit",
+    "case_id": "auction_closing",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "abstain",
+    "raw_response": "E) Abstain \u2014 tell the user you're not confident enough to answer.\n\nThe information is 45 minutes old and the auction was closing in 10 minutes from that observation, so it has likely already ended and the context data is stale.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "explicit",
+    "case_id": "user_preference_old",
+    "is_stale": false,
+    "correct_action": "retrieve_memory",
+    "predicted_action": "ask_clarify",
+    "raw_response": "D) Ask the user a clarifying question.\n\nWhile I have some dietary information, preferences can be nuanced (pescatarian vs. fully omnivorous, frequency of fish consumption, other restrictions) and restaurant recommendations depend on cuisine type, location, budget, and occasion\u2014all of which require clarification.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "explicit",
+    "case_id": "user_preference_old",
+    "is_stale": true,
+    "correct_action": "retrieve_memory",
+    "predicted_action": "ask_clarify",
+    "raw_response": "D) Ask the user a clarifying question.\n\nWhile I have some dietary information, preferences can change and vary by occasion, so I should ask what type of cuisine or dietary considerations matter for this specific recommendation.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "prompted",
+    "case_id": "flight_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B. Gate assignments can change frequently at airports, and 30 seconds is enough time for a change to occur, so I should refresh the information before answering.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "prompted",
+    "case_id": "flight_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nGate assignments can change frequently, and 4 hours is enough time for a reassignment, so the information should be verified before providing it to the user.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "prompted",
+    "case_id": "stock_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B. Stock prices change constantly throughout trading hours, and even 2 minutes is enough time for meaningful changes, so I should refresh the data before answering.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "prompted",
+    "case_id": "stock_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nStock prices change constantly throughout trading hours, and 6-hour-old data could be significantly outdated and misleading.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "prompted",
+    "case_id": "weather",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B. Weather conditions can change significantly in 15 minutes, and an umbrella recommendation depends on the forecast for the entire day, not just current conditions, so I should refresh the information before answering.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "prompted",
+    "case_id": "weather",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nWeather conditions change frequently, and 2-day-old data is too stale to reliably answer whether an umbrella is needed today.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "prompted",
+    "case_id": "traffic",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nTraffic conditions change frequently, and 5 minutes is enough time for the situation to shift materially, so current conditions should be rechecked rather than relying on information that's already becoming stale.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "prompted",
+    "case_id": "traffic",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nTraffic conditions change significantly over 3 hours, so the 35-minute estimate from earlier may no longer be accurate and could mislead the user's travel planning.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "prompted",
+    "case_id": "restaurant_availability",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B. Since restaurant availability can change rapidly (other customers may have booked the table in the past minute), I should verify the current status before confirming.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "prompted",
+    "case_id": "restaurant_availability",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B. Since 5 hours have passed and restaurant availability can change rapidly due to other bookings or cancellations, I should verify the current status before confirming the table is still available.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "prompted",
+    "case_id": "crypto_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B. Since cryptocurrency prices are highly volatile and the data is 45 seconds old, I should refresh the current price to ensure accuracy rather than risk providing outdated information.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "prompted",
+    "case_id": "crypto_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nBitcoin prices change constantly, and 8-hour-old data could be significantly outdated, so I should obtain current pricing before responding.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "prompted",
+    "case_id": "delivery_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nEven though the information is only 2 minutes old, delivery status can change rapidly (package could have been delivered, rerouted, or encountered delays), so I should verify the current status rather than risk giving outdated information.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "prompted",
+    "case_id": "delivery_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nSince the tracking information is 1 day old, the package status has likely changed and needs to be updated to give you accurate current information.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "prompted",
+    "case_id": "sports_score",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nEven though the information is only 1 minute old, a live sports game is actively changing and the score could have shifted multiple times in that brief window, so I should verify the current score rather than risk providing outdated information.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "prompted",
+    "case_id": "sports_score",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nThe game information is 3 hours old, which is well beyond the timeframe of a live sporting event, so the score has almost certainly changed and needs to be updated.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "prompted",
+    "case_id": "birthday",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nBirthday information is static and doesn't change, so a one-hour-old observation is perfectly reliable for this type of personal fact.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "prompted",
+    "case_id": "birthday",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above.\n\nBirthday information is static and doesn't change over time, so a 6-month-old record is reliable.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "prompted",
+    "case_id": "home_address",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above.\n\nA home address is stable information that wouldn't change in 2 hours, so refreshing is unnecessary.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "prompted",
+    "case_id": "home_address",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "abstain",
+    "raw_response": "E) Abstain \u2014 tell the user you're not confident enough to answer\n\nPersonal information like home addresses can change, and three months is enough time for a move to have occurred, so I should not rely on stale data for something this sensitive.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "prompted",
+    "case_id": "capital_city",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The capital of France is a stable, unchanging fact that doesn't require refreshing after only 10 minutes.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "prompted",
+    "case_id": "capital_city",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The capital of France is a stable, unchanging fact that doesn't require refreshing even after a year.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "prompted",
+    "case_id": "programming_syntax",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThis is fundamental Python syntax that hasn't changed in 5 minutes (or in decades), so refreshing would be unnecessary.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "prompted",
+    "case_id": "programming_syntax",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe `len()` function for getting list length in Python is a fundamental language feature that hasn't changed in 2 years and is extremely unlikely to change, so refreshing is unnecessary.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "prompted",
+    "case_id": "ceo_identity",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nTwitter's leadership and even its name have changed significantly since that information was recorded, so I need current information to give an accurate answer.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "prompted",
+    "case_id": "ceo_identity",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nTwitter was rebranded to X in 2023, and the platform's structure and leadership may have changed significantly in the past year, so the cached information is likely outdated.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "prompted",
+    "case_id": "software_version",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nPython releases updates frequently, and 2 days is enough time for a new patch or minor version to be released, so I should verify the current latest version rather than rely on information from 2 days ago.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "prompted",
+    "case_id": "software_version",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nPython releases new versions regularly, and 8 months is enough time for updates beyond 3.12.1 to have been released, so I should verify the current latest version rather than rely on outdated information.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "prompted",
+    "case_id": "medication_dose",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "abstain",
+    "raw_response": "E) Abstain \u2014 tell the user you're not confident enough to answer.\n\nMedical prescriptions can change frequently based on blood pressure readings, side effects, or doctor adjustments, so one-week-old information may no longer be accurate.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "prompted",
+    "case_id": "medication_dose",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "abstain",
+    "raw_response": "E) Abstain \u2014 tell the user you're not confident enough to answer.\n\nMedical prescriptions can change frequently due to dosage adjustments, side effects, or changing health conditions, so one-year-old information is too stale to rely on without verification.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "prompted",
+    "case_id": "meeting_in_5min",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe information is only 30 seconds old and meeting room assignments are stable data that wouldn't change in that timeframe, so it's safe and helpful to answer immediately given the user's time constraint.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "prompted",
+    "case_id": "meeting_in_5min",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nThe calendar information is 2 hours old, and meeting details can change; I should verify the current room assignment before the user's imminent meeting.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "prompted",
+    "case_id": "auction_closing",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering\n\nThe auction closes in 10 minutes and bids can change rapidly, so even though the information is only 20 seconds old, it's likely outdated by now and I should verify the current bid before answering.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "prompted",
+    "case_id": "auction_closing",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "abstain",
+    "raw_response": "E) Abstain \u2014 tell the user you're not confident enough to answer\n\nThe auction was closing in 10 minutes 45 minutes ago, meaning it has almost certainly already ended, and the context information is now stale and unreliable.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "prompted",
+    "case_id": "user_preference_old",
+    "is_stale": false,
+    "correct_action": "retrieve_memory",
+    "predicted_action": "ask_clarify",
+    "raw_response": "D) Ask the user a clarifying question.\n\nSince the user's dietary preferences have recently changed (from vegetarian to pescatarian), I should confirm their current preferences and any other relevant details before recommending a restaurant.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-haiku",
+    "condition": "prompted",
+    "case_id": "user_preference_old",
+    "is_stale": true,
+    "correct_action": "retrieve_memory",
+    "predicted_action": "ask_clarify",
+    "raw_response": "D) Ask the user a clarifying question.\n\nSince dietary preferences can change and the most recent information (from last week) indicates a shift, I should confirm their current dietary preferences before recommending a restaurant rather than relying on potentially outdated context.",
+    "is_correct": false
+  }
+]

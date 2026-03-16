@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "temporal-llm"
+version = "0.1.0"
+description = "Elapsed-time awareness for LLM stale-context decisions"
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+where = ["src"]

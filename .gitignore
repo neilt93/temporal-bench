@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Environment / secrets
+.env
+
+# Pytest
+.pytest_cache/
+
+# Model weights (too large for git)
+outputs/*/best/
+outputs/*/checkpoint-*/
+outputs/*/*.bin
+outputs/*/*.safetensors
+outputs/analysis/*_predictions.json
+
+# Large data files
+*.pt
+*.bin
+*.safetensors
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp
+*.tmp
+*.bak

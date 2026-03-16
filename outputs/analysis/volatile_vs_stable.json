@@ -1,0 +1,178 @@
+{
+  "gpt2_baseline": {
+    "high": {
+      "accuracy": 0.5645161290322581,
+      "f1_macro": 0.2314048371682717,
+      "n": 186
+    },
+    "medium": {
+      "accuracy": 0.5053763440860215,
+      "f1_macro": 0.19742820755104556,
+      "n": 186
+    },
+    "low": {
+      "accuracy": 0.5625,
+      "f1_macro": 0.144,
+      "n": 96
+    },
+    "stable": {
+      "accuracy": 1.0,
+      "f1_macro": 0.2,
+      "n": 30
+    }
+  },
+  "gpt2_time_tokens": {
+    "high": {
+      "accuracy": 0.8333333333333334,
+      "f1_macro": 0.3625882889040784,
+      "n": 186
+    },
+    "medium": {
+      "accuracy": 0.7849462365591398,
+      "f1_macro": 0.34225108225108225,
+      "n": 186
+    },
+    "low": {
+      "accuracy": 0.8020833333333334,
+      "f1_macro": 0.34288248337028826,
+      "n": 96
+    },
+    "stable": {
+      "accuracy": 1.0,
+      "f1_macro": 0.2,
+      "n": 30
+    }
+  },
+  "gpt2_text_time": {
+    "high": {
+      "accuracy": 0.7419354838709677,
+      "f1_macro": 0.32,
+      "n": 186
+    },
+    "medium": {
+      "accuracy": 0.7795698924731183,
+      "f1_macro": 0.34077956108745494,
+      "n": 186
+    },
+    "low": {
+      "accuracy": 0.75,
+      "f1_macro": 0.31991744066047473,
+      "n": 96
+    },
+    "stable": {
+      "accuracy": 0.7666666666666667,
+      "f1_macro": 0.17358490566037738,
+      "n": 30
+    }
+  },
+  "tinyllama_fullft_baseline": {
+    "high": {
+      "accuracy": 0.5591397849462365,
+      "f1_macro": 0.20592885375494072,
+      "n": 186
+    },
+    "medium": {
+      "accuracy": 0.42473118279569894,
+      "f1_macro": 0.18319753129225755,
+      "n": 186
+    },
+    "low": {
+      "accuracy": 0.5625,
+      "f1_macro": 0.144,
+      "n": 96
+    },
+    "stable": {
+      "accuracy": 1.0,
+      "f1_macro": 0.2,
+      "n": 30
+    }
+  },
+  "tinyllama_fullft_time_tokens": {
+    "high": {
+      "accuracy": 0.43548387096774194,
+      "f1_macro": 0.18475862068965515,
+      "n": 186
+    },
+    "medium": {
+      "accuracy": 0.3279569892473118,
+      "f1_macro": 0.10584610328252742,
+      "n": 186
+    },
+    "low": {
+      "accuracy": 0.5625,
+      "f1_macro": 0.144,
+      "n": 96
+    },
+    "stable": {
+      "accuracy": 1.0,
+      "f1_macro": 0.2,
+      "n": 30
+    }
+  },
+  "tinyllama_fullft_text_time": {
+    "high": {
+      "accuracy": 0.5591397849462365,
+      "f1_macro": 0.22150870406189554,
+      "n": 186
+    },
+    "medium": {
+      "accuracy": 0.521505376344086,
+      "f1_macro": 0.2226738647189584,
+      "n": 186
+    },
+    "low": {
+      "accuracy": 0.5104166666666666,
+      "f1_macro": 0.156738472494214,
+      "n": 96
+    },
+    "stable": {
+      "accuracy": 1.0,
+      "f1_macro": 0.2,
+      "n": 30
+    }
+  },
+  "tinyllama_lora_midlr": {
+    "high": {
+      "accuracy": 0.8387096774193549,
+      "f1_macro": 0.36519682636557826,
+      "n": 186
+    },
+    "medium": {
+      "accuracy": 0.8010752688172043,
+      "f1_macro": 0.349401208569859,
+      "n": 186
+    },
+    "low": {
+      "accuracy": 0.7604166666666666,
+      "f1_macro": 0.3240906148867314,
+      "n": 96
+    },
+    "stable": {
+      "accuracy": 1.0,
+      "f1_macro": 0.2,
+      "n": 30
+    }
+  },
+  "tinyllama_lora_highlr": {
+    "high": {
+      "accuracy": 0.7365591397849462,
+      "f1_macro": 0.31465691032628984,
+      "n": 186
+    },
+    "medium": {
+      "accuracy": 0.7258064516129032,
+      "f1_macro": 0.3153480570310316,
+      "n": 186
+    },
+    "low": {
+      "accuracy": 0.7395833333333334,
+      "f1_macro": 0.309625,
+      "n": 96
+    },
+    "stable": {
+      "accuracy": 1.0,
+      "f1_macro": 0.2,
+      "n": 30
+    }
+  }
+}

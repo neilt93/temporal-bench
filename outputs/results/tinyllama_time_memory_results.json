@@ -1,0 +1,319 @@
+{
+  "counterfactual_sensitivity": {
+    "total_pairs": 1281,
+    "correct_switches": 5,
+    "incorrect_static": 755,
+    "correct_static": 516,
+    "incorrect_switches": 5,
+    "switch_sensitivity": 0.006578947368421052,
+    "switch_specificity": 0.9904030710172744,
+    "switch_accuracy": 0.4067135050741608
+  },
+  "stale_calibration": {
+    "overall_accuracy": 0.4036144578313253,
+    "f1_macro": 0.11801063497028463,
+    "refresh_precision": 1.0,
+    "refresh_recall": 0.008771929824561403,
+    "refresh_f1": 0.017391304347826087,
+    "false_trust_rate": 0.9926470588235294,
+    "false_trust_count": 270,
+    "unnecessary_refresh_rate": 0.0,
+    "unnecessary_refresh_count": 0,
+    "confusion_matrix": [
+      [
+        199,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        226,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        19,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        8,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        44,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "per_class": {
+      "answer_directly": {
+        "precision": 0.4012096774193548,
+        "recall": 1.0,
+        "f1": 0.5726618705035971,
+        "support": 199
+      },
+      "refresh": {
+        "precision": 1.0,
+        "recall": 0.008771929824561403,
+        "f1": 0.017391304347826087,
+        "support": 228
+      },
+      "retrieve_memory": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "support": 19
+      },
+      "ask_clarify": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "support": 8
+      },
+      "abstain": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "support": 44
+      }
+    },
+    "per_volatility_confusion_matrix": {
+      "high": [
+        [
+          56,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          101,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          4,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          21,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "low": [
+        [
+          54,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          28,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          9,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          4,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "medium": [
+        [
+          59,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          97,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          6,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          19,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "stable": [
+        [
+          30,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "n": 498
+  },
+  "memory_retrieval": {
+    "accuracy": 0.3941368078175896,
+    "retrieve_precision": 0,
+    "retrieve_recall": 0.0,
+    "retrieve_f1": 0,
+    "accuracy_by_memory_age": {
+      "5s": 1.0,
+      "30m": 0.16666666666666666,
+      "15m": 0.5238095238095238,
+      "6h": 0.4166666666666667,
+      "1w": 0.1935483870967742,
+      "1mo": 0.2608695652173913,
+      "3h": 0.4,
+      "3d": 0.08,
+      "1y": 0.2,
+      "3mo": 0.4166666666666667,
+      "12h": 0.3684210526315789,
+      "2w": 0.2631578947368421,
+      "1h": 0.5,
+      "5m": 1.0,
+      "1m": 1.0,
+      "30s": 1.0,
+      "1d": 0.16129032258064516,
+      "6mo": 0.3333333333333333
+    },
+    "n": 307
+  },
+  "deadline_awareness": {
+    "overall_accuracy": 0.4157303370786517,
+    "tight_deadline_accuracy": 0.4857142857142857,
+    "relaxed_deadline_accuracy": 0.37037037037037035,
+    "tight_refresh_rate": 0.0,
+    "relaxed_refresh_rate": 0.0,
+    "n_tight": 35,
+    "n_relaxed": 54,
+    "n": 89
+  },
+  "ablations": {
+    "fake_time": {
+      "real_time_accuracy": 0.4036144578313253,
+      "real_time_f1": 0.11801063497028463,
+      "shuffled_time_accuracy": 0.39959839357429716,
+      "shuffled_time_f1": 0.11585263919557869,
+      "accuracy_drop": 0.004016064257028162,
+      "f1_drop": 0.002157995774705948,
+      "n": 498
+    },
+    "time_granularity": {
+      "fine_accuracy": 0.4036144578313253,
+      "coarse_accuracy": 0.39959839357429716,
+      "accuracy_diff": 0.004016064257028162,
+      "n": 498
+    },
+    "volatility_split": {
+      "high": {
+        "accuracy": 0.3118279569892473,
+        "f1_macro": 0.1012710191837057,
+        "n": 186
+      },
+      "medium": {
+        "accuracy": 0.3172043010752688,
+        "f1_macro": 0.0963265306122449,
+        "n": 186
+      },
+      "low": {
+        "accuracy": 0.5625,
+        "f1_macro": 0.144,
+        "n": 96
+      },
+      "stable": {
+        "accuracy": 1.0,
+        "f1_macro": 0.2,
+        "n": 30
+      }
+    }
+  }
+}

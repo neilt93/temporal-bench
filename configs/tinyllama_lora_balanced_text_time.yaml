@@ -1,0 +1,45 @@
+model:
+  name: TinyLlama/TinyLlama-1.1B-Chat-v1.0
+  use_lora: true
+  lora_r: 16
+  lora_alpha: 32
+  lora_dropout: 0.05
+  lora_target_modules:
+    - q_proj
+    - k_proj
+    - v_proj
+    - o_proj
+  load_in_4bit: false
+  load_in_8bit: false
+  max_length: 512
+  gradient_checkpointing: true
+  lora_save_embeddings: true
+
+data_dir: data/balanced
+variant: text_time
+
+batch_size: 2
+gradient_accumulation_steps: 16
+learning_rate: 0.0003
+weight_decay: 0.01
+warmup_ratio: 0.06
+num_epochs: 10
+max_steps: -1
+
+optimizer: adamw_torch
+lr_scheduler: cosine
+fp16: false
+bf16: true
+
+output_dir: outputs
+logging_steps: 10
+eval_steps: 50
+save_steps: 50
+save_total_limit: 5
+eval_strategy: steps
+
+use_wandb: false
+wandb_project: temporal-llm
+wandb_run_name: tinyllama_lora_balanced_text_time
+
+seed: 42

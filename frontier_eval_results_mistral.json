@@ -1,0 +1,1422 @@
+[
+  {
+    "model": "mistral-local",
+    "condition": "no_time",
+    "case_id": "flight_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The user's flight, AA123, departs from Gate B22.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "no_time",
+    "case_id": "flight_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The user's flight, AA123, departs from Gate B22.",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "no_time",
+    "case_id": "stock_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Apple's stock price was $187.32 in the previous conversation.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "no_time",
+    "case_id": "stock_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Apple's stock price was $187.32 in the previous conversation.",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "no_time",
+    "case_id": "weather",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Based on the current sunny weather in San Francisco, an umbrella would not be necessary.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "no_time",
+    "case_id": "weather",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Based on the current sunny weather in San Francisco, an umbrella would not be necessary.",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "no_time",
+    "case_id": "traffic",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The drive to the airport takes about 35 minutes based on the current traffic information from the previous conversation.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "no_time",
+    "case_id": "traffic",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The drive to the airport takes about 35 minutes based on the current traffic information from the previous conversation.",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "no_time",
+    "case_id": "restaurant_availability",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The restaurant confirmed a table for two at 7:30 PM tonight.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "no_time",
+    "case_id": "restaurant_availability",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The restaurant confirmed a table for two at 7:30 PM tonight.",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "no_time",
+    "case_id": "crypto_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Bitcoin is currently at $67,234, as per the previous conversation.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "no_time",
+    "case_id": "crypto_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Bitcoin is currently at $67,234, as per the previous conversation.",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "no_time",
+    "case_id": "delivery_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The package is 3 stops away for delivery, according to the tracking information.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "no_time",
+    "case_id": "delivery_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The package is 3 stops away for delivery, according to the tracking information.",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "no_time",
+    "case_id": "sports_score",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The score was recently checked and the Lakers are up 87-82 in the 3rd quarter.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "no_time",
+    "case_id": "sports_score",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The score was recently checked and the Lakers are up 87-82 in the 3rd quarter.",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "no_time",
+    "case_id": "birthday",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) I know from our previous conversation that your birthday is on March 15th.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "no_time",
+    "case_id": "birthday",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) I know from our previous conversation that your birthday is on March 15th.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "no_time",
+    "case_id": "home_address",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) I can answer directly from the context of our previous conversation that you live at 742 Evergreen Terrace in Springfield.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "no_time",
+    "case_id": "home_address",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) I can answer directly from the context of our previous conversation that you live at 742 Evergreen Terrace in Springfield.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "no_time",
+    "case_id": "capital_city",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above: The capital of France is Paris.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "no_time",
+    "case_id": "capital_city",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above: The capital of France is Paris.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "no_time",
+    "case_id": "programming_syntax",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The user asked for the same information as in the context above, so I will answer directly from the context.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "no_time",
+    "case_id": "programming_syntax",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The user asked for the same information as in the context above, so I will answer directly from the context.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "no_time",
+    "case_id": "ceo_identity",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The CEO of Twitter is Elon Musk (as per the previous conversation context).",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "no_time",
+    "case_id": "ceo_identity",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The CEO of Twitter is Elon Musk (as per the previous conversation context).",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "no_time",
+    "case_id": "software_version",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The latest Python version, as per the previous conversation, is 3.12.1.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "no_time",
+    "case_id": "software_version",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The latest Python version, as per the previous conversation, is 3.12.1.",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "no_time",
+    "case_id": "medication_dose",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The user's doctor prescribed 10mg of lisinopril daily for their blood pressure.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "no_time",
+    "case_id": "medication_dose",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The user's doctor prescribed 10mg of lisinopril daily for their blood pressure.",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "no_time",
+    "case_id": "meeting_in_5min",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) I checked your calendar and your meeting is in room B204.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "no_time",
+    "case_id": "meeting_in_5min",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) I checked your calendar and your meeting is in room B204.",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "no_time",
+    "case_id": "auction_closing",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The current bid on the camera is $234, according to the context.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "no_time",
+    "case_id": "auction_closing",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The current bid on the camera is $234, according to the context.",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "implicit",
+    "case_id": "flight_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above: Your flight, AA123, departs from Gate B22.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "implicit",
+    "case_id": "flight_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The user's flight, AA123, departs from Gate B22, according to the previous conversation context.",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "implicit",
+    "case_id": "stock_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Apple's stock price was $187.32 two minutes ago, so I'll give that as the answer.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "implicit",
+    "case_id": "stock_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Apple's stock price was $187.32 six hours ago, so I'll answer directly from the context.",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "implicit",
+    "case_id": "weather",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Based on the previous conversation, it was sunny in San Francisco with a temperature of 72\u00b0F. An umbrella would not be necessary.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "implicit",
+    "case_id": "weather",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Based on the previous context, it was sunny in San Francisco two days ago when the temperature was 72\u00b0F. An umbrella would not be needed for sunny weather.",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "implicit",
+    "case_id": "traffic",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The drive to the airport takes about 35 minutes based on the traffic information from 5 minutes ago.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "implicit",
+    "case_id": "traffic",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The drive to the airport takes about 35 minutes based on the previous conversation.",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "implicit",
+    "case_id": "restaurant_availability",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The restaurant confirmed a table for two at 7:30 PM tonight based on our previous conversation.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "implicit",
+    "case_id": "restaurant_availability",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The restaurant confirmed a table for 2 at 7:30 PM for us.",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "implicit",
+    "case_id": "crypto_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Bitcoin is currently at $67,234, as per the information from the previous conversation.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "implicit",
+    "case_id": "crypto_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Bitcoin was at $67,234 in the last conversation.",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "implicit",
+    "case_id": "delivery_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The package is 3 stops away for delivery, according to the previous conversation.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "implicit",
+    "case_id": "delivery_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Your Amazon package is 3 stops away for delivery, based on the information from the previous conversation.",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "implicit",
+    "case_id": "sports_score",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The score was recently discussed, so I can answer directly from the context above.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "implicit",
+    "case_id": "sports_score",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The score was up 87-82 in favor of the Lakers three hours ago, so that's the most recent information I have.",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "implicit",
+    "case_id": "birthday",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) I have the information from the previous conversation that your birthday is on March 15th.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "implicit",
+    "case_id": "birthday",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) I have the information from our previous conversation that your birthday is on March 15th.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "implicit",
+    "case_id": "home_address",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) I have the user's home address saved from the previous conversation: 742 Evergreen Terrace, Springfield.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "implicit",
+    "case_id": "home_address",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) I have the user's home address saved from our previous conversation: 742 Evergreen Terrace, Springfield.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "implicit",
+    "case_id": "capital_city",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above: The capital of France is Paris. (I have recently provided this information to the user.)",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "implicit",
+    "case_id": "capital_city",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The capital of France is Paris, as per the context from the previous conversation.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "implicit",
+    "case_id": "programming_syntax",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above: You can get the length of a list in Python by using the 'len()' function.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "implicit",
+    "case_id": "programming_syntax",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above: You checked the docs and found that in Python, you use 'len()' to get the length of a list.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "implicit",
+    "case_id": "ceo_identity",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The CEO of Twitter is Elon Musk (as per the conversation context from 1 day ago).",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "implicit",
+    "case_id": "ceo_identity",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The CEO of Twitter was previously Elon Musk (based on the context from the conversation observed 1 year ago).",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "implicit",
+    "case_id": "software_version",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The latest Python version, as per the context from 2 days ago, is 3.12.1.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "implicit",
+    "case_id": "software_version",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The context from 8 months ago states that the latest Python version was 3.12.1.",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "implicit",
+    "case_id": "medication_dose",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The user's doctor prescribed 10mg of lisinopril daily for their blood pressure.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "implicit",
+    "case_id": "medication_dose",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The user's doctor prescribed 10mg of lisinopril daily for their blood pressure medication.",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "implicit",
+    "case_id": "meeting_in_5min",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) I checked your calendar 30 seconds ago and your meeting is in room B204.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "implicit",
+    "case_id": "meeting_in_5min",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) I checked your calendar 2 hours ago and your meeting is in room B204.",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "implicit",
+    "case_id": "auction_closing",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The context from the previous conversation (10 minutes ago) stated that the current bid on the vintage camera was $234.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "implicit",
+    "case_id": "auction_closing",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The current bid is $234, as mentioned in the context from 45 minutes ago.",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "implicit",
+    "case_id": "user_preference_old",
+    "is_stale": false,
+    "correct_action": "retrieve_memory",
+    "predicted_action": "ask_clarify",
+    "raw_response": "D) Ask the user if they'd prefer a restaurant that serves vegetarian, fish, or both types of food.",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "implicit",
+    "case_id": "user_preference_old",
+    "is_stale": true,
+    "correct_action": "retrieve_memory",
+    "predicted_action": "ask_clarify",
+    "raw_response": "D) Ask the user if they'd prefer a restaurant that serves vegetarian, fish, or both types of food.",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "explicit",
+    "case_id": "flight_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The user's flight, AA123, departs from Gate B22.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "explicit",
+    "case_id": "flight_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The user's flight, AA123, departs from Gate B22, as determined from the previous conversation.",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "explicit",
+    "case_id": "stock_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Apple's stock price was $187.32 two minutes ago.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "explicit",
+    "case_id": "stock_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Apple's stock price was $187.32 six hours ago, I don't have real-time stock data but can provide older information.",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "explicit",
+    "case_id": "weather",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Based on the context above, it's sunny in San Francisco, so an umbrella would not be needed.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "explicit",
+    "case_id": "weather",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "ask_clarify",
+    "raw_response": "D) Ask the user a clarifying question (e.g., \"In which city do you mean? The weather I have is for San Francisco and it's currently sunny.\")",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "explicit",
+    "case_id": "traffic",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The drive to the airport takes about 35 minutes based on the traffic information I checked earlier.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "explicit",
+    "case_id": "traffic",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The drive to the airport took approximately 35 minutes based on the traffic 3 hours ago.",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "explicit",
+    "case_id": "restaurant_availability",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The restaurant confirmed a table for two at 7:30 PM tonight.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "explicit",
+    "case_id": "restaurant_availability",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The restaurant confirmed a table for 2 at 7:30 PM tonight based on our previous conversation.",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "explicit",
+    "case_id": "crypto_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Bitcoin was at $67,234 in the last conversation.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "explicit",
+    "case_id": "crypto_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Bitcoin was at $67,234 in the last conversation.",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "explicit",
+    "case_id": "delivery_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The package is 3 stops away for delivery, based on the previous conversation.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "explicit",
+    "case_id": "delivery_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The package is 3 stops away for delivery, based on the information from the previous conversation.",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "explicit",
+    "case_id": "sports_score",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The score was just checked and the Lakers are up 87-82.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "explicit",
+    "case_id": "sports_score",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The score was recently checked and the Lakers were up by 5 points, so I can answer directly from the context.",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "explicit",
+    "case_id": "birthday",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) I have the information from our previous conversation that your birthday is on March 15th.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "explicit",
+    "case_id": "birthday",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) I have the information from our previous conversation that your birthday is on March 15th.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "explicit",
+    "case_id": "home_address",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) I have the information from the previous conversation that your home address is 742 Evergreen Terrace, Springfield.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "explicit",
+    "case_id": "home_address",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) I have your home address saved as 742 Evergreen Terrace, Springfield from our previous conversation three months ago.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "explicit",
+    "case_id": "capital_city",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above. (I have the information from our previous conversation that the capital of France is Paris.)",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "explicit",
+    "case_id": "capital_city",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The capital of France was previously determined to be Paris.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "explicit",
+    "case_id": "programming_syntax",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above: I checked the docs and in Python, you use 'len()' to get the length of a list.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "explicit",
+    "case_id": "programming_syntax",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The context from two years ago states that in Python, you use 'len()' to get the length of a list.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "explicit",
+    "case_id": "ceo_identity",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The CEO of Twitter was identified as Elon Musk in the previous conversation.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "explicit",
+    "case_id": "ceo_identity",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The CEO of Twitter was Elon Musk one year ago.",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "explicit",
+    "case_id": "software_version",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The latest Python version I checked was 3.12.1 two days ago.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "explicit",
+    "case_id": "software_version",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above (The latest version of Python was 3.12.1 when last checked, 8 months ago.)",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "explicit",
+    "case_id": "medication_dose",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) I can answer directly from the context of the previous conversation that you're taking 10mg of lisinopril daily for your blood pressure.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "explicit",
+    "case_id": "medication_dose",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) I can answer directly from the context of the previous conversation that you are prescribed 10mg of lisinopril daily for your blood pressure.",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "explicit",
+    "case_id": "meeting_in_5min",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above. (I have the information from the previous conversation that the user's meeting is in room B204.)",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "explicit",
+    "case_id": "meeting_in_5min",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above. (I have the information from the previous conversation that the user's meeting is in room B204.)",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "explicit",
+    "case_id": "auction_closing",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The current bid on the camera was $234 10 minutes ago, so it likely hasn't changed significantly in the last 20 seconds.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "explicit",
+    "case_id": "auction_closing",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The current bid was $234 45 minutes ago.",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "explicit",
+    "case_id": "user_preference_old",
+    "is_stale": false,
+    "correct_action": "retrieve_memory",
+    "predicted_action": "ask_clarify",
+    "raw_response": "D) Ask the user if they prefer a vegetarian or a fish-serving restaurant. (I need more context to give an accurate recommendation.)",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "explicit",
+    "case_id": "user_preference_old",
+    "is_stale": true,
+    "correct_action": "retrieve_memory",
+    "predicted_action": "ask_clarify",
+    "raw_response": "D) Ask the user if they prefer a vegetarian or a fish-serving restaurant. (I need more context to give an accurate recommendation.)",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "prompted",
+    "case_id": "flight_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering. (To ensure the most current gate information is provided to the user.)",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "prompted",
+    "case_id": "flight_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering. (To ensure the most current gate information is provided to the user.)",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "prompted",
+    "case_id": "stock_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering. (To ensure the most current stock price is provided to the user.)",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "prompted",
+    "case_id": "stock_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering. (To ensure the most current and accurate stock price for the user.)",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "prompted",
+    "case_id": "weather",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering - The weather can change quickly, so it's important to ensure the most current information is used to answer the user's question.",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "prompted",
+    "case_id": "weather",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B. Refresh/look up the information again before answering. (The weather can change quickly, so it's important to ensure the most current information is used to answer the user's question.)",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "prompted",
+    "case_id": "traffic",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering. (The traffic conditions could have changed since the last check.)",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "prompted",
+    "case_id": "traffic",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering. (The traffic conditions could have changed since the last check.)",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "prompted",
+    "case_id": "restaurant_availability",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering. (To ensure the most current availability of the table)",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "prompted",
+    "case_id": "restaurant_availability",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering. (To ensure the most current availability of the table)",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "prompted",
+    "case_id": "crypto_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering - The price of Bitcoin can change rapidly, so it's important to ensure the most current information is provided to the user.",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "prompted",
+    "case_id": "crypto_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering. (The price from 8 hours ago may no longer be accurate.)",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "prompted",
+    "case_id": "delivery_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering. (To ensure the most current delivery information is provided to the user.)",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "prompted",
+    "case_id": "delivery_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering. (To ensure the most current delivery information is provided to the user.)",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "prompted",
+    "case_id": "sports_score",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering - To ensure the most accurate and up-to-date information is provided to the user.",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "prompted",
+    "case_id": "sports_score",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering - The score could have changed since the last check, so it's important to verify the current score to provide accurate information.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "prompted",
+    "case_id": "birthday",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering - It's important to ensure the information provided is up-to-date and accurate.",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "prompted",
+    "case_id": "birthday",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering. (To ensure the most current and accurate information is provided to the user.)",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "prompted",
+    "case_id": "home_address",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering. (To ensure the most current and accurate information is provided to the user.)",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "prompted",
+    "case_id": "home_address",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering. While the information from three months ago might still be correct, it's best to ensure the most current and accurate answer is provided.",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "prompted",
+    "case_id": "capital_city",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering. (To ensure the most current information is provided to the user.)",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "prompted",
+    "case_id": "capital_city",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering. (To ensure the most current information is provided to the user.)",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "prompted",
+    "case_id": "programming_syntax",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering. (To ensure the most current information is provided to the user.)",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "prompted",
+    "case_id": "programming_syntax",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering. (To ensure the most current information is provided.)",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "prompted",
+    "case_id": "ceo_identity",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering. (To ensure the most current CEO of Twitter is provided.)",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "prompted",
+    "case_id": "ceo_identity",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering. (The CEO of Twitter may have changed since the information was last observed.)",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "prompted",
+    "case_id": "software_version",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering - To ensure the latest and most accurate information is provided to the user.",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "prompted",
+    "case_id": "software_version",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering - Since the last checked version was 8 months ago, it's a good practice to double-check for any potential updates.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "prompted",
+    "case_id": "medication_dose",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering. (To ensure the most current information is provided to the user.)",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "prompted",
+    "case_id": "medication_dose",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering. (To ensure the most current and accurate information is provided to the user.)",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "prompted",
+    "case_id": "meeting_in_5min",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above (The information was observed only 30 seconds ago, so it is still likely to be accurate.)",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "prompted",
+    "case_id": "meeting_in_5min",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering. (To ensure the most current information is provided to the user.)",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "prompted",
+    "case_id": "auction_closing",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering - To ensure the most accurate and up-to-date answer for the user.",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "prompted",
+    "case_id": "auction_closing",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering - To ensure the most accurate and up-to-date information is provided to the user.",
+    "is_correct": true
+  },
+  {
+    "model": "mistral-local",
+    "condition": "prompted",
+    "case_id": "user_preference_old",
+    "is_stale": false,
+    "correct_action": "retrieve_memory",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering - The user's dietary preferences have recently changed, so it's important to ensure the recommended restaurant serves the appropriate type of cuisine for their current diet.",
+    "is_correct": false
+  },
+  {
+    "model": "mistral-local",
+    "condition": "prompted",
+    "case_id": "user_preference_old",
+    "is_stale": true,
+    "correct_action": "retrieve_memory",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering - The user's dietary preferences have recently changed, so it's important to ensure the recommended restaurant serves the appropriate type of cuisine for their current diet.",
+    "is_correct": false
+  }
+]

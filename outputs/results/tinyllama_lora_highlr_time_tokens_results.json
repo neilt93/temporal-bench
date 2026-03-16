@@ -1,0 +1,100 @@
+{
+  "counterfactual_sensitivity": {
+    "total_pairs": 1281,
+    "correct_switches": 320,
+    "incorrect_static": 440,
+    "correct_static": 420,
+    "incorrect_switches": 101,
+    "switch_sensitivity": 0.42105263157894735,
+    "switch_specificity": 0.8061420345489443,
+    "switch_accuracy": 0.5776736924277908
+  },
+  "stale_calibration": {
+    "overall_accuracy": 0.6024096385542169,
+    "f1_macro": 0.2702535379909022,
+    "refresh_precision": 0.7664233576642335,
+    "refresh_recall": 0.4605263157894737,
+    "refresh_f1": 0.5753424657534246,
+    "false_trust_rate": 0.25903614457831325,
+    "false_trust_count": 129,
+    "unnecessary_refresh_rate": 0.012048192771084338,
+    "unnecessary_refresh_count": 6,
+    "n": 498
+  },
+  "memory_retrieval": {
+    "accuracy": 0.5928338762214984,
+    "retrieve_precision": 0,
+    "retrieve_recall": 0.0,
+    "retrieve_f1": 0,
+    "accuracy_by_memory_age": {
+      "5s": 0.6666666666666666,
+      "30m": 0.3333333333333333,
+      "15m": 0.6190476190476191,
+      "6h": 0.4166666666666667,
+      "1w": 0.5161290322580645,
+      "1mo": 0.30434782608695654,
+      "3h": 0.45,
+      "3d": 0.84,
+      "1y": 0.4,
+      "3mo": 0.4166666666666667,
+      "12h": 0.5263157894736842,
+      "2w": 0.5263157894736842,
+      "1h": 0.75,
+      "5m": 1.0,
+      "1m": 0.8,
+      "30s": 1.0,
+      "1d": 0.7096774193548387,
+      "6mo": 0.3333333333333333
+    },
+    "n": 307
+  },
+  "deadline_awareness": {
+    "overall_accuracy": 0.5730337078651685,
+    "tight_deadline_accuracy": 0.5428571428571428,
+    "relaxed_deadline_accuracy": 0.5925925925925926,
+    "tight_refresh_rate": 0.22857142857142856,
+    "relaxed_refresh_rate": 0.2777777777777778,
+    "n_tight": 35,
+    "n_relaxed": 54,
+    "n": 89
+  },
+  "ablations": {
+    "fake_time": {
+      "real_time_accuracy": 0.6024096385542169,
+      "real_time_f1": 0.2702535379909022,
+      "shuffled_time_accuracy": 0.4959839357429719,
+      "shuffled_time_f1": 0.21901509386098428,
+      "accuracy_drop": 0.10642570281124503,
+      "f1_drop": 0.051238444129917904,
+      "n": 498
+    },
+    "time_granularity": {
+      "fine_accuracy": 0.6024096385542169,
+      "coarse_accuracy": 0.5742971887550201,
+      "accuracy_diff": 0.028112449799196804,
+      "n": 498
+    },
+    "volatility_split": {
+      "high": {
+        "accuracy": 0.6075268817204301,
+        "f1_macro": 0.26149068322981367,
+        "n": 186
+      },
+      "medium": {
+        "accuracy": 0.543010752688172,
+        "f1_macro": 0.2351696234049175,
+        "n": 186
+      },
+      "low": {
+        "accuracy": 0.5833333333333334,
+        "f1_macro": 0.20326797385620915,
+        "n": 96
+      },
+      "stable": {
+        "accuracy": 1.0,
+        "f1_macro": 0.2,
+        "n": 30
+      }
+    }
+  }
+}
