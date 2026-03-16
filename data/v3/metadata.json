@@ -1,0 +1,45 @@
+{
+  "fact_types": [
+    "flight_status",
+    "stock_price",
+    "traffic",
+    "live_score",
+    "weather_now",
+    "meeting_schedule",
+    "project_status",
+    "weather_forecast",
+    "package_tracking",
+    "restaurant_availability",
+    "company_info",
+    "personal_preference",
+    "contact_info",
+    "historical_fact",
+    "math_constant",
+    "geography"
+  ],
+  "volatility_levels": [
+    "high",
+    "medium",
+    "low",
+    "stable"
+  ],
+  "actions": [
+    "answer_directly",
+    "refresh",
+    "retrieve_memory",
+    "ask_clarify",
+    "abstain"
+  ],
+  "counterfactual_group_size": 6,
+  "examples_per_fact_type": 80,
+  "split_ratios": [
+    0.7,
+    0.15,
+    0.15000000000000005
+  ],
+  "counts": {
+    "train": 4620,
+    "val": 990,
+    "test": 990
+  }
+}

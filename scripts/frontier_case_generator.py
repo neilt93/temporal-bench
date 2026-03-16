@@ -184,7 +184,7 @@ def main():
         by_cat[c["category"]] += 1
         by_fact[c["fact_type"]] += 1
 
-    print(f"Generated {len(cases)} frontier eval cases → {args.output}")
+    print(f"Generated {len(cases)} frontier eval cases -> {args.output}")
     print(f"\nBy category:")
     for cat, count in sorted(by_cat.items()):
         print(f"  {cat}: {count}")
