@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.3.2)  16 MAR 2026 13:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.3.2)  16 MAR 2026 17:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -446,32 +446,32 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 t/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
 [2] [3{C:/Users/neilt/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm
 -super-ts1.enc}]
-Overfull \hbox (11.75035pt too wide) in paragraph at lines 170--215
+Overfull \hbox (11.75035pt too wide) in paragraph at lines 167--220
  [][] 
  []
 
-<figures/fig1_blind_spot.pdf, id=162, 641.62022pt x 316.69987pt>
+<figures/fig1_blind_spot.pdf, id=162, 713.89023pt x 315.79706pt>
 File: figures/fig1_blind_spot.pdf Graphic file (type pdf)
 <use figures/fig1_blind_spot.pdf>
-Package pdftex.def Info: figures/fig1_blind_spot.pdf  used on input line 219.
-(pdftex.def)             Requested size: 452.9679pt x 223.58754pt.
+Package pdftex.def Info: figures/fig1_blind_spot.pdf  used on input line 224.
+(pdftex.def)             Requested size: 452.9679pt x 200.3747pt.
 [4]
 <figures/fig2_false_trust.pdf, id=169, 569.17772pt x 280.03308pt>
 File: figures/fig2_false_trust.pdf Graphic file (type pdf)
 <use figures/fig2_false_trust.pdf>
-Package pdftex.def Info: figures/fig2_false_trust.pdf  used on input line 241.
+Package pdftex.def Info: figures/fig2_false_trust.pdf  used on input line 246.
 (pdftex.def)             Requested size: 385.02547pt x 189.43718pt.
 <figures/fig4_gpt4o_conditions.pdf, id=170, 496.90768pt x 280.03308pt>
 File: figures/fig4_gpt4o_conditions.pdf Graphic file (type pdf)
 <use figures/fig4_gpt4o_conditions.pdf>
 Package pdftex.def Info: figures/fig4_gpt4o_conditions.pdf  used on input line 
-262.
+267.
 (pdftex.def)             Requested size: 339.72592pt x 191.44974pt.
  [5 <./figures/fig1_blind_spot.pdf>]
-<figures/fig3_tradeoff.pdf, id=234, 713.71771pt x 279.43187pt>
+<figures/fig3_tradeoff.pdf, id=229, 713.71771pt x 279.43187pt>
 File: figures/fig3_tradeoff.pdf Graphic file (type pdf)
 <use figures/fig3_tradeoff.pdf>
-Package pdftex.def Info: figures/fig3_tradeoff.pdf  used on input line 290.
+Package pdftex.def Info: figures/fig3_tradeoff.pdf  used on input line 295.
 (pdftex.def)             Requested size: 452.9679pt x 177.34772pt.
 
 
@@ -490,30 +490,29 @@ Package rerunfilecheck Info: File `paper_frontier.out' has not changed.
 Here is how much of TeX's memory you used:
  11511 strings out of 467871
  174513 string characters out of 5418377
- 609007 words of memory out of 5000000
+ 611029 words of memory out of 5000000
  40168 multiletter control sequences out of 15000+600000
  644585 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,10n,79p,473b,562s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,10n,79p,473b,560s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/neilt/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmmi10.pfb><C:/Users/neilt/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmsy10.pfb><C:/Users/neilt/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmsy8.pfb><C:/Users/neilt/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/cm-super/sfbx1000.pfb><C:/Users/neilt/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/cm-super/sfbx1095.pfb><C:/Users/neilt/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Users/neilt/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx1440.pfb><C:/Users/neilt/App
-Data/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1000.pfb><C:/Users/n
-eilt/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1095.pfb><C:
-/Users/neilt/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1200
+ublic/cm-super/sfbx1000.pfb><C:/Users/neilt/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/cm-super/sfbx1095.pfb><C:/Users/neilt/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Users/neilt/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/cm-super/sfbx1440.pfb><C:/Users/neilt/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1000.pfb><C:/Users/neilt/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1095.pfb><C:/Users/n
+eilt/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1200.pfb><C:
+/Users/neilt/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1728
 .pfb><C:/Users/neilt/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/
-sfrm1728.pfb><C:/Users/neilt/AppData/Local/Programs/MiKTeX/fonts/type1/public/c
-m-super/sfti1000.pfb><C:/Users/neilt/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/cm-super/sfti1095.pfb><C:/Users/neilt/AppData/Local/Programs/MiKTeX/font
-s/type1/public/cm-super/sftt1095.pfb>
-Output written on paper_frontier.pdf (10 pages, 407179 bytes).
+sfti1000.pfb><C:/Users/neilt/AppData/Local/Programs/MiKTeX/fonts/type1/public/c
+m-super/sfti1095.pfb><C:/Users/neilt/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/cm-super/sftt1095.pfb>
+Output written on paper_frontier.pdf (10 pages, 396481 bytes).
 PDF statistics:
- 503 PDF objects out of 1000 (max. 8388607)
+ 493 PDF objects out of 1000 (max. 8388607)
  75 named destinations out of 1000 (max. 500000)
  165 words of extra memory for PDF output out of 10000 (max. 10000000)
 

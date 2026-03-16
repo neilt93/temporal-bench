@@ -32,8 +32,7 @@ Without annotations, models produce the same action regardless of whether contex
 Adding a single natural-language annotation (``Time since observed: 4 hours ago'') raises switch sensitivity to 31--100\% and substantially reduces false trust in stale information.
 
 We call this the \emph{temporal blind spot}: the consistent inability of language models, across the models and tasks we tested, to assess context reliability based on age -- despite possessing latent temporal reasoning that activates when elapsed time is made salient.
-On 18 hand-crafted scenarios, GPT-4o reaches 100\% switch sensitivity with explicit annotations.
-On a larger 96-case generated benchmark, GPT-5.4 reaches 66\% and Claude Opus 4.6 reaches 64\%, with false trust dropping from 27--42\% to 7--10\%.
+On a 96-case generated benchmark, GPT-5.4 reaches 66\% switch sensitivity with explicit annotations, Claude Opus 4.6 reaches 64\%, and Claude Sonnet reaches 63\%, with false trust dropping from 27--42\% to 7--14\%.
 The fix requires no retraining -- only a prompt-layer change.
 \end{abstract}
 
@@ -52,9 +51,7 @@ Without elapsed-time annotations, all models exhibit near-zero switch sensitivit
 
 The fix is simple.
 Adding a single line -- ``Time since this information was observed: 4 hours ago'' -- causes models to differentiate fresh from stale context.
-On 18 hand-crafted scenarios, GPT-4o reaches 100\% switch sensitivity.
-On a larger 96-case generated benchmark, GPT-5.4 and Claude Opus 4.6 reach 64--66\%.
-False trust drops substantially across all models tested.
+On a 96-case generated benchmark, GPT-5.4 and Claude Opus 4.6 reach 64--66\% switch sensitivity, with false trust dropping from 27--42\% to 7--14\%.
 
 We call this the \emph{temporal blind spot}: the inability of language models to assess context reliability based on age, despite possessing latent temporal reasoning capabilities that activate when elapsed time is made explicit.
 
@@ -154,7 +151,7 @@ We evaluate seven models spanning three providers and four capability tiers:
 We additionally evaluate GPT-5.4 and Claude Opus 4.6 on a \textbf{96-case generated benchmark} produced programmatically from our taxonomy of 16 fact types, balanced across four volatility levels (24 cases each).
 This larger benchmark tests whether the effect observed on hand-crafted scenarios generalises to a broader, more diverse set.
 
-Total evaluation: 1{,}406 API calls across all models, conditions, scenarios, and fresh/stale variants.
+Total evaluation: 1{,}406 API calls across all models, conditions, scenarios, and fresh/stale variants (638 on the 18-case benchmark, 768 on the 96-case benchmark).
 
 % ============================================================
 \section{Results}
@@ -203,9 +200,17 @@ Table~\ref{tab:frontier} presents the full results across all models and conditi
 \midrule
 \multicolumn{7}{l}{\emph{96 generated scenarios, 2 conditions}} \\
 \midrule
+\multirow{2}{*}{GPT-4o}
+  & No time   & 192 & 0.526 & 0.034 & 0.339 & 0.318 \\
+  & Explicit  & 192 & 0.661 & 0.407 & 0.136 & 0.252 \\
+\midrule
 \multirow{2}{*}{GPT-5.4}
   & No time   & 192 & 0.573 & 0.051 & 0.424 & 0.290 \\
   & Explicit  & 192 & 0.760 & 0.661 & 0.102 & 0.131 \\
+\midrule
+\multirow{2}{*}{Claude Sonnet 4}
+  & No time   & 192 & 0.547 & 0.000 & 0.390 & 0.318 \\
+  & Explicit  & 192 & 0.682 & 0.627 & 0.068 & 0.178 \\
 \midrule
 \multirow{2}{*}{Claude Opus 4.6}
   & No time   & 192 & 0.547 & 0.000 & 0.271 & 0.383 \\
@@ -248,10 +253,10 @@ They simply do not use temporal context to assess whether cached information is 
 Adding a clearly labelled elapsed-time annotation (``Time since this information was observed: 4 hours ago'') produces large improvements:
 
 \begin{itemize}
-    \item \textbf{GPT-4o} (18 cases): 7.7\% $\to$ 100\% switch sensitivity. False trust: 69.2\% $\to$ 0\%.
-    \item \textbf{Claude Sonnet 4} (18 cases): 0\% $\to$ 76.9\%. False trust: 84.6\% $\to$ 0\%.
     \item \textbf{GPT-5.4} (96 cases): 5.1\% $\to$ 66.1\%. False trust: 42.4\% $\to$ 10.2\%.
     \item \textbf{Claude Opus 4.6} (96 cases): 0\% $\to$ 64.4\%. False trust: 27.1\% $\to$ 8.5\%.
+    \item \textbf{Claude Sonnet 4} (96 cases): 0\% $\to$ 62.7\%. False trust: 39.0\% $\to$ 6.8\%.
+    \item \textbf{GPT-4o} (96 cases): 3.4\% $\to$ 40.7\%. False trust: 33.9\% $\to$ 13.6\%.
 \end{itemize}
 
 The temporal reasoning capability exists latently in these models.
@@ -311,7 +316,7 @@ Table~\ref{tab:cross} summarises switch sensitivity across all seven models.
 
 \begin{table}[h]
 \centering
-\caption{Switch sensitivity by model in the no-time condition vs.\ the explicit-time condition. The blind spot is consistent across models; the benefit of annotation scales with model capability. Models marked $\dagger$ were evaluated on the larger 96-case benchmark.}
+\caption{Switch sensitivity by model in the no-time condition vs.\ the explicit-time condition. Models with 96-case results are shown on the generated benchmark; others on the 18-case hand-crafted set. The blind spot is consistent across all models; the benefit of annotation varies.}
 \label{tab:cross}
 \begin{tabular}{lccc}
 \toprule
@@ -320,10 +325,11 @@ Table~\ref{tab:cross} summarises switch sensitivity across all seven models.
 Mistral-7B (local) & 18 & 0.0\% & 30.8\% \\
 GPT-4o-mini & 18 & 0.0\% & 53.8\% \\
 Claude Haiku 4.5 & 18 & 0.0\% & 38.5\% \\
-Claude Sonnet 4 & 18 & 0.0\% & 76.9\% \\
-GPT-4o & 18 & 7.7\% & 100.0\% \\
-GPT-5.4$^\dagger$ & 96 & 5.1\% & 66.1\% \\
-Claude Opus 4.6$^\dagger$ & 96 & 0.0\% & 64.4\% \\
+\midrule
+GPT-4o & 96 & 3.4\% & 40.7\% \\
+Claude Sonnet 4 & 96 & 0.0\% & 62.7\% \\
+GPT-5.4 & 96 & 5.1\% & 66.1\% \\
+Claude Opus 4.6 & 96 & 0.0\% & 64.4\% \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -336,7 +342,7 @@ Within our evaluation, temporal sensitivity to cached context age does not appea
 It must be explicitly provided in the input.
 
 \paragraph{The benefit of annotation scales with capability.}
-While all models improve with explicit time annotations, the magnitude of improvement correlates with model capability: GPT-4o reaches 100\% on hand-crafted cases, GPT-5.4 and Claude Opus 4.6 reach 64--66\% on the harder generated benchmark, while Mistral-7B reaches only 30.8\%.
+While all models improve with explicit time annotations, the magnitude of improvement correlates with model capability: On the 96-case generated benchmark, GPT-5.4, Claude Opus 4.6, and Claude Sonnet reach 63--66\%, GPT-4o reaches 41\%, while Mistral-7B reaches 31\% on the hand-crafted set.
 More capable models appear to have stronger latent temporal reasoning that activates more fully when given explicit elapsed time.
 This is consistent with a \emph{representation bottleneck}: the reasoning ability is present, but requires the right input format to engage.
 
@@ -346,7 +352,7 @@ This is consistent with a \emph{representation bottleneck}: the reasoning abilit
 
 \paragraph{Representation gap, not reasoning gap.}
 The most striking aspect of our results is the size of the no-time to explicit gap.
-GPT-4o goes from 7.7\% to 100\% switch sensitivity on 18 hand-crafted cases; on the larger 96-case benchmark, GPT-5.4 goes from 5.1\% to 66.1\% and Claude Opus 4.6 from 0\% to 64.4\%.
+On the 96-case generated benchmark, GPT-5.4 goes from 5.1\% to 66.1\% switch sensitivity, Claude Opus 4.6 from 0\% to 64.4\%, and Claude Sonnet from 0\% to 62.7\%.
 These models clearly possess substantial ability to reason about temporal context -- they simply do not apply it unless elapsed time is surfaced explicitly.
 
 We hypothesise that this is because training data contains abundant timestamps as \emph{facts about events} (``The meeting is at 3 PM'') but rarely presents elapsed time as a \emph{decision signal about context reliability} (``This information is 4 hours old and may be unreliable'').
@@ -378,9 +384,9 @@ A user who receives stale information presented as current may make costly decis
 \paragraph{Limitations.}
 Our evaluation has several limitations that should inform interpretation of the results.
 
-\emph{Scale:} Five models are evaluated on 18 hand-crafted scenarios; two (GPT-5.4 and Claude Opus 4.6) are additionally evaluated on a larger 96-case generated benchmark.
-Effect sizes are smaller on the generated benchmark (64--66\% vs.\ 100\%), suggesting the hand-crafted scenarios may overstate the effect.
-Evaluating all models on the larger benchmark is ongoing work.
+\emph{Scale:} Five models are evaluated on 18 hand-crafted scenarios; four (GPT-4o, GPT-5.4, Claude Sonnet, Claude Opus 4.6) are additionally evaluated on a larger 96-case generated benchmark.
+Effect sizes are smaller on the generated benchmark (41--66\% vs.\ 31--100\% on hand-crafted), suggesting the hand-crafted scenarios may overstate the effect for some models.
+Evaluating the remaining models (Haiku, GPT-4o-mini, Mistral) on the larger benchmark is straightforward but not yet completed.
 
 \emph{Ecological validity:} Our scenarios are realistic but synthetic.
 We do not test in deployed RAG or agent systems, where models must jointly reason about content relevance, temporal freshness, and user intent.
@@ -397,7 +403,7 @@ We partially control for this with the implicit condition (which adds temporal i
 \section{Conclusion}
 
 Across the models and stale-context tasks we tested, language models show near-zero sensitivity to elapsed time (0--8\%) unless age is explicitly represented in the prompt.
-Adding a single natural-language annotation of how long ago information was observed raises sensitivity to 31--100\%, with false trust dropping from 27--100\% to 0--10\% for the most capable models.
+Adding a single natural-language annotation of how long ago information was observed raises sensitivity to 31--66\% on a diverse generated benchmark (and higher on hand-crafted scenarios), with false trust dropping from 27--42\% to 7--14\% for the most capable models.
 
 This pattern is consistent across seven models from three providers, spanning four capability tiers and two benchmark sizes (18 hand-crafted and 96 generated scenarios).
 It does not diminish with scale: GPT-5.4 shows the same near-zero baseline sensitivity as smaller models.
