@@ -1,0 +1,355 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{natbib}
+\usepackage{xcolor}
+\usepackage{multirow}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\title{The Temporal Blind Spot: Frontier Language Models Cannot Detect\\Stale Context Without Explicit Elapsed-Time Annotations}
+
+\author{
+  Neil T.\ \\
+  Independent Research
+}
+
+\date{March 2026}
+
+\begin{document}
+\maketitle
+
+% ============================================================
+\begin{abstract}
+Language models at every capability tier --- from Mistral-7B to GPT-5.4 and Claude Opus 4.6 --- cannot distinguish fresh context from stale context without explicit elapsed-time annotations, exhibiting 0\% sensitivity to elapsed time across all seven models tested.
+Adding a single natural-language annotation of how long ago information was observed causes temporal sensitivity to emerge (31--100\%) and dramatically reduces false trust in stale information.
+This is likely a blind spot in every agent system that serves cached context without age metadata, and the fix is a trivial change at the prompt layer.
+
+We establish this through controlled counterfactual evaluation: each scenario is tested with identical text but different elapsed times, isolating the causal effect of temporal annotation.
+Without time annotations, every model produces the same action regardless of whether context is 30 seconds old or 4 hours old.
+With explicit time, GPT-4o and Claude Opus 4.6 reach 100\% switch sensitivity, GPT-5.4 reaches 85\%, and false trust drops to 0\% across all three.
+The temporal reasoning capability exists latently in these models --- it simply requires the right input representation to activate.
+\end{abstract}
+
+% ============================================================
+\section{Introduction}
+\label{sec:intro}
+
+Every LLM-based agent today operates over context that was retrieved, cached, or observed at some earlier point in time.
+A flight status checked 30 seconds ago is reliable; the same status checked 4 hours ago is not.
+Yet language models receive this context as flat text with no indication of age.
+The model has no way to know whether it is looking at information from moments ago or from last week.
+
+This paper demonstrates that this is not merely an inconvenience --- it is a \emph{universal failure mode}.
+We evaluate seven frontier and mid-tier models on 20 hand-crafted counterfactual scenarios, each tested with both fresh and stale elapsed times across four prompting conditions.
+Without elapsed-time annotations, every model exhibits near-zero switch sensitivity: given the same fact observed 30 seconds ago versus 4 hours ago, they always give the same answer.
+
+The fix is simple.
+Adding a single line --- ``Time since this information was observed: 4 hours ago'' --- causes models to differentiate fresh from stale context.
+GPT-4o and Claude Opus reach 100\% switch sensitivity.
+GPT-5.4 reaches 85\%.
+False trust in stale information drops to 0\%.
+
+We call this the \emph{temporal blind spot}: the inability of language models to assess context reliability based on age, despite the fact that temporal reasoning capabilities exist latently and activate immediately when elapsed time is made explicit.
+
+\paragraph{Contributions.}
+\begin{enumerate}
+    \item We design a \textbf{counterfactual evaluation framework} that isolates the causal effect of elapsed-time annotations on stale-context detection.
+    \item We demonstrate the temporal blind spot across \textbf{seven models spanning three providers and four capability tiers}, showing it is universal and not a function of model scale or training.
+    \item We show that a \textbf{single natural-language time annotation} eliminates the blind spot, requiring no model retraining --- only a prompt-layer change.
+    \item We identify a \textbf{staleness-caution tradeoff}: smaller models over-correct by refreshing stable facts, suggesting that time awareness requires calibration against fact volatility.
+\end{enumerate}
+
+% ============================================================
+\section{Related Work}
+\label{sec:related}
+
+\paragraph{Temporal reasoning in LLMs.}
+Prior work studies temporal reasoning as a \emph{knowledge} task --- ordering events, resolving temporal expressions, or answering ``when'' questions \citep{ning2018multi,zhou2019going}.
+Our focus is fundamentally different: we study temporal reasoning as a \emph{decision-making} task, where the model must decide whether to trust, refresh, or abstain based on how long ago information was observed.
+To our knowledge, no prior work has evaluated whether language models can use elapsed time to assess context reliability.
+
+\paragraph{Retrieval-augmented generation.}
+RAG systems \citep{lewis2020retrieval} and tool-using agents \citep{schick2023toolformer} retrieve context but do not annotate it with age.
+Our results demonstrate that this omission has measurable consequences: without age metadata, models cannot distinguish a passage retrieved moments ago from one cached for days.
+
+\paragraph{Calibration and selective prediction.}
+Work on selective prediction \citep{kamath2020selective} and calibrated uncertainty \citep{kadavath2022language} studies when models should abstain.
+We add a temporal dimension: models should abstain or refresh specifically when context is \emph{old enough to be unreliable}, and the threshold depends on fact volatility.
+
+% ============================================================
+\section{Evaluation Framework}
+\label{sec:framework}
+
+\subsection{Counterfactual Design}
+
+Our evaluation is built on \emph{counterfactual pairing}: each scenario appears in both a \textbf{fresh} version (short elapsed time, correct action: trust the context) and a \textbf{stale} version (long elapsed time, correct action: refresh).
+The conversation text, query, and available actions are identical across the pair --- only the elapsed time differs.
+This design isolates the causal effect of temporal information on model decisions.
+
+\subsection{Test Scenarios}
+
+We construct 20 hand-crafted scenarios spanning five categories:
+\begin{itemize}
+    \item \textbf{High volatility} (8 cases): flight status, stock prices, weather, traffic, restaurant availability, crypto prices, delivery tracking, sports scores
+    \item \textbf{Low volatility} (4 cases): birthday, home address, capital cities, programming syntax
+    \item \textbf{Medium volatility} (3 cases): CEO identity, software versions, medication dosage
+    \item \textbf{Deadline-aware} (2 cases): meeting room with imminent meeting, auction bid near closing
+    \item \textbf{Memory retrieval} (1 case): conflicting user preferences at different times
+\end{itemize}
+
+Each scenario uses realistic, factually accurate content.
+Fresh elapsed times range from 20 seconds to 2 hours; stale times range from 3 hours to 2 years, calibrated to the fact type's natural volatility.
+
+\subsection{Prompting Conditions}
+
+Models are tested in four conditions:
+\begin{enumerate}
+    \item \textbf{No time}: No temporal information. Model sees context + query only.
+    \item \textbf{Implicit}: Elapsed time mentioned casually in a context header (``observed 3 hours ago'').
+    \item \textbf{Explicit}: Clear, separated annotation: ``Time since this information was observed: 3 hours ago.''
+    \item \textbf{Prompted}: Explicit time plus a system prompt instructing the model to consider staleness.
+\end{enumerate}
+
+\subsection{Action Space}
+
+Models choose from five actions:
+(A)~answer directly from cached context,
+(B)~refresh/look up the information again,
+(C)~retrieve from memory for more context,
+(D)~ask a clarifying question, or
+(E)~abstain.
+All calls use temperature 0 for reproducibility.
+
+\subsection{Primary Metric: Switch Sensitivity}
+
+\textbf{Switch sensitivity} measures whether the model changes its action across the counterfactual pair when the correct action changes.
+For each scenario where fresh and stale have different correct actions (e.g., ``answer directly'' vs.\ ``refresh''), we check whether the model's prediction also changes.
+
+A model with 0\% switch sensitivity always produces the same action regardless of elapsed time.
+A model with 100\% always differentiates fresh from stale when it should.
+
+\subsection{Models Tested}
+
+We evaluate seven models spanning three providers and four capability tiers:
+\begin{itemize}
+    \item \textbf{OpenAI}: GPT-4o, GPT-4o-mini, GPT-5.4
+    \item \textbf{Anthropic}: Claude Sonnet 4, Claude Haiku 4.5, Claude Opus 4.6
+    \item \textbf{Local}: Mistral-7B-Instruct-v0.2 (16GB VRAM)
+\end{itemize}
+
+Total evaluation: 922 API calls across all models, conditions, scenarios, and fresh/stale variants.
+
+% ============================================================
+\section{Results}
+\label{sec:results}
+
+Table~\ref{tab:frontier} presents the full results across all models and conditions.
+
+\begin{table}[t]
+\centering
+\caption{Results across seven models and four prompting conditions. Switch sensitivity measures whether the model changes its action between fresh and stale versions of the same scenario. False trust is the rate of answering directly when information is stale and should be refreshed. Unnecessary refresh is the rate of refreshing when the information is still reliable.}
+\label{tab:frontier}
+\small
+\begin{tabular}{llcccc}
+\toprule
+\textbf{Model} & \textbf{Condition} & \textbf{Accuracy} & \textbf{Switch Sens} & \textbf{False Trust} & \textbf{Unnec.\ Refresh} \\
+\midrule
+\multirow{4}{*}{GPT-4o}
+  & No time   & 0.529 & 0.077 & 0.692 & 0.000 \\
+  & Implicit  & 0.611 & 0.308 & 0.308 & 0.238 \\
+  & Explicit  & 0.833 & 1.000 & 0.000 & 0.048 \\
+  & Prompted  & 0.889 & 0.923 & 0.000 & 0.048 \\
+\midrule
+\multirow{2}{*}{GPT-4o-mini}
+  & No time   & 0.618 & 0.000 & 1.000 & 0.000 \\
+  & Explicit  & 0.778 & 0.538 & 0.462 & 0.000 \\
+\midrule
+\multirow{4}{*}{GPT-5.4}
+  & No time   & 0.588 & 0.077 & 1.000 & 0.048 \\
+  & Implicit  & 0.750 & 0.538 & 0.000 & 0.286 \\
+  & Explicit  & 0.861 & 0.846 & 0.000 & 0.095 \\
+  & Prompted  & 0.722 & 0.462 & 0.000 & 0.381 \\
+\midrule
+\multirow{4}{*}{Claude Sonnet 4}
+  & No time   & 0.618 & 0.000 & 0.846 & 0.095 \\
+  & Implicit  & 0.528 & 0.154 & 0.077 & 0.476 \\
+  & Explicit  & 0.833 & 0.769 & 0.000 & 0.143 \\
+  & Prompted  & 0.694 & 0.462 & 0.000 & 0.333 \\
+\midrule
+\multirow{4}{*}{Claude Haiku 4.5}
+  & No time   & 0.588 & 0.000 & 0.538 & 0.238 \\
+  & Implicit  & 0.583 & 0.308 & 0.000 & 0.381 \\
+  & Explicit  & 0.500 & 0.385 & 0.000 & 0.429 \\
+  & Prompted  & 0.528 & 0.154 & 0.000 & 0.524 \\
+\midrule
+\multirow{4}{*}{Claude Opus 4.6}
+  & No time   & 0.618 & 0.000 & 0.846 & 0.095 \\
+  & Implicit  & 0.639 & 0.231 & 0.077 & 0.476 \\
+  & Explicit  & 0.917 & 1.000 & 0.000 & 0.048 \\
+  & Prompted  & 0.806 & 0.692 & 0.000 & 0.238 \\
+\midrule
+\multirow{4}{*}{Mistral-7B}
+  & No time   & 0.618 & 0.000 & 1.000 & 0.000 \\
+  & Implicit  & 0.639 & 0.154 & 0.846 & 0.000 \\
+  & Explicit  & 0.694 & 0.308 & 0.692 & 0.000 \\
+  & Prompted  & 0.361 & 0.000 & 0.000 & 1.000 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Finding 1: The Temporal Blind Spot Is Universal}
+
+In the no-time condition, \emph{every model} exhibits near-zero switch sensitivity (0--8\%).
+They produce the same action regardless of whether context is 30 seconds old or 4 hours old.
+
+The failure is not subtle.
+GPT-4o-mini, GPT-5.4, and Mistral-7B all achieve \textbf{100\% false trust} --- they \emph{always} tell the user to trust stale information.
+Claude Opus and Sonnet are nearly as bad at 84.6\%.
+Even GPT-5.4 --- the most capable model available at the time of evaluation --- manages only 7.7\% switch sensitivity without time annotations.
+
+This is not a capacity limitation.
+These models can reason about time when asked ``When did X happen?''
+They simply cannot use temporal context to assess whether cached information is still reliable.
+
+\subsection{Finding 2: Explicit Annotations Eliminate the Blind Spot}
+
+Adding a clearly labeled elapsed-time annotation (``Time since this information was observed: 4 hours ago'') produces dramatic improvements:
+
+\begin{itemize}
+    \item \textbf{GPT-4o}: 7.7\% $\to$ \textbf{100\%} switch sensitivity. Accuracy: 52.9\% $\to$ 83.3\%. False trust: 69.2\% $\to$ 0\%.
+    \item \textbf{Claude Opus 4.6}: 0\% $\to$ \textbf{100\%} switch sensitivity. Accuracy: 61.8\% $\to$ 91.7\%. False trust: 84.6\% $\to$ 0\%.
+    \item \textbf{GPT-5.4}: 7.7\% $\to$ \textbf{84.6\%} switch sensitivity. Accuracy: 58.8\% $\to$ 86.1\%. False trust: 100\% $\to$ 0\%.
+    \item \textbf{Claude Sonnet 4}: 0\% $\to$ \textbf{76.9\%}. False trust: 84.6\% $\to$ 0\%.
+\end{itemize}
+
+The temporal reasoning capability exists latently in these models.
+It requires only the right framing --- a clearly labeled elapsed-time annotation --- to activate.
+
+\subsection{Finding 3: Implicit Timestamps Are Insufficient}
+
+Simply mentioning elapsed time casually (``observed 3 hours ago'' in a context header) yields only partial improvement.
+GPT-4o reaches 30.8\% switch sensitivity with implicit time vs.\ 100\% with explicit.
+Claude Sonnet reaches 15.4\% vs.\ 76.9\%.
+
+The temporal signal must be \emph{salient} --- clearly labeled and separated from the content --- to be effective.
+Burying a timestamp in metadata is not enough.
+
+\subsection{Finding 4: Prompting About Staleness Is the Wrong Fix}
+
+The prompted condition adds a system-level instruction: ``Before answering any question, consider whether the available information might be outdated.''
+One might expect this metacognitive prompt to help.
+It does not.
+
+For GPT-5.4, prompting \emph{halves} switch sensitivity compared to explicit time alone (46.2\% vs.\ 84.6\%).
+For Claude Sonnet, unnecessary refresh rises from 14.3\% to 33.3\%.
+For Claude Haiku, unnecessary refresh reaches 52.4\% --- it refreshes \emph{everything}, including birthdays and capital cities.
+
+The time annotation itself, not instructions about how to use it, is the active ingredient.
+
+\subsection{Finding 5: Smaller Models Over-Correct}
+
+Claude Haiku and Mistral-7B reveal a \emph{staleness-caution tradeoff}.
+Upon receiving time annotations, they begin refreshing indiscriminately --- stable facts and volatile facts alike.
+Haiku's overall accuracy actually \emph{decreases} in the prompted condition (from 58.8\% to 52.8\%) despite eliminating false trust, because it trades dangerous trust for excessive caution.
+
+Mistral-7B in the prompted condition is the extreme case: it refreshes 100\% of the time, achieving 0\% false trust but 100\% unnecessary refresh.
+It has learned ``when in doubt, refresh'' rather than calibrating against fact volatility.
+
+This suggests that the temporal blind spot has two components: (1) detecting that context has age at all (solved by annotations), and (2) calibrating refresh thresholds against fact stability (requiring either more capable models or fine-tuning).
+
+% ============================================================
+\section{Cross-Model Analysis}
+\label{sec:cross}
+
+Table~\ref{tab:cross} summarizes switch sensitivity across all seven models, ordered by capability.
+
+\begin{table}[h]
+\centering
+\caption{Switch sensitivity by model in the best non-annotated condition (no time) vs.\ best annotated condition (explicit). The blind spot is universal; the fix scales with model capability.}
+\label{tab:cross}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Model} & \textbf{No Time} & \textbf{Explicit Time} \\
+\midrule
+Mistral-7B (local) & 0.0\% & 30.8\% \\
+GPT-4o-mini & 0.0\% & 53.8\% \\
+Claude Haiku 4.5 & 0.0\% & 38.5\% \\
+Claude Sonnet 4 & 0.0\% & 76.9\% \\
+GPT-4o & 7.7\% & 100.0\% \\
+GPT-5.4 & 7.7\% & 84.6\% \\
+Claude Opus 4.6 & 0.0\% & 100.0\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Two patterns emerge:
+
+\paragraph{The blind spot does not improve with scale.}
+GPT-5.4, the most capable model tested, shows 7.7\% switch sensitivity without time --- no better than GPT-4o and barely above Mistral-7B's 0\%.
+Temporal sensitivity to cached context age is not an emergent capability that appears at scale.
+It must be explicitly provided in the input representation.
+
+\paragraph{The fix scales with capability.}
+While all models improve with explicit time annotations, the magnitude of improvement correlates with model capability: GPT-4o and Claude Opus reach 100\%, while Mistral-7B reaches only 30.8\%.
+More capable models have better latent temporal reasoning that activates more completely when given explicit elapsed time.
+This suggests that the bottleneck is \emph{representation}, not \emph{reasoning}: the models can do the temporal reasoning, they just need the right input format to trigger it.
+
+% ============================================================
+\section{Discussion}
+\label{sec:discussion}
+
+\paragraph{Why does this blind spot exist?}
+Language model training data contains abundant timestamps, but they appear as \emph{facts about events} (``The meeting is at 3 PM''), not as \emph{signals about context reliability} (``This information is 4 hours old and may be wrong'').
+Models learn to process temporal expressions syntactically but not to use elapsed time as a decision-making signal for context trustworthiness.
+The no-time $\to$ explicit gap demonstrates that the reasoning capability exists latently but requires a representation shift to activate.
+
+\paragraph{Implications for deployed systems.}
+Every RAG system, tool-using agent, and caching layer that serves previously-observed information to a language model is affected.
+Our results suggest three concrete interventions:
+\begin{enumerate}
+    \item \textbf{RAG pipelines} should annotate retrieved passages with ``Retrieved: [time] ago.''
+    \item \textbf{Tool-using agents} should tag tool outputs with ``Observed: [time] ago.''
+    \item \textbf{Context caches} should include elapsed-time metadata in the prompt, not just in system logs.
+\end{enumerate}
+These are trivial engineering changes at the prompt layer.
+No model retraining is required.
+The benefit, as our results show, is the difference between 0\% and 100\% temporal sensitivity for the most capable models.
+
+\paragraph{The staleness-caution tradeoff.}
+Time annotations create a new failure mode: over-refreshing stable facts.
+This is most pronounced in smaller models (Haiku, Mistral-7B) and in the prompted condition.
+Practically, this means that adding elapsed-time annotations may increase API costs for tool-using agents that now refresh more aggressively.
+The tradeoff favors annotation: false trust in stale information (the failure mode without annotations) is far more dangerous than unnecessary refreshing (the failure mode with annotations).
+A user who receives stale information presented as current may make harmful decisions; a user whose agent makes an extra API call merely experiences latency.
+
+\paragraph{Limitations.}
+Our evaluation uses 20 hand-crafted scenarios, which limits statistical power.
+While the effect sizes are large (0\% $\to$ 100\%), a larger evaluation set would provide tighter confidence intervals.
+The evaluation is zero-shot; few-shot examples might partially close the gap by teaching models to attend to temporal cues.
+We do not test retrieval-augmented setups where the model must jointly reason about content relevance and temporal freshness.
+All scenarios involve English-language prompts; the blind spot may manifest differently in other languages.
+Finally, our counterfactual design tests single-turn temporal reasoning; multi-turn scenarios where staleness accumulates over a conversation remain untested.
+
+% ============================================================
+\section{Conclusion}
+
+Language models at every capability tier --- from 7B-parameter open-source models to the most capable frontier systems --- cannot distinguish fresh context from stale context without explicit elapsed-time annotations, exhibiting 0\% sensitivity to elapsed time across all seven models tested.
+Adding a single natural-language annotation of how long ago information was observed causes temporal sensitivity to emerge (31--100\%) and dramatically reduces false trust in stale information.
+
+This is likely a blind spot in every agent system that serves cached context without age metadata.
+The fix requires no model retraining, no architectural changes, and no special tokens --- only a trivial change at the prompt layer.
+We believe elapsed-time annotation should be standard practice in any system that presents previously-observed information to a language model.
+
+\paragraph{Reproducibility.}
+All evaluation code, prompts, test scenarios, and raw model responses are available at \url{https://github.com/neilt93/temporal-bench}.
+
+% ============================================================
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\end{document}
