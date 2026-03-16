@@ -1,0 +1,34 @@
+{
+  "gpt-5.4": {
+    "explicit": {
+      "accuracy": 0.76,
+      "false_trust_rate": 0.102,
+      "switch_sensitivity": 0.661,
+      "unnecessary_refresh_rate": 0.131,
+      "n_samples": 192
+    },
+    "no_time": {
+      "accuracy": 0.573,
+      "false_trust_rate": 0.424,
+      "switch_sensitivity": 0.051,
+      "unnecessary_refresh_rate": 0.29,
+      "n_samples": 192
+    }
+  },
+  "claude-opus-4.6": {
+    "explicit": {
+      "accuracy": 0.745,
+      "false_trust_rate": 0.085,
+      "switch_sensitivity": 0.644,
+      "unnecessary_refresh_rate": 0.15,
+      "n_samples": 192
+    },
+    "no_time": {
+      "accuracy": 0.547,
+      "false_trust_rate": 0.271,
+      "switch_sensitivity": 0.0,
+      "unnecessary_refresh_rate": 0.383,
+      "n_samples": 192
+    }
+  }
+}

@@ -1,0 +1,83 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\newlabel{sec:intro}{{1}{1}{Introduction}{section.1}{}}
+\@writefile{toc}{\contentsline {paragraph}{Contributions.}{1}{section*.1}\protected@file@percent }
+\citation{ning2018multi}
+\citation{zhou2019going}
+\citation{dhingra2022time}
+\citation{lazaridou2021mind,luu2022time}
+\citation{jang2022temporalwiki,kasai2023realtime}
+\citation{park2023generative,zhong2024memorybank}
+\citation{lewis2020retrieval}
+\citation{zhang2023retrieve}
+\citation{schick2023toolformer,qin2023toolllm}
+\citation{kamath2020selective}
+\citation{kadavath2022language}
+\citation{yin2023large}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{2}{section.2}\protected@file@percent }
+\newlabel{sec:related}{{2}{2}{Related Work}{section.2}{}}
+\@writefile{toc}{\contentsline {paragraph}{Temporal reasoning in LLMs.}{2}{section*.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Time-aware memory and retrieval.}{2}{section*.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Tool use and agent decision-making.}{2}{section*.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Calibration, abstention, and selective prediction.}{2}{section*.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Evaluation Framework}{2}{section.3}\protected@file@percent }
+\newlabel{sec:framework}{{3}{2}{Evaluation Framework}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Counterfactual Design}{2}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Test Scenarios}{3}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Prompting Conditions}{3}{subsection.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Action Space}{3}{subsection.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Primary Metric: Switch Sensitivity}{3}{subsection.3.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6}Models Tested}{3}{subsection.3.6}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Results across seven models. The top section shows five models evaluated on 18 hand-crafted scenarios across up to four prompting conditions. The bottom section shows GPT-5.4 and Claude Opus 4.6 evaluated on a larger 96-case generated benchmark (no-time and explicit conditions only).}}{4}{table.1}\protected@file@percent }
+\newlabel{tab:frontier}{{1}{4}{Results across seven models. The top section shows five models evaluated on 18 hand-crafted scenarios across up to four prompting conditions. The bottom section shows GPT-5.4 and Claude Opus 4.6 evaluated on a larger 96-case generated benchmark (no-time and explicit conditions only)}{table.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Results}{4}{section.4}\protected@file@percent }
+\newlabel{sec:results}{{4}{4}{Results}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Finding 1: Low Temporal Sensitivity Without Annotations}{4}{subsection.4.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Switch sensitivity across all seven models with and without explicit elapsed-time annotations. Without time, all models fall in the 0--8\% range. With explicit time, the most capable models reach 100\%.}}{5}{figure.1}\protected@file@percent }
+\newlabel{fig:blind_spot}{{1}{5}{Switch sensitivity across all seven models with and without explicit elapsed-time annotations. Without time, all models fall in the 0--8\% range. With explicit time, the most capable models reach 100\%}{figure.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Finding 2: Explicit Annotations Substantially Reduce the Blind Spot}{5}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Finding 3: Implicit Timestamps Are Insufficient}{5}{subsection.4.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces False trust rate across prompting conditions for the three most capable models. Without time annotations, models trust stale information 69--100\% of the time. Explicit annotations reduce this to 0\%.}}{6}{figure.2}\protected@file@percent }
+\newlabel{fig:false_trust}{{2}{6}{False trust rate across prompting conditions for the three most capable models. Without time annotations, models trust stale information 69--100\% of the time. Explicit annotations reduce this to 0\%}{figure.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Finding 4: Prompting About Staleness Does Not Help}{6}{subsection.4.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Finding 5: Smaller Models Over-Correct}{6}{subsection.4.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Cross-Model Analysis}{6}{section.5}\protected@file@percent }
+\newlabel{sec:cross}{{5}{6}{Cross-Model Analysis}{section.5}{}}
+\@writefile{toc}{\contentsline {paragraph}{The blind spot does not diminish with scale.}{6}{section*.6}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces GPT-4o performance across four prompting conditions. Implicit time yields only partial improvement; explicit time produces the full effect.}}{7}{figure.3}\protected@file@percent }
+\newlabel{fig:gpt4o_conditions}{{3}{7}{GPT-4o performance across four prompting conditions. Implicit time yields only partial improvement; explicit time produces the full effect}{figure.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces The staleness-caution tradeoff. Time annotations eliminate false trust (left) but increase unnecessary refreshing of stable facts (right), especially for smaller models like Haiku and Mistral.}}{7}{figure.4}\protected@file@percent }
+\newlabel{fig:tradeoff}{{4}{7}{The staleness-caution tradeoff. Time annotations eliminate false trust (left) but increase unnecessary refreshing of stable facts (right), especially for smaller models like Haiku and Mistral}{figure.4}{}}
+\@writefile{toc}{\contentsline {paragraph}{The benefit of annotation scales with capability.}{7}{section*.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Discussion}{7}{section.6}\protected@file@percent }
+\newlabel{sec:discussion}{{6}{7}{Discussion}{section.6}{}}
+\@writefile{toc}{\contentsline {paragraph}{Representation gap, not reasoning gap.}{7}{section*.8}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Switch sensitivity by model in the no-time condition vs.\ the explicit-time condition. The blind spot is consistent across models; the benefit of annotation scales with model capability. Models marked $\dagger $ were evaluated on the larger 96-case benchmark.}}{8}{table.2}\protected@file@percent }
+\newlabel{tab:cross}{{2}{8}{Switch sensitivity by model in the no-time condition vs.\ the explicit-time condition. The blind spot is consistent across models; the benefit of annotation scales with model capability. Models marked $\dagger $ were evaluated on the larger 96-case benchmark}{table.2}{}}
+\@writefile{toc}{\contentsline {paragraph}{Implications for deployed systems.}{8}{section*.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{The staleness-caution tradeoff.}{8}{section*.10}\protected@file@percent }
+\bibstyle{plainnat}
+\bibdata{references}
+\bibcite{dhingra2022time}{{1}{2022}{{Dhingra et~al.}}{{Dhingra, Cole, Eisenschlos, Gillick, Eisenstein, and Cohen}}}
+\bibcite{jang2022temporalwiki}{{2}{2022}{{Jang et~al.}}{{Jang, Ye, Yang, Shin, Han, Kim, Choi, and Seo}}}
+\bibcite{kadavath2022language}{{3}{2022}{{Kadavath et~al.}}{{Kadavath, Conerly, Askell, Henighan, Drain, Perez, Schiefer, Hatfield-Dodds, DasSarma, Tran-Johnson, et~al.}}}
+\bibcite{kamath2020selective}{{4}{2020}{{Kamath et~al.}}{{Kamath, Jia, and Liang}}}
+\@writefile{toc}{\contentsline {paragraph}{Limitations.}{9}{section*.11}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{9}{section.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Reproducibility.}{9}{section*.12}\protected@file@percent }
+\bibcite{kasai2023realtime}{{5}{2023}{{Kasai et~al.}}{{Kasai, Sakaguchi, Takahashi, Le~Bras, Asli, Lu, Radev, Hajishirzi, Smith, and Choi}}}
+\bibcite{lazaridou2021mind}{{6}{2021}{{Lazaridou et~al.}}{{Lazaridou, Kuncoro, Gribovskaya, Agrawal, Liske, Terber, and Blunsom}}}
+\bibcite{lewis2020retrieval}{{7}{2020}{{Lewis et~al.}}{{Lewis, Perez, Piktus, Petroni, Karpukhin, Goyal, K{\"u}ttler, Lewis, Yih, Rockt{\"a}schel, Riedel, and Kiela}}}
+\bibcite{luu2022time}{{8}{2022}{{Luu et~al.}}{{Luu, Khashabi, Sadegh~Raghunathan, Roth, and Hajishirzi}}}
+\bibcite{ning2018multi}{{9}{2018}{{Ning et~al.}}{{Ning, Wu, and Roth}}}
+\bibcite{park2023generative}{{10}{2023}{{Park et~al.}}{{Park, O'Brien, Cai, Morris, Liang, and Bernstein}}}
+\bibcite{qin2023toolllm}{{11}{2023}{{Qin et~al.}}{{Qin, Liang, Ye, Zhu, Yan, Lu, Lin, Cong, Tang, Qian, et~al.}}}
+\bibcite{schick2023toolformer}{{12}{2023}{{Schick et~al.}}{{Schick, Dwivedi-Yu, Dess{\`i}, Raileanu, Lomeli, Zettlemoyer, Cancedda, and Scialom}}}
+\bibcite{yin2023large}{{13}{2023}{{Yin et~al.}}{{Yin, Sun, Guo, Wu, Qiu, and Huang}}}
+\bibcite{zhang2023retrieve}{{14}{2023}{{Zhang et~al.}}{{Zhang, Shao, Xiao, Liu, Zhao, and Zhu}}}
+\bibcite{zhong2024memorybank}{{15}{2024}{{Zhong et~al.}}{{Zhong, Guo, Gao, Ye, and Wang}}}
+\bibcite{zhou2019going}{{16}{2019}{{Zhou et~al.}}{{Zhou, Khashabi, Ning, and Roth}}}
+\gdef \@abspage@last{10}

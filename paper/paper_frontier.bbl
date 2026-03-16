@@ -1,0 +1,119 @@
+\begin{thebibliography}{16}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Dhingra et~al.(2022)Dhingra, Cole, Eisenschlos, Gillick, Eisenstein,
+  and Cohen]{dhingra2022time}
+Bhuwan Dhingra, Jeremy~R Cole, Julian~Martin Eisenschlos, Daniel Gillick, Jacob
+  Eisenstein, and William~W Cohen.
+\newblock Time-aware language models as temporal knowledge bases.
+\newblock \emph{Transactions of the ACL}, 10:\penalty0 257--273, 2022.
+
+\bibitem[Jang et~al.(2022)Jang, Ye, Yang, Shin, Han, Kim, Choi, and
+  Seo]{jang2022temporalwiki}
+Joel Jang, Seonghyeon Ye, Sohee Yang, Joongbo Shin, Janghoon Han, Gyeonghun
+  Kim, Stanley~Jungkyu Choi, and Minjoon Seo.
+\newblock {TemporalWiki}: A lifelong benchmark for training and evaluating
+  ever-evolving language models.
+\newblock \emph{Proceedings of EMNLP}, 2022.
+
+\bibitem[Kadavath et~al.(2022)Kadavath, Conerly, Askell, Henighan, Drain,
+  Perez, Schiefer, Hatfield-Dodds, DasSarma, Tran-Johnson,
+  et~al.]{kadavath2022language}
+Saurav Kadavath, Tom Conerly, Amanda Askell, Tom Henighan, Dawn Drain, Ethan
+  Perez, Nicholas Schiefer, Zac Hatfield-Dodds, Nova DasSarma, Eli
+  Tran-Johnson, et~al.
+\newblock Language models (mostly) know what they know.
+\newblock \emph{arXiv preprint arXiv:2207.05221}, 2022.
+
+\bibitem[Kamath et~al.(2020)Kamath, Jia, and Liang]{kamath2020selective}
+Amita Kamath, Robin Jia, and Percy Liang.
+\newblock Selective question answering under domain shift.
+\newblock In \emph{Proceedings of ACL}, 2020.
+
+\bibitem[Kasai et~al.(2023)Kasai, Sakaguchi, Takahashi, Le~Bras, Asli, Lu,
+  Radev, Hajishirzi, Smith, and Choi]{kasai2023realtime}
+Jungo Kasai, Keisuke Sakaguchi, Yoichi Takahashi, Ronan Le~Bras, Akari Asli,
+  Xinyan Lu, Dragomir Radev, Hannaneh Hajishirzi, Noah~A Smith, and Yejin Choi.
+\newblock Realtime {QA}: What's the answer right now?
+\newblock \emph{Proceedings of NeurIPS Datasets and Benchmarks}, 2023.
+
+\bibitem[Lazaridou et~al.(2021)Lazaridou, Kuncoro, Gribovskaya, Agrawal, Liske,
+  Terber, and Blunsom]{lazaridou2021mind}
+Angeliki Lazaridou, Adhiguna Kuncoro, Elena Gribovskaya, Devang Agrawal, Adam
+  Liske, Angelina Terber, and Phil Blunsom.
+\newblock Mind the gap: Assessing temporal generalization in neural language
+  models.
+\newblock \emph{Advances in Neural Information Processing Systems}, 2021.
+
+\bibitem[Lewis et~al.(2020)Lewis, Perez, Piktus, Petroni, Karpukhin, Goyal,
+  K{\"u}ttler, Lewis, Yih, Rockt{\"a}schel, Riedel, and
+  Kiela]{lewis2020retrieval}
+Patrick Lewis, Ethan Perez, Aleksandra Piktus, Fabio Petroni, Vladimir
+  Karpukhin, Naman Goyal, Heinrich K{\"u}ttler, Mike Lewis, Wen-tau Yih, Tim
+  Rockt{\"a}schel, Sebastian Riedel, and Douwe Kiela.
+\newblock Retrieval-augmented generation for knowledge-intensive {NLP} tasks.
+\newblock In \emph{Advances in Neural Information Processing Systems}, 2020.
+
+\bibitem[Luu et~al.(2022)Luu, Khashabi, Sadegh~Raghunathan, Roth, and
+  Hajishirzi]{luu2022time}
+Kelvin Luu, Daniel Khashabi, Suchin~Gururangan Sadegh~Raghunathan, Dan Roth,
+  and Hannaneh Hajishirzi.
+\newblock Time waits for no one! analysis and challenges of temporal
+  misalignment.
+\newblock \emph{Proceedings of NAACL}, 2022.
+
+\bibitem[Ning et~al.(2018)Ning, Wu, and Roth]{ning2018multi}
+Qiang Ning, Hao Wu, and Dan Roth.
+\newblock A multi-axis annotation scheme for event temporal relations.
+\newblock In \emph{Proceedings of ACL}, 2018.
+
+\bibitem[Park et~al.(2023)Park, O'Brien, Cai, Morris, Liang, and
+  Bernstein]{park2023generative}
+Joon~Sung Park, Joseph~C O'Brien, Carrie~J Cai, Meredith~Ringel Morris, Percy
+  Liang, and Michael~S Bernstein.
+\newblock Generative agents: Interactive simulacra of human behavior.
+\newblock In \emph{Proceedings of UIST}, 2023.
+
+\bibitem[Qin et~al.(2023)Qin, Liang, Ye, Zhu, Yan, Lu, Lin, Cong, Tang, Qian,
+  et~al.]{qin2023toolllm}
+Yujia Qin, Shihao Liang, Yining Ye, Kunlun Zhu, Lan Yan, Yaxi Lu, Yankai Lin,
+  Xin Cong, Xiangru Tang, Bill Qian, et~al.
+\newblock {ToolLLM}: Facilitating large language models to master 16000+
+  real-world {API}s.
+\newblock \emph{arXiv preprint arXiv:2307.16789}, 2023.
+
+\bibitem[Schick et~al.(2023)Schick, Dwivedi-Yu, Dess{\`i}, Raileanu, Lomeli,
+  Zettlemoyer, Cancedda, and Scialom]{schick2023toolformer}
+Timo Schick, Jane Dwivedi-Yu, Roberto Dess{\`i}, Roberta Raileanu, Maria
+  Lomeli, Luke Zettlemoyer, Nicola Cancedda, and Thomas Scialom.
+\newblock Toolformer: Language models can teach themselves to use tools.
+\newblock \emph{arXiv preprint arXiv:2302.04761}, 2023.
+
+\bibitem[Yin et~al.(2023)Yin, Sun, Guo, Wu, Qiu, and Huang]{yin2023large}
+Zhangyue Yin, Qiushi Sun, Qipeng Guo, Jiawen Wu, Xipeng Qiu, and Xuanjing
+  Huang.
+\newblock Do large language models know what they don't know?
+\newblock \emph{Findings of ACL}, 2023.
+
+\bibitem[Zhang et~al.(2023)Zhang, Shao, Xiao, Liu, Zhao, and
+  Zhu]{zhang2023retrieve}
+Peitian Zhang, Shitao Shao, Zheng Xiao, Zhicheng Liu, Yongqiang Zhao, and
+  Jiawei Zhu.
+\newblock Retrieve anything to augment large language models.
+\newblock \emph{arXiv preprint arXiv:2310.07554}, 2023.
+
+\bibitem[Zhong et~al.(2024)Zhong, Guo, Gao, Ye, and Wang]{zhong2024memorybank}
+Wanjun Zhong, Lianghong Guo, Qiqi Gao, He~Ye, and Yanlin Wang.
+\newblock {MemoryBank}: Enhancing large language models with long-term memory.
+\newblock \emph{Proceedings of AAAI}, 2024.
+
+\bibitem[Zhou et~al.(2019)Zhou, Khashabi, Ning, and Roth]{zhou2019going}
+Ben Zhou, Daniel Khashabi, Qiang Ning, and Dan Roth.
+\newblock ``going on a diet'': Translation with knowledge of the target length.
+\newblock In \emph{Proceedings of ACL}, 2019.
+
+\end{thebibliography}
