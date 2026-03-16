@@ -4,6 +4,7 @@
 \usepackage{amsmath,amssymb}
 \usepackage{booktabs}
 \usepackage{graphicx}
+\graphicspath{{figures/}}
 \usepackage{hyperref}
 \usepackage{natbib}
 \usepackage{xcolor}
@@ -11,7 +12,7 @@
 \usepackage{geometry}
 \geometry{margin=1in}
 
-\title{The Temporal Blind Spot: Frontier Language Models Cannot Detect\\Stale Context Without Explicit Elapsed-Time Annotations}
+\title{Language Models Don't Know What Time It Is}
 
 \author{
   Neil T.\ \\
@@ -202,6 +203,13 @@ Table~\ref{tab:frontier} presents the full results across all models and conditi
 \end{tabular}
 \end{table}
 
+\begin{figure}[t]
+\centering
+\includegraphics[width=\textwidth]{fig1_blind_spot.pdf}
+\caption{Switch sensitivity across all seven models with and without explicit elapsed-time annotations. Without time, every model exhibits 0--8\% sensitivity. With time, the most capable models reach 100\%.}
+\label{fig:blind_spot}
+\end{figure}
+
 \subsection{Finding 1: The Temporal Blind Spot Is Universal}
 
 In the no-time condition, \emph{every model} exhibits near-zero switch sensitivity (0--8\%).
@@ -216,6 +224,13 @@ This is not a capacity limitation.
 These models can reason about time when asked ``When did X happen?''
 They simply cannot use temporal context to assess whether cached information is still reliable.
 
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.85\textwidth]{fig2_false_trust.pdf}
+\caption{False trust rate across prompting conditions for the three most capable models. Without time annotations, models trust stale information 69--100\% of the time. Explicit annotations reduce this to 0\%.}
+\label{fig:false_trust}
+\end{figure}
+
 \subsection{Finding 2: Explicit Annotations Eliminate the Blind Spot}
 
 Adding a clearly labeled elapsed-time annotation (``Time since this information was observed: 4 hours ago'') produces dramatic improvements:
@@ -229,6 +244,13 @@ Adding a clearly labeled elapsed-time annotation (``Time since this information 
 
 The temporal reasoning capability exists latently in these models.
 It requires only the right framing --- a clearly labeled elapsed-time annotation --- to activate.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.75\textwidth]{fig4_gpt4o_conditions.pdf}
+\caption{GPT-4o performance across four prompting conditions. Implicit time yields only partial improvement; explicit time produces the full effect.}
+\label{fig:gpt4o_conditions}
+\end{figure}
 
 \subsection{Finding 3: Implicit Timestamps Are Insufficient}
 
@@ -250,6 +272,13 @@ For Claude Sonnet, unnecessary refresh rises from 14.3\% to 33.3\%.
 For Claude Haiku, unnecessary refresh reaches 52.4\% --- it refreshes \emph{everything}, including birthdays and capital cities.
 
 The time annotation itself, not instructions about how to use it, is the active ingredient.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\textwidth]{fig3_tradeoff.pdf}
+\caption{The staleness-caution tradeoff. Time annotations eliminate false trust (left) but increase unnecessary refreshing of stable facts (right), especially for smaller models like Haiku and Mistral.}
+\label{fig:tradeoff}
+\end{figure}
 
 \subsection{Finding 5: Smaller Models Over-Correct}
 
