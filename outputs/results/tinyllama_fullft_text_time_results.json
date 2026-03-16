@@ -1,13 +1,13 @@
 {
   "counterfactual_sensitivity": {
     "total_pairs": 1281,
-    "correct_switches": 33,
-    "incorrect_static": 727,
-    "correct_static": 509,
-    "incorrect_switches": 12,
-    "switch_sensitivity": 0.04342105263157895,
-    "switch_specificity": 0.9769673704414588,
-    "switch_accuracy": 0.42310694769711166
+    "correct_switches": 37,
+    "incorrect_static": 723,
+    "correct_static": 510,
+    "incorrect_switches": 11,
+    "switch_sensitivity": 0.04868421052631579,
+    "switch_specificity": 0.9788867562380038,
+    "switch_accuracy": 0.4270101483216237
   },
   "stale_calibration": {
     "overall_accuracy": 0.5622489959839357,
@@ -15,10 +15,229 @@
     "refresh_precision": 0.5823293172690763,
     "refresh_recall": 0.6359649122807017,
     "refresh_f1": 0.6079664570230607,
-    "false_trust_rate": 0.19678714859437751,
+    "false_trust_rate": 0.3602941176470588,
     "false_trust_count": 98,
-    "unnecessary_refresh_rate": 0.1285140562248996,
+    "unnecessary_refresh_rate": 0.32160804020100503,
     "unnecessary_refresh_count": 64,
+    "confusion_matrix": [
+      [
+        135,
+        64,
+        0,
+        0,
+        0
+      ],
+      [
+        83,
+        145,
+        0,
+        0,
+        0
+      ],
+      [
+        13,
+        6,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        5,
+        0,
+        0,
+        0
+      ],
+      [
+        15,
+        29,
+        0,
+        0,
+        0
+      ]
+    ],
+    "per_class": {
+      "answer_directly": {
+        "precision": 0.5421686746987951,
+        "recall": 0.678391959798995,
+        "f1": 0.6026785714285714,
+        "support": 199
+      },
+      "refresh": {
+        "precision": 0.5823293172690763,
+        "recall": 0.6359649122807017,
+        "f1": 0.6079664570230607,
+        "support": 228
+      },
+      "retrieve_memory": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "support": 19
+      },
+      "ask_clarify": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "support": 8
+      },
+      "abstain": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "support": 44
+      }
+    },
+    "per_volatility_confusion_matrix": {
+      "high": [
+        [
+          23,
+          33,
+          0,
+          0,
+          0
+        ],
+        [
+          22,
+          81,
+          0,
+          0,
+          0
+        ],
+        [
+          4,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          5,
+          16,
+          0,
+          0,
+          0
+        ]
+      ],
+      "low": [
+        [
+          47,
+          7,
+          0,
+          0,
+          0
+        ],
+        [
+          26,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          6,
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "medium": [
+        [
+          35,
+          24,
+          0,
+          0,
+          0
+        ],
+        [
+          35,
+          62,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          7,
+          12,
+          0,
+          0,
+          0
+        ]
+      ],
+      "stable": [
+        [
+          30,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
     "n": 498
   },
   "memory_retrieval": {

@@ -28,7 +28,7 @@
 Language models that operate over cached or retrieved context must decide whether that context is still trustworthy or has gone stale.
 We show that without explicit elapsed-time annotations, models --- from 124M-parameter GPT-2 to frontier systems like GPT-5.4 and Claude Opus 4.6 --- overwhelmingly trust stale information, exhibiting 0\% switch sensitivity (never changing their action between fresh and stale versions of the same fact).
 Adding a single natural-language annotation (``Time since observed: 4 hours ago'') causally fixes this:
-fine-tuned GPT-2 jumps from 0\% to 81\% switch sensitivity,
+fine-tuned GPT-2 jumps from 0\% to 66--68\% switch sensitivity,
 Claude Opus 4.6 and GPT-4o both reach 100\%, and GPT-5.4 reaches 85\%.
 A shuffled-time ablation confirms that models learn the temporal signal rather than exploiting surface cues (accuracy drops 20--30 points when times are randomized).
 These results establish elapsed-time awareness as a lightweight, generalizable intervention for any system that serves cached context to a language model.
@@ -108,15 +108,15 @@ Table~\ref{tab:finetune} shows the main fine-tuning results.
 \textbf{Model} & \textbf{Variant} & \textbf{Stale Acc} & \textbf{Switch Sens} & \textbf{False Trust} & \textbf{Shuffled $\Delta$} \\
 \midrule
 \multirow{4}{*}{GPT-2 (124M)}
-  & Baseline     & 0.464 & 0.000 & 0.402 & --- \\
-  & Time tokens  & 0.819 & 0.678 & 0.032 & 0.203 \\
-  & Time+memory  & 0.815 & 0.725 & 0.004 & 0.012 \\
-  & Text time    & 0.819 & 0.720 & 0.008 & 0.299 \\
+  & Baseline     & 0.568 & 0.000 & 0.324 & --- \\
+  & Time tokens  & 0.819 & 0.678 & 0.055 & 0.207 \\
+  & Time+memory  & 0.827 & 0.707 & 0.015 & 0.036 \\
+  & Text time    & 0.759 & 0.662 & 0.103 & 0.229 \\
 \midrule
 \multirow{3}{*}{TinyLlama (1.1B)}
-  & Baseline     & 0.490 & 0.000 & 0.026 & --- \\
-  & Text time (LoRA)  & 0.819 & 0.720 & 0.008 & 0.299 \\
-  & Text time (v2) & 0.707 & 0.708 & 0.002 & 0.253 \\
+  & Baseline     & 0.536 & 0.000 & 0.467 & --- \\
+  & Text time (LoRA)  & 0.819 & 0.720 & 0.015 & 0.299 \\
+  & Text time (v2) & 0.707 & 0.708 & 0.004 & 0.253 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -124,7 +124,7 @@ Table~\ref{tab:finetune} shows the main fine-tuning results.
 The pattern is stark:
 \begin{itemize}
     \item \textbf{Baselines have 0\% switch sensitivity} across both model sizes. Without temporal information, models learn a fixed policy that never adapts to elapsed time.
-    \item \textbf{Time-aware variants reach 68--81\% switch sensitivity}, correctly changing their action for the majority of counterfactual pairs.
+    \item \textbf{Time-aware variants reach 66--72\% switch sensitivity}, correctly changing their action for the majority of counterfactual pairs.
     \item \textbf{The shuffled-time ablation confirms causal use}: randomizing elapsed times drops accuracy by 20--30 points, proving models rely on the temporal signal rather than surface correlations.
     \item \textbf{Text time matches or exceeds special tokens}, suggesting that natural language is a sufficient representation --- no custom tokenizer modifications needed.
 \end{itemize}
@@ -276,7 +276,7 @@ The consistent pattern:
 \textbf{Model} & \textbf{No Time} & \textbf{With Time} \\
 \midrule
 GPT-2 baseline (124M, fine-tuned) & 0.0\% & --- \\
-GPT-2 text time (124M, fine-tuned) & --- & 72.0\% \\
+GPT-2 text time (124M, fine-tuned) & --- & 66.2\% \\
 TinyLlama (1.1B, LoRA) & 0.0\% & 72.0\% \\
 Mistral-7B (local) & 0.0\% & 30.8\% \\
 GPT-4o-mini (API) & 0.0\% & 53.8\% \\
@@ -334,7 +334,7 @@ Without explicit time annotations:
 
 With a single natural-language time annotation:
 \begin{itemize}
-    \item Fine-tuned models: 68--81\% switch sensitivity
+    \item Fine-tuned models: 66--72\% switch sensitivity
     \item Frontier models: 31--100\% switch sensitivity, 0\% false trust
 \end{itemize}
 

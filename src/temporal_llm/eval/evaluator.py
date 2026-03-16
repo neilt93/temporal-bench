@@ -426,11 +426,24 @@ class TemporalEvaluator:
             if variant == "text_time":
                 old_time = f"{seconds_to_human(ex['elapsed_seconds'])} ago"
                 new_time_str = f"{seconds_to_human(new_time)} ago"
-                shuffled_texts.append(text.replace(old_time, new_time_str))
+                text = text.replace(old_time, new_time_str)
             else:
                 old_token = ex["elapsed_token"]
                 new_token = seconds_to_token(new_time)
-                shuffled_texts.append(text.replace(old_token, new_token))
+                text = text.replace(old_token, new_token)
+            # Also replace memory-age tokens/text so the full temporal
+            # signal is disrupted, not just the top-level elapsed time
+            if ex.get("memories"):
+                for mem in ex["memories"]:
+                    mem_age = mem.get("age_seconds", 0)
+                    if variant in ("time_tokens", "time_memory"):
+                        old_mem_token = f"<dt_{seconds_to_bucket(mem_age)}>"
+                        new_mem_token = seconds_to_token(new_time * 0.7)  # arbitrary shift
+                        text = text.replace(old_mem_token, new_mem_token, 1)
+                    old_mem_human = seconds_to_human(mem_age)
+                    new_mem_human = seconds_to_human(new_time * 0.7)
+                    text = text.replace(old_mem_human, new_mem_human, 1)
+            shuffled_texts.append(text)
 
         shuffled_preds = self._predict_all(shuffled_texts)
         shuffled_acc = accuracy_score(oracles, shuffled_preds)

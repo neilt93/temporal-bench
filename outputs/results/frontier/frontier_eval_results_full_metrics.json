@@ -1,12 +1,5 @@
 {
   "gpt-4o": {
-    "implicit": {
-      "accuracy": 0.611,
-      "false_trust_rate": 0.308,
-      "switch_sensitivity": 0.308,
-      "unnecessary_refresh_rate": 0.238,
-      "n_samples": 36
-    },
     "no_time": {
       "accuracy": 0.529,
       "false_trust_rate": 0.692,
@@ -14,11 +7,11 @@
       "unnecessary_refresh_rate": 0.0,
       "n_samples": 34
     },
-    "explicit": {
-      "accuracy": 0.833,
-      "false_trust_rate": 0.0,
-      "switch_sensitivity": 1.0,
-      "unnecessary_refresh_rate": 0.048,
+    "implicit": {
+      "accuracy": 0.611,
+      "false_trust_rate": 0.308,
+      "switch_sensitivity": 0.308,
+      "unnecessary_refresh_rate": 0.238,
       "n_samples": 36
     },
     "prompted": {
@@ -27,16 +20,16 @@
       "switch_sensitivity": 0.923,
       "unnecessary_refresh_rate": 0.048,
       "n_samples": 36
+    },
+    "explicit": {
+      "accuracy": 0.833,
+      "false_trust_rate": 0.0,
+      "switch_sensitivity": 1.0,
+      "unnecessary_refresh_rate": 0.048,
+      "n_samples": 36
     }
   },
   "claude-sonnet": {
-    "implicit": {
-      "accuracy": 0.528,
-      "false_trust_rate": 0.077,
-      "switch_sensitivity": 0.154,
-      "unnecessary_refresh_rate": 0.476,
-      "n_samples": 36
-    },
     "no_time": {
       "accuracy": 0.618,
       "false_trust_rate": 0.846,
@@ -44,11 +37,11 @@
       "unnecessary_refresh_rate": 0.095,
       "n_samples": 34
     },
-    "explicit": {
-      "accuracy": 0.833,
-      "false_trust_rate": 0.0,
-      "switch_sensitivity": 0.769,
-      "unnecessary_refresh_rate": 0.143,
+    "implicit": {
+      "accuracy": 0.528,
+      "false_trust_rate": 0.077,
+      "switch_sensitivity": 0.154,
+      "unnecessary_refresh_rate": 0.476,
       "n_samples": 36
     },
     "prompted": {
@@ -57,16 +50,16 @@
       "switch_sensitivity": 0.462,
       "unnecessary_refresh_rate": 0.333,
       "n_samples": 36
+    },
+    "explicit": {
+      "accuracy": 0.833,
+      "false_trust_rate": 0.0,
+      "switch_sensitivity": 0.769,
+      "unnecessary_refresh_rate": 0.143,
+      "n_samples": 36
     }
   },
   "claude-haiku": {
-    "implicit": {
-      "accuracy": 0.583,
-      "false_trust_rate": 0.0,
-      "switch_sensitivity": 0.308,
-      "unnecessary_refresh_rate": 0.381,
-      "n_samples": 36
-    },
     "no_time": {
       "accuracy": 0.588,
       "false_trust_rate": 0.538,
@@ -74,11 +67,11 @@
       "unnecessary_refresh_rate": 0.238,
       "n_samples": 34
     },
-    "explicit": {
-      "accuracy": 0.5,
+    "implicit": {
+      "accuracy": 0.583,
       "false_trust_rate": 0.0,
-      "switch_sensitivity": 0.385,
-      "unnecessary_refresh_rate": 0.429,
+      "switch_sensitivity": 0.308,
+      "unnecessary_refresh_rate": 0.381,
       "n_samples": 36
     },
     "prompted": {
@@ -86,6 +79,13 @@
       "false_trust_rate": 0.0,
       "switch_sensitivity": 0.154,
       "unnecessary_refresh_rate": 0.524,
+      "n_samples": 36
+    },
+    "explicit": {
+      "accuracy": 0.5,
+      "false_trust_rate": 0.0,
+      "switch_sensitivity": 0.385,
+      "unnecessary_refresh_rate": 0.429,
       "n_samples": 36
     }
   }

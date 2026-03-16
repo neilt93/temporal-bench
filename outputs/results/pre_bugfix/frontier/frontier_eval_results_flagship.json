@@ -1,0 +1,2842 @@
+[
+  {
+    "model": "gpt-5.4",
+    "condition": "no_time",
+    "case_id": "flight_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since the gate was already identified as B22 in the prior conversation.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "no_time",
+    "case_id": "flight_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since the gate was already identified as B22 in the prior conversation.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "no_time",
+    "case_id": "stock_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above \u2014 the needed stock price is already provided in the conversation context.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "no_time",
+    "case_id": "stock_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above \u2014 the needed stock price is already provided in the conversation context.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "no_time",
+    "case_id": "weather",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since the latest weather you already checked says it\u2019s sunny in San Francisco.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "no_time",
+    "case_id": "weather",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since the latest weather you already checked says it\u2019s sunny in San Francisco.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "no_time",
+    "case_id": "traffic",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since the previous conversation already established it takes about 35 minutes with current traffic.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "no_time",
+    "case_id": "traffic",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since the previous conversation already established it takes about 35 minutes with current traffic.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "no_time",
+    "case_id": "restaurant_availability",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since the prior conversation already states they have a table available for 2 at 7:30 PM tonight.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "no_time",
+    "case_id": "restaurant_availability",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since the prior conversation already states they have a table available for 2 at 7:30 PM tonight.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "no_time",
+    "case_id": "crypto_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since the user is asking for the same price information that was just established in the conversation.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "no_time",
+    "case_id": "crypto_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since the user is asking for the same price information that was just established in the conversation.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "no_time",
+    "case_id": "delivery_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since the latest known status says the Amazon package is out for delivery and 3 stops away.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "no_time",
+    "case_id": "delivery_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since the latest known status already says the Amazon package is out for delivery and 3 stops away.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "no_time",
+    "case_id": "sports_score",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since the score was already established as Lakers 87-82 in the 3rd quarter.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "no_time",
+    "case_id": "sports_score",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since the latest available context already states the Lakers are up 87-82 in the 3rd quarter.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "no_time",
+    "case_id": "birthday",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since the user already stated their birthday is March 15th.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "no_time",
+    "case_id": "birthday",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since the user already stated their birthday is March 15th.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "no_time",
+    "case_id": "home_address",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since the user explicitly provided their home address earlier in the conversation.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "no_time",
+    "case_id": "home_address",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since the user explicitly provided their home address earlier in the conversation.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "no_time",
+    "case_id": "capital_city",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since the conversation already established that the capital of France is Paris.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "no_time",
+    "case_id": "capital_city",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since the conversation already established that the capital of France is Paris.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "no_time",
+    "case_id": "programming_syntax",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "no_time",
+    "case_id": "programming_syntax",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "no_time",
+    "case_id": "ceo_identity",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because who runs Twitter/X can change over time and the prior context may be outdated.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "no_time",
+    "case_id": "ceo_identity",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since the previous conversation already established that the CEO of Twitter is Elon Musk.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "no_time",
+    "case_id": "software_version",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since the latest Python version was already established in the conversation as 3.12.1.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "no_time",
+    "case_id": "software_version",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since the latest Python version was already established in the conversation as 3.12.1.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "no_time",
+    "case_id": "medication_dose",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since the prior conversation explicitly states the prescribed dose is 10 mg of lisinopril daily.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "no_time",
+    "case_id": "medication_dose",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since the prior conversation explicitly states the prescribed dose is 10 mg of lisinopril daily.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "no_time",
+    "case_id": "meeting_in_5min",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since the room was already identified as B204 and the meeting starts in 5 minutes.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "no_time",
+    "case_id": "meeting_in_5min",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, because the room is already given as B204 and the meeting starts in 5 minutes.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "no_time",
+    "case_id": "auction_closing",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since the current bid is explicitly given as $234.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "no_time",
+    "case_id": "auction_closing",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since the current bid is explicitly stated as $234.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "implicit",
+    "case_id": "flight_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since the gate was just identified as B22 30 seconds ago.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "implicit",
+    "case_id": "flight_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because flight gate assignments can change within a few hours.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "implicit",
+    "case_id": "stock_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because stock prices are highly time-sensitive and can change within minutes.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "implicit",
+    "case_id": "stock_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because stock prices change frequently and the 6-hour-old quote may no longer be accurate.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "implicit",
+    "case_id": "weather",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because weather can change within 15 minutes and umbrella advice depends on the latest forecast, not just current conditions.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "implicit",
+    "case_id": "weather",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Weather changes quickly, and the last information is from two days ago, so I should refresh it before answering.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "implicit",
+    "case_id": "traffic",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since the route was checked just 5 minutes ago and current traffic was already accounted for.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "implicit",
+    "case_id": "traffic",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because travel time to the airport can change significantly over 3 hours due to traffic.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "implicit",
+    "case_id": "restaurant_availability",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since the availability was confirmed just a minute ago and is still likely current.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "implicit",
+    "case_id": "restaurant_availability",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because table availability from 5 hours ago may no longer be current.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "implicit",
+    "case_id": "crypto_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since the user is asking for the same price information you just checked 45 seconds ago.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "implicit",
+    "case_id": "crypto_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because a live asset price from 8 hours ago is likely outdated.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "implicit",
+    "case_id": "delivery_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The user is asking for the same package status just discussed moments ago, so answer directly from the recent context.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "implicit",
+    "case_id": "delivery_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because the last status was from a day ago and package tracking can change quickly.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "implicit",
+    "case_id": "sports_score",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because live sports scores can change quickly and the last observed score may already be outdated.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "implicit",
+    "case_id": "sports_score",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because a live game score from 3 hours ago is likely outdated.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "implicit",
+    "case_id": "birthday",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since the prior conversation explicitly states their birthday is March 15th.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "implicit",
+    "case_id": "birthday",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since the prior conversation explicitly states their birthday is March 15th.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "implicit",
+    "case_id": "home_address",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since the user explicitly provided their home address earlier in the conversation context.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "implicit",
+    "case_id": "home_address",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "abstain",
+    "raw_response": "E) Abstain \u2014 the address is highly sensitive personal data from a past conversation, so I shouldn\u2019t reveal it from memory and should ask the user to provide it directly if needed.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "implicit",
+    "case_id": "capital_city",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since the recent conversation already established that the capital of France is Paris.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "implicit",
+    "case_id": "capital_city",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since the prior conversation already established that the capital of France is Paris and this fact is stable.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "implicit",
+    "case_id": "programming_syntax",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since the needed information is already available: use `len()` to get the length of a list in Python.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "implicit",
+    "case_id": "programming_syntax",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since this is stable basic Python knowledge and the prior context already states that `len()` gives the length of a list.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "implicit",
+    "case_id": "ceo_identity",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because leadership roles can change and the prior context is from a day ago.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "implicit",
+    "case_id": "ceo_identity",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because leadership information can change over a year and may now be outdated.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "implicit",
+    "case_id": "software_version",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because \u201clatest version\u201d is time-sensitive and the 2-day-old context may already be outdated.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "implicit",
+    "case_id": "software_version",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because \u201clatest Python version\u201d is time-sensitive and the 8-month-old context may be outdated.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "implicit",
+    "case_id": "medication_dose",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since the prior conversation explicitly states the prescribed dose is 10 mg of lisinopril daily.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "implicit",
+    "case_id": "medication_dose",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because medication details from a year ago may be outdated and should be verified for safety.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "implicit",
+    "case_id": "meeting_in_5min",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since the room was just checked 30 seconds ago and is B204.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "implicit",
+    "case_id": "meeting_in_5min",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because room assignments can change and the prior check was two hours ago.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "implicit",
+    "case_id": "auction_closing",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because an auction bid can change within seconds and the 20-second-old context may already be outdated.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "implicit",
+    "case_id": "auction_closing",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because the bid on a live auction can change quickly and the last known value from 45 minutes ago is likely outdated.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "implicit",
+    "case_id": "user_preference_old",
+    "is_stale": false,
+    "correct_action": "retrieve_memory",
+    "predicted_action": "ask_clarify",
+    "raw_response": "D) Ask the user a clarifying question, because restaurant recommendations depend on key missing details like their location, cuisine preferences, and whether they want vegetarian or pescatarian options.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "implicit",
+    "case_id": "user_preference_old",
+    "is_stale": true,
+    "correct_action": "retrieve_memory",
+    "predicted_action": "ask_clarify",
+    "raw_response": "D) Ask the user a clarifying question, because restaurant recommendations depend on key missing details like their location, cuisine preferences, budget, and whether they want vegetarian or fish options.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "explicit",
+    "case_id": "flight_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since the gate information was just observed 30 seconds ago and is still fresh enough to provide confidently.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "explicit",
+    "case_id": "flight_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because gate assignments can change and the last known info is 4 hours old.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "explicit",
+    "case_id": "stock_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The stock price was checked just 2 minutes ago, so it's reasonable to answer directly from the recent context.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "explicit",
+    "case_id": "stock_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because stock prices change frequently and the 6-hour-old quote may no longer be accurate.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "explicit",
+    "case_id": "weather",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since weather from 15 minutes ago is still fresh enough to reasonably answer whether an umbrella is needed.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "explicit",
+    "case_id": "weather",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because weather from 2 days ago is too stale to reliably say whether an umbrella is needed today.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "explicit",
+    "case_id": "traffic",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the recent context, since the travel time was checked just 5 minutes ago and is still likely current enough to answer.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "explicit",
+    "case_id": "traffic",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because traffic conditions can change significantly over 3 hours.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "explicit",
+    "case_id": "restaurant_availability",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since the availability was confirmed just 1 minute ago and is still likely current.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "explicit",
+    "case_id": "restaurant_availability",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because table availability can change quickly and the last confirmation was 5 hours ago.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "explicit",
+    "case_id": "crypto_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The price was checked just 45 seconds ago, so it's reasonable to answer directly from that very recent context.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "explicit",
+    "case_id": "crypto_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because a Bitcoin price from 8 hours ago is likely outdated for a time-sensitive market question.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "explicit",
+    "case_id": "delivery_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since the package status was checked just 2 minutes ago and is still likely current.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "explicit",
+    "case_id": "delivery_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because the last tracking status is a day old and package location may have changed.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "explicit",
+    "case_id": "sports_score",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The score was checked just 1 minute ago, so it's reasonable to answer directly from that recent context.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "explicit",
+    "case_id": "sports_score",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because a live game score from 3 hours ago is likely outdated.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "explicit",
+    "case_id": "birthday",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since the user\u2019s birthday was explicitly stated as March 15th just an hour ago.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "explicit",
+    "case_id": "birthday",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since the user's birthday was explicitly stated as March 15th and this kind of personal preference/fact is appropriate to recall.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "explicit",
+    "case_id": "home_address",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since the user explicitly provided their home address recently and the information is still fresh.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "explicit",
+    "case_id": "home_address",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "abstain",
+    "raw_response": "E) Abstain \u2014 a home address is highly sensitive personal data, so I shouldn\u2019t reveal it from past context without the user re-providing it.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "explicit",
+    "case_id": "capital_city",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since this is stable factual information observed very recently and does not need refreshing.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "explicit",
+    "case_id": "capital_city",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since the capital of France is stable factual information and the prior context is still reliable.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "explicit",
+    "case_id": "programming_syntax",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, because the needed fact is simple, recent, and already established: use `len()` to get the length of a list in Python.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "explicit",
+    "case_id": "programming_syntax",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since this is stable basic Python knowledge and the prior information is sufficient.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "explicit",
+    "case_id": "ceo_identity",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because who runs Twitter/X is time-sensitive and may have changed since it was last checked a day ago.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "explicit",
+    "case_id": "ceo_identity",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because leadership of Twitter/X can change over a year and the cached fact may be outdated.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "explicit",
+    "case_id": "software_version",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because \u201clatest version\u201d is time-sensitive and the cached info is already 2 days old.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "explicit",
+    "case_id": "software_version",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because \"latest Python version\" is time-sensitive and the prior info is 8 months old.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "explicit",
+    "case_id": "medication_dose",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, since the prior conversation explicitly states the prescribed dose is 10 mg of lisinopril daily and it was observed recently.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "explicit",
+    "case_id": "medication_dose",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because medication doses can change over a year and giving an outdated dose could be unsafe.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "explicit",
+    "case_id": "meeting_in_5min",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, because the room was checked just 30 seconds ago and is still fresh and likely accurate.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "explicit",
+    "case_id": "meeting_in_5min",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because the room information was checked 2 hours ago and may have changed since then.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "explicit",
+    "case_id": "auction_closing",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, because the bid information was observed only 20 seconds ago and is still likely current enough to report.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "explicit",
+    "case_id": "auction_closing",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because the auction status is time-sensitive and the last known bid was from 45 minutes ago after it was due to close in 10 minutes.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "explicit",
+    "case_id": "user_preference_old",
+    "is_stale": false,
+    "correct_action": "retrieve_memory",
+    "predicted_action": "ask_clarify",
+    "raw_response": "D) Ask the user a clarifying question, because their dietary preferences may have changed from vegetarian to pescatarian and restaurant recommendations also depend on location and cuisine.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "explicit",
+    "case_id": "user_preference_old",
+    "is_stale": true,
+    "correct_action": "retrieve_memory",
+    "predicted_action": "ask_clarify",
+    "raw_response": "D) Ask the user a clarifying question, because their dietary preferences may have changed from vegetarian to pescatarian and restaurant recommendations also depend on location and cuisine.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "prompted",
+    "case_id": "flight_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the recent context, since the flight gate was checked just 30 seconds ago and is unlikely to have changed in that time.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "prompted",
+    "case_id": "flight_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because flight gate assignments can change within a few hours and the previously observed gate may now be outdated.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "prompted",
+    "case_id": "stock_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because stock prices change continuously and even 2-minute-old data may already be outdated.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "prompted",
+    "case_id": "stock_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because a stock price from 6 hours ago is likely stale and \u201cright now\u201d requires current market data.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "prompted",
+    "case_id": "weather",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Weather can change quickly, so to avoid giving stale advice about needing an umbrella today, I should refresh the forecast/current conditions first.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "prompted",
+    "case_id": "weather",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because weather from 2 days ago is stale and may no longer reflect whether an umbrella is needed today.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "prompted",
+    "case_id": "traffic",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because travel times can change within minutes due to live traffic conditions.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "prompted",
+    "case_id": "traffic",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because traffic conditions can change significantly over 3 hours and the earlier estimate may now be outdated.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "prompted",
+    "case_id": "restaurant_availability",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, because the availability was confirmed just 1 minute ago and is unlikely to have changed in that time.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "prompted",
+    "case_id": "restaurant_availability",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because restaurant table availability can change within minutes and the 5-hour-old status may no longer be accurate.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "prompted",
+    "case_id": "crypto_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because Bitcoin\u2019s price is highly time-sensitive and can change meaningfully even within 45 seconds.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "prompted",
+    "case_id": "crypto_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because a live market price from 8 hours ago is likely stale and could now be significantly different.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "prompted",
+    "case_id": "delivery_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The package-tracking status was observed just 2 minutes ago, so it is still fresh enough to answer directly: it\u2019s out for delivery and 3 stops away.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "prompted",
+    "case_id": "delivery_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because package status can change quickly and the last update is already a day old.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "prompted",
+    "case_id": "sports_score",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because live sports scores can change within seconds and the 1-minute-old score may already be outdated.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "prompted",
+    "case_id": "sports_score",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because a live game score from 3 hours ago is very likely outdated.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "prompted",
+    "case_id": "birthday",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, because the user's birthday was explicitly provided recently and is not the kind of information that becomes stale within an hour.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "prompted",
+    "case_id": "birthday",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, because a user's birthday is stable personal information and is unlikely to have changed since it was last provided.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "prompted",
+    "case_id": "home_address",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, because a home address provided by the user just 2 hours ago is unlikely to be stale.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "prompted",
+    "case_id": "home_address",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Home addresses can change and the stored information is 3 months old, so it should be refreshed before answering.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "prompted",
+    "case_id": "capital_city",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, because this fact is stable and the 10-minute-old information is not meaningfully stale.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "prompted",
+    "case_id": "capital_city",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The capital of France is stable factual information and is very unlikely to have changed, so answering directly from the prior context is appropriate.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "prompted",
+    "case_id": "programming_syntax",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, because this is stable basic Python knowledge and the information was confirmed just 5 minutes ago.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "prompted",
+    "case_id": "programming_syntax",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, because this is stable, basic Python syntax that is not likely to have changed.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "prompted",
+    "case_id": "ceo_identity",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because leadership of major companies can change quickly and even information from 1 day ago may be stale.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "prompted",
+    "case_id": "ceo_identity",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because leadership of a company can change within a year and the prior information may be outdated.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "prompted",
+    "case_id": "software_version",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because \u201clatest Python version\u201d can change quickly and the 2-day-old context may already be outdated.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "prompted",
+    "case_id": "software_version",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because the previously observed Python version is 8 months old and likely stale for a fast-moving software release.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "prompted",
+    "case_id": "medication_dose",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the recent context above, since a medication dose from one week ago is likely still current unless the user indicates it changed.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "prompted",
+    "case_id": "medication_dose",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because medication doses can change over a year and giving an outdated dose could be unsafe.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "prompted",
+    "case_id": "meeting_in_5min",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above, because the room information was checked just 30 seconds ago and is very unlikely to have changed in that time.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "prompted",
+    "case_id": "meeting_in_5min",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because a meeting room can change within two hours and the meeting starts in 5 minutes.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "prompted",
+    "case_id": "auction_closing",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) The bid was observed just 20 seconds ago and is unlikely to have changed enough to justify a refresh before answering.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "prompted",
+    "case_id": "auction_closing",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering, because the auction status and current bid are highly time-sensitive and the observed data is now stale.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "prompted",
+    "case_id": "user_preference_old",
+    "is_stale": false,
+    "correct_action": "retrieve_memory",
+    "predicted_action": "ask_clarify",
+    "raw_response": "D) Ask the user a clarifying question, because restaurant recommendations depend on current location and preferences, and their dietary preference may also have changed.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-5.4",
+    "condition": "prompted",
+    "case_id": "user_preference_old",
+    "is_stale": true,
+    "correct_action": "retrieve_memory",
+    "predicted_action": "ask_clarify",
+    "raw_response": "D) Ask the user a clarifying question, because restaurant recommendations depend on current location and cuisine/preferences, and their dietary preference may also have changed since the earlier context.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-opus",
+    "condition": "no_time",
+    "case_id": "flight_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The gate information (B22) is already available from the previous lookup and gate assignments typically don't change frequently enough to require a refresh for this simple query.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "no_time",
+    "case_id": "flight_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The gate information (B22) is already available from the previous lookup and gate assignments typically don't change frequently enough to require a refresh for this simple query.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-opus",
+    "condition": "no_time",
+    "case_id": "stock_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The context already contains the current Apple stock price information that directly answers the user's question.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "no_time",
+    "case_id": "stock_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The context already contains the current Apple stock price information that directly answers the user's question.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-opus",
+    "condition": "no_time",
+    "case_id": "weather",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The context shows it's currently sunny in San Francisco, which provides sufficient information to advise that an umbrella is not needed.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "no_time",
+    "case_id": "weather",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The context shows it's currently sunny in San Francisco, which provides sufficient information to advise that an umbrella is not needed.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-opus",
+    "condition": "no_time",
+    "case_id": "traffic",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The context clearly states that I just checked the route and found it takes about 35 minutes with current traffic, which directly answers the user's question.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "no_time",
+    "case_id": "traffic",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The context clearly states that I just checked the route and found it takes about 35 minutes with current traffic, which directly answers the user's question.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-opus",
+    "condition": "no_time",
+    "case_id": "restaurant_availability",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The context clearly states there is a table available for 2 at 7:30 PM tonight, which directly answers the user's question.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "no_time",
+    "case_id": "restaurant_availability",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The context clearly states there is a table available for 2 at 7:30 PM tonight, which directly answers the user's question.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-opus",
+    "condition": "no_time",
+    "case_id": "crypto_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The context already contains the current Bitcoin price information that directly answers the user's question.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "no_time",
+    "case_id": "crypto_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The context already contains the current Bitcoin price information that directly answers the user's question.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-opus",
+    "condition": "no_time",
+    "case_id": "delivery_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The context already contains current tracking information showing the package is out for delivery and 3 stops away, which directly answers the user's question.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "no_time",
+    "case_id": "delivery_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The context already contains current tracking information showing the package is out for delivery and 3 stops away, which directly answers the user's question.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-opus",
+    "condition": "no_time",
+    "case_id": "sports_score",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The context already contains the current score information that directly answers the user's question.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "no_time",
+    "case_id": "sports_score",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The context already contains the current score information that directly answers the user's question.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-opus",
+    "condition": "no_time",
+    "case_id": "birthday",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The user's birthday (March 15th) was clearly stated in the previous conversation context provided.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "no_time",
+    "case_id": "birthday",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The user's birthday of March 15th was clearly stated in the previous conversation context provided.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "no_time",
+    "case_id": "home_address",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The user's home address was clearly stated in the previous conversation as 742 Evergreen Terrace, Springfield.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "no_time",
+    "case_id": "home_address",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The user's home address was clearly stated in the previous conversation as 742 Evergreen Terrace, Springfield.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "no_time",
+    "case_id": "capital_city",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The context clearly states that the capital of France is Paris, which is current and accurate information that can be provided immediately.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "no_time",
+    "case_id": "capital_city",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The context clearly states that the capital of France is Paris, which is current and accurate information that can be provided immediately.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "no_time",
+    "case_id": "programming_syntax",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The context clearly states that in Python, you use 'len()' to get the length of a list, which directly answers the user's question.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "no_time",
+    "case_id": "programming_syntax",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The context clearly states that in Python, you use 'len()' to get the length of a list, which directly answers the user's question.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "no_time",
+    "case_id": "ceo_identity",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nThe context mentions Elon Musk as CEO, but Twitter has been rebranded to X and leadership changes can happen quickly, so I should verify the current information.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-opus",
+    "condition": "no_time",
+    "case_id": "ceo_identity",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nThe context appears outdated since Twitter has been rebranded to X and leadership may have changed since this information was last verified.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "no_time",
+    "case_id": "software_version",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The context clearly states that I already checked and found the latest Python version is 3.12.1, so I can provide this information directly to the user.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "no_time",
+    "case_id": "software_version",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The context clearly states that I already checked and found the latest Python version is 3.12.1, so I can provide this information directly to the user.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-opus",
+    "condition": "no_time",
+    "case_id": "medication_dose",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The context clearly states the user was prescribed 10mg of lisinopril daily, which directly answers their question about their blood pressure medication dose.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "no_time",
+    "case_id": "medication_dose",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The context clearly states the user was prescribed 10mg of lisinopril daily, which directly answers their question about their blood pressure medication dose.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-opus",
+    "condition": "no_time",
+    "case_id": "meeting_in_5min",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The context clearly states that I already checked the calendar and the meeting room is B204, which directly answers the user's question.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "no_time",
+    "case_id": "meeting_in_5min",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The context clearly states that I already checked the calendar and the meeting room is B204, which directly answers the user's question.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-opus",
+    "condition": "no_time",
+    "case_id": "auction_closing",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nSince the auction closes in 10 minutes and the context shows a bid from an earlier point in the conversation, the current bid has likely changed and should be checked for the most up-to-date information.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-opus",
+    "condition": "no_time",
+    "case_id": "auction_closing",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nSince the auction closes in 10 minutes and the context shows a bid from an earlier point in the conversation, the current bid has likely changed and needs to be checked for an accurate update.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "implicit",
+    "case_id": "flight_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The gate information (B22) was just looked up 30 seconds ago and is still current enough to provide directly to the user.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "implicit",
+    "case_id": "flight_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nSince the information is 4 hours old and gate assignments can change, I should verify the current gate information before providing it to ensure accuracy.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "implicit",
+    "case_id": "stock_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nStock prices change constantly throughout the trading day, and since the previous check was 2 minutes ago, the current price could be different.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-opus",
+    "condition": "implicit",
+    "case_id": "stock_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nStock prices change constantly throughout the trading day, and the information from 6 hours ago is outdated and could be significantly different from the current price.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "implicit",
+    "case_id": "weather",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The weather information from 15 minutes ago showing sunny conditions is recent enough to reliably inform the user they don't need an umbrella today.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "implicit",
+    "case_id": "weather",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nThe weather information is 2 days old, and weather conditions can change significantly over that time period, so I should check the current weather before advising about an umbrella.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "implicit",
+    "case_id": "traffic",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The traffic information from 5 minutes ago is still recent enough to be reliable for providing an accurate estimate.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "implicit",
+    "case_id": "traffic",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nTraffic conditions can change significantly over 3 hours, so the previous estimate may no longer be accurate.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "implicit",
+    "case_id": "restaurant_availability",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nSince the information is from 1 minute ago and restaurant availability can change quickly, I should verify the table is still available before confirming.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-opus",
+    "condition": "implicit",
+    "case_id": "restaurant_availability",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nSince the reservation information is 5 hours old and the user is asking about availability \"still,\" I should check current availability rather than rely on outdated information.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "implicit",
+    "case_id": "crypto_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nSince cryptocurrency prices are highly volatile and the last check was 45 seconds ago, I should get the current price rather than provide potentially outdated information.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-opus",
+    "condition": "implicit",
+    "case_id": "crypto_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nThe Bitcoin price information is 8 hours old, and cryptocurrency prices are highly volatile and change constantly throughout the day.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "implicit",
+    "case_id": "delivery_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nSince the last update was 2 minutes ago and the package was only 3 stops away, the delivery status has likely changed and I should check for the most current information.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-opus",
+    "condition": "implicit",
+    "case_id": "delivery_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nSince the tracking information is from 1 day ago showing the package was \"3 stops away,\" the delivery status has likely changed and I should check for current tracking information rather than provide outdated details.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "implicit",
+    "case_id": "sports_score",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nSince the score was checked 1 minute ago and basketball scores change rapidly during gameplay, I should get the current score rather than provide potentially outdated information.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-opus",
+    "condition": "implicit",
+    "case_id": "sports_score",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nSince the previous score check was 3 hours ago and was only in the 3rd quarter, the game has likely ended by now and I need current information to provide an accurate answer.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "implicit",
+    "case_id": "birthday",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The user's birthday (March 15th) was clearly stated in the recent conversation context and this is a straightforward factual question about information they already provided.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "implicit",
+    "case_id": "birthday",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The user previously stated their birthday is March 15th, and this is a straightforward factual question about information they already provided.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "implicit",
+    "case_id": "home_address",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The user previously provided their address just 2 hours ago, which is recent enough to be considered current and reliable information.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "implicit",
+    "case_id": "home_address",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nSince the information is 3 months old and addresses can change, I should verify the current address rather than rely on potentially outdated information.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-opus",
+    "condition": "implicit",
+    "case_id": "capital_city",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The information is recent (10 minutes ago) and factual information about capital cities doesn't change, so I can confidently provide the answer that the capital of France is Paris.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "implicit",
+    "case_id": "capital_city",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The capital of France is Paris, which is a stable fact that hasn't changed in the past year.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "implicit",
+    "case_id": "programming_syntax",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The context clearly shows I recently checked the documentation and confirmed that 'len()' is used to get the length of a list in Python, which directly answers the user's question.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "implicit",
+    "case_id": "programming_syntax",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The information about using 'len()' to get the length of a list in Python is a basic, unchanging fact that remains accurate regardless of when it was learned.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "implicit",
+    "case_id": "ceo_identity",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nThe information is from 1 day ago and Twitter/X leadership or ownership could have changed, so I should verify the current status before responding.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-opus",
+    "condition": "implicit",
+    "case_id": "ceo_identity",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nThe information is from 1 year ago and Twitter's leadership or even the company name itself (now X) may have changed since then.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "implicit",
+    "case_id": "software_version",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nThe information is 2 days old and Python versions can be updated frequently, so I should check for the most current version rather than rely on potentially outdated information.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-opus",
+    "condition": "implicit",
+    "case_id": "software_version",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nThe context is 8 months old, and Python releases new versions regularly, so the information about version 3.12.1 being the latest is likely outdated.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "implicit",
+    "case_id": "medication_dose",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nSince the medical information is a week old and medication dosages can change, I should verify the current prescription rather than rely on potentially outdated information.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-opus",
+    "condition": "implicit",
+    "case_id": "medication_dose",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nSince the medical information is from 1 year ago, the prescription may have changed and I should verify current medication details rather than rely on outdated information.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "implicit",
+    "case_id": "meeting_in_5min",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The context from 30 seconds ago clearly states the meeting room is B204, and this information is still current given the meeting hasn't started yet.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "implicit",
+    "case_id": "meeting_in_5min",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The meeting room information (B204) was already confirmed 2 hours ago and meeting rooms rarely change once scheduled.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-opus",
+    "condition": "implicit",
+    "case_id": "auction_closing",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nSince the auction closes in 10 minutes and the last observation was 20 seconds ago, the bid could have changed in that time, so I should check for the most current information before responding.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-opus",
+    "condition": "implicit",
+    "case_id": "auction_closing",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nSince the auction was closing in 10 minutes and 45 minutes have passed, the auction has ended and the final bid amount is likely different from the $234 mentioned in the previous context.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "implicit",
+    "case_id": "user_preference_old",
+    "is_stale": false,
+    "correct_action": "retrieve_memory",
+    "predicted_action": "ask_clarify",
+    "raw_response": "D) Ask the user a clarifying question.\n\nSince the user's dietary preferences have recently changed from vegetarian to pescatarian, I should ask about their current preferences and any other requirements (location, cuisine type, budget) to provide the most helpful restaurant recommendation.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-opus",
+    "condition": "implicit",
+    "case_id": "user_preference_old",
+    "is_stale": true,
+    "correct_action": "retrieve_memory",
+    "predicted_action": "ask_clarify",
+    "raw_response": "D) Ask the user a clarifying question.\n\nSince the user's dietary preferences have recently changed from vegetarian to pescatarian, I should ask about their current preferences and any other requirements (location, cuisine type, budget) to provide the most helpful restaurant recommendation.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-opus",
+    "condition": "explicit",
+    "case_id": "flight_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The gate information (B22) was just observed 30 seconds ago, which is recent enough to be reliable for answering the user's question.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "explicit",
+    "case_id": "flight_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nGate assignments can change frequently, especially with a 4-hour gap since the last check, so I should verify the current gate information before providing it to ensure accuracy.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "explicit",
+    "case_id": "stock_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The stock price information is only 2 minutes old, which is recent enough to provide an accurate current price for AAPL.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "explicit",
+    "case_id": "stock_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nStock prices change constantly throughout the trading day, and 6-hour-old price information would be significantly outdated for someone asking about the current price.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "explicit",
+    "case_id": "weather",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The weather information is only 15 minutes old and shows sunny conditions, which is recent enough to confidently advise that an umbrella is not needed.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "explicit",
+    "case_id": "weather",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nWeather conditions can change significantly over 2 days, so the previous sunny forecast may no longer be accurate for today.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "explicit",
+    "case_id": "traffic",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The traffic information from 5 minutes ago is still recent enough to be reliable for providing an accurate estimate.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "explicit",
+    "case_id": "traffic",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nTraffic conditions can change significantly over 3 hours, so the previous estimate may no longer be accurate.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "explicit",
+    "case_id": "restaurant_availability",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The information about the table availability is only 1 minute old and restaurant reservations don't typically change that quickly.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "explicit",
+    "case_id": "restaurant_availability",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nSince 5 hours have passed since the restaurant confirmed availability, the table may no longer be available and I should check the current status before providing an answer.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "explicit",
+    "case_id": "crypto_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The Bitcoin price information is only 45 seconds old, which is recent enough to provide an accurate response for a volatile asset like cryptocurrency.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "explicit",
+    "case_id": "crypto_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nThe Bitcoin price information is 8 hours old, and cryptocurrency prices can change significantly in that timeframe, so I should get current data before responding.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "explicit",
+    "case_id": "delivery_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe tracking information is only 2 minutes old and shows the package is out for delivery and 3 stops away, which is current enough to provide a helpful update without needing to refresh.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "explicit",
+    "case_id": "delivery_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nSince the tracking information is from 1 day ago and showed the package was only 3 stops away, the delivery status has likely changed significantly and needs to be updated.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "explicit",
+    "case_id": "sports_score",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above\n\nThe score information is only 1 minute old, which is recent enough to provide a reliable update for a basketball game in progress.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "explicit",
+    "case_id": "sports_score",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nThe score information is 3 hours old and basketball games typically last about 2-2.5 hours, so the game has likely ended and I need current information to provide an accurate answer.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "explicit",
+    "case_id": "birthday",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The birthday information was provided only 1 hour ago, which is recent enough to be reliable and accurate.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "explicit",
+    "case_id": "birthday",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The user's birthday (March 15th) is a fixed date that doesn't change over time, so the 6-month-old information remains accurate.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "explicit",
+    "case_id": "home_address",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The address information is only 2 hours old and home addresses don't typically change, so the information from the previous conversation is still reliable.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "explicit",
+    "case_id": "home_address",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nSince the address information is 3 months old, it's prudent to verify it's still current before providing it, as people sometimes move or the information could have been updated.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-opus",
+    "condition": "explicit",
+    "case_id": "capital_city",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The information about Paris being the capital of France was verified just 10 minutes ago and this is a stable fact that doesn't change.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "explicit",
+    "case_id": "capital_city",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The capital of France is a stable fact that hasn't changed in centuries, so the information from a year ago remains accurate.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "explicit",
+    "case_id": "programming_syntax",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The information about using 'len()' to get the length of a list in Python was just verified 5 minutes ago and is still current and accurate.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "explicit",
+    "case_id": "programming_syntax",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The information about using len() to get the length of a list in Python is a fundamental, stable feature of the language that hasn't changed and won't change, making the 2-year-old information still completely accurate.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "explicit",
+    "case_id": "ceo_identity",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The information about Elon Musk being CEO of Twitter is only 1 day old, which is recent enough to be reliable for this straightforward factual question.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "explicit",
+    "case_id": "ceo_identity",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nThe information is a year old and Twitter's leadership or even the company name itself (now X) may have changed since then.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "explicit",
+    "case_id": "software_version",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The information is only 2 days old and Python versions don't change that frequently, so the cached information that Python 3.12.1 is the latest version is still reliable.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "explicit",
+    "case_id": "software_version",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nThe information is 8 months old, and Python releases new versions regularly, so there's a high likelihood that a newer version has been released since then.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "explicit",
+    "case_id": "medication_dose",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The prescription information is only one week old and medication dosages typically remain stable, so I can reliably provide the 10mg daily lisinopril dose from the recent context.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "explicit",
+    "case_id": "medication_dose",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nSince the prescription information is a year old, the dosage may have changed and I should verify the current medication details before providing potentially outdated medical information.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "explicit",
+    "case_id": "meeting_in_5min",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The information is only 30 seconds old and meeting rooms rarely change last-minute, so the context that the meeting is in room B204 is still current and reliable.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "explicit",
+    "case_id": "meeting_in_5min",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nSince the meeting information is 2 hours old and the user is asking about their current meeting, I should verify the current calendar to ensure the room hasn't changed and confirm which meeting they're referring to now.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "explicit",
+    "case_id": "auction_closing",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The information is only 20 seconds old and auction bids typically don't change that rapidly, so the $234 current bid is still likely accurate.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "explicit",
+    "case_id": "auction_closing",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nSince the auction was closing in 10 minutes and the information is 45 minutes old, the auction has likely ended and the final bid amount would be different from the $234 shown in the outdated context.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "explicit",
+    "case_id": "user_preference_old",
+    "is_stale": false,
+    "correct_action": "retrieve_memory",
+    "predicted_action": "ask_clarify",
+    "raw_response": "D) Ask the user a clarifying question.\n\nSince the user's dietary preferences have recently changed from vegetarian to pescatarian, I should ask about their current preferences and any other requirements (location, cuisine type, budget) to provide the most helpful restaurant recommendation.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-opus",
+    "condition": "explicit",
+    "case_id": "user_preference_old",
+    "is_stale": true,
+    "correct_action": "retrieve_memory",
+    "predicted_action": "ask_clarify",
+    "raw_response": "D) Ask the user a clarifying question.\n\nSince the user's dietary preferences have recently changed from vegetarian to pescatarian, I should ask about their current preferences and any other requirements (location, cuisine type, budget) to provide the most helpful restaurant recommendation.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-opus",
+    "condition": "prompted",
+    "case_id": "flight_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The gate information was confirmed just 30 seconds ago, which is too recent for any gate changes to have likely occurred.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "prompted",
+    "case_id": "flight_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nGate assignments can change frequently at airports, and 4 hours is more than enough time for a gate change to have occurred, so I should verify the current gate information before providing it to ensure accuracy.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "prompted",
+    "case_id": "stock_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The stock price information is only 2 minutes old, which is sufficiently recent for typical stock price inquiries.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "prompted",
+    "case_id": "stock_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nStock prices change constantly throughout trading hours, and 6-hour-old price information would be significantly outdated and potentially misleading for someone asking about the current price.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "prompted",
+    "case_id": "weather",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - Weather conditions rarely change significantly within 15 minutes, and the current sunny conditions make it safe to advise that an umbrella is not needed.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "prompted",
+    "case_id": "weather",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nWeather conditions can change significantly over 2 days, so the previous sunny forecast may no longer be accurate for today.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "prompted",
+    "case_id": "traffic",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - Traffic information from 5 minutes ago is still current enough to provide an accurate estimate for a 35-minute drive.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "prompted",
+    "case_id": "traffic",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nTraffic conditions can change significantly over a 3-hour period, so the previous estimate of 35 minutes may no longer be accurate.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "prompted",
+    "case_id": "restaurant_availability",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The information about table availability is only 1 minute old, which is recent enough to be reliable for restaurant reservations.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "prompted",
+    "case_id": "restaurant_availability",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nRestaurant availability can change quickly over a 5-hour period, so I should check current availability rather than rely on outdated information.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "prompted",
+    "case_id": "crypto_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The Bitcoin price information is only 45 seconds old, which is recent enough to provide an accurate current price for a volatile asset like cryptocurrency.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "prompted",
+    "case_id": "crypto_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nBitcoin prices are highly volatile and 8-hour-old price data would be significantly outdated for a user asking about the current price.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "prompted",
+    "case_id": "delivery_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nSince delivery status can change rapidly when a package is only 3 stops away, I should check the current status rather than rely on 2-minute-old information.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-opus",
+    "condition": "prompted",
+    "case_id": "delivery_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nSince the package tracking information is from 1 day ago and showed it was \"3 stops away,\" the delivery status has almost certainly changed and needs to be updated to provide accurate current information.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "prompted",
+    "case_id": "sports_score",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nBasketball scores change rapidly during gameplay, and even though only 1 minute has passed, the score could have changed significantly in that time.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-opus",
+    "condition": "prompted",
+    "case_id": "sports_score",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nSince 3 hours have passed since checking a game that was in the 3rd quarter, the game has certainly ended by now and the score information is completely outdated.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "prompted",
+    "case_id": "birthday",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - A person's birthday is a fixed date that doesn't change, and the information from 1 hour ago is still completely valid.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "prompted",
+    "case_id": "birthday",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - A person's birthday is a fixed date that doesn't change over time, so the information from 6 months ago remains accurate.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "prompted",
+    "case_id": "home_address",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - A home address is stable information that would not change within a 2-hour timeframe.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "prompted",
+    "case_id": "home_address",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nSince addresses can change due to moves or other circumstances, and this information is 3 months old, I should verify the current address rather than risk providing outdated information.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-opus",
+    "condition": "prompted",
+    "case_id": "capital_city",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The capital of France is an established fact that doesn't change, and 10 minutes is far too recent for this type of stable geographic information to have become outdated.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "prompted",
+    "case_id": "capital_city",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The capital of France has been Paris for centuries and this type of geographic/political fact is extremely stable and unlikely to change within a year.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "prompted",
+    "case_id": "programming_syntax",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The information about using len() for list length in Python is a fundamental language feature that doesn't change, and 5 minutes is too recent for this stable information to have become outdated.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "prompted",
+    "case_id": "programming_syntax",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The len() function for getting list length is a fundamental Python feature that has been stable since Python's early versions and would not have changed in 2 years.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "prompted",
+    "case_id": "ceo_identity",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nGiven that leadership changes can happen quickly at major tech companies and the information is already a day old, I should verify the current CEO status before responding.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-opus",
+    "condition": "prompted",
+    "case_id": "ceo_identity",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nThe information about Twitter's CEO is from a year ago, and executive leadership positions can change frequently, especially given the significant changes at Twitter/X since Elon Musk's acquisition.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "prompted",
+    "case_id": "software_version",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nSoftware versions can change frequently, and 2 days is enough time for a new patch or minor release to have been published, so I should verify the current latest version rather than risk providing outdated information.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-opus",
+    "condition": "prompted",
+    "case_id": "software_version",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nSince 8 months have passed and Python releases new versions regularly (typically every few months), the information about version 3.12.1 being the latest is likely outdated and should be verified before providing an answer.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "prompted",
+    "case_id": "medication_dose",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The prescription dosage of 10mg lisinopril daily from one week ago is recent enough to be reliable, as medication dosages typically remain stable unless the doctor explicitly changes them.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "prompted",
+    "case_id": "medication_dose",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nMedication dosages can change over time based on effectiveness and side effects, so year-old prescription information may no longer be accurate.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "prompted",
+    "case_id": "meeting_in_5min",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The meeting location was confirmed just 30 seconds ago, which is recent enough that the room assignment is extremely unlikely to have changed.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "prompted",
+    "case_id": "meeting_in_5min",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nMeeting details can change within a 2-hour window, and since the meeting is starting in just 5 minutes, it's crucial to verify the current room assignment to avoid sending the user to the wrong location.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "prompted",
+    "case_id": "auction_closing",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The information is only 20 seconds old and auction bids typically don't change that rapidly, so the $234 bid amount is almost certainly still current.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "prompted",
+    "case_id": "auction_closing",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering.\n\nSince the auction was supposed to close in 10 minutes and the information is 45 minutes old, the auction has likely ended and I need current information to provide an accurate answer about the bid status.",
+    "is_correct": true
+  },
+  {
+    "model": "claude-opus",
+    "condition": "prompted",
+    "case_id": "user_preference_old",
+    "is_stale": false,
+    "correct_action": "retrieve_memory",
+    "predicted_action": "ask_clarify",
+    "raw_response": "D) Ask the user a clarifying question.\n\nI should ask about their current dietary preferences since their eating habits recently changed from vegetarian to pescatarian, and this information is crucial for making an appropriate restaurant recommendation.",
+    "is_correct": false
+  },
+  {
+    "model": "claude-opus",
+    "condition": "prompted",
+    "case_id": "user_preference_old",
+    "is_stale": true,
+    "correct_action": "retrieve_memory",
+    "predicted_action": "ask_clarify",
+    "raw_response": "D) Ask the user a clarifying question.\n\nI should ask about their current dietary preferences since their eating habits recently changed from vegetarian to pescatarian, and this information is crucial for making an appropriate restaurant recommendation.",
+    "is_correct": false
+  }
+]

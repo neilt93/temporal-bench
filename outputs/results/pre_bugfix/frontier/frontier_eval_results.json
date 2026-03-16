@@ -1,0 +1,702 @@
+[
+  {
+    "model": "gpt-4o-mini",
+    "condition": "no_time",
+    "case_id": "flight_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The information about the gate is already provided in the previous conversation.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "no_time",
+    "case_id": "flight_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The information about the gate is already provided in the previous conversation.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "no_time",
+    "case_id": "stock_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The stock price was provided in the previous conversation and is still relevant.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "no_time",
+    "case_id": "stock_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The stock price was already provided in the previous conversation.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "no_time",
+    "case_id": "weather",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above \u2014 since the current weather is sunny, an umbrella is not needed today.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "no_time",
+    "case_id": "weather",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - Since the current weather is sunny, an umbrella is not needed today.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "no_time",
+    "case_id": "traffic",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The information provided indicates that the drive to the airport takes about 35 minutes with current traffic.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "no_time",
+    "case_id": "traffic",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The information provided indicates that the drive to the airport takes about 35 minutes with current traffic.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "no_time",
+    "case_id": "restaurant_availability",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The restaurant has a table available for 2 at 7:30 PM tonight, so I can confirm that you can still get that table.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "no_time",
+    "case_id": "restaurant_availability",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The information confirms that a table for 2 is available at 7:30 PM tonight.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "no_time",
+    "case_id": "crypto_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The current price of Bitcoin is already provided in the context.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "no_time",
+    "case_id": "crypto_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above \u2014 the current price of Bitcoin is already provided in the context.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "no_time",
+    "case_id": "delivery_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The package is out for delivery and is 3 stops away, which directly addresses the user's question.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "no_time",
+    "case_id": "delivery_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The package is out for delivery and is 3 stops away, which directly answers the user's question.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "no_time",
+    "case_id": "sports_score",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The score is already provided, so I can give the user the current score of the game.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "no_time",
+    "case_id": "sports_score",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The score is already provided, so I can confidently share that the Lakers are up 87-82 in the 3rd quarter.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "no_time",
+    "case_id": "birthday",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The user's birthday is already mentioned as March 15th, so I can provide that information directly.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "no_time",
+    "case_id": "birthday",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The user's birthday is already mentioned as March 15th, so I can provide that information directly.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "no_time",
+    "case_id": "home_address",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The user's home address was provided in the previous conversation, so I can confidently repeat it.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "no_time",
+    "case_id": "home_address",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The user's home address was provided in the previous conversation, so I can confidently repeat it.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "no_time",
+    "case_id": "capital_city",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The information is already provided and accurate.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "no_time",
+    "case_id": "capital_city",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The information is already provided and accurate.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "no_time",
+    "case_id": "programming_syntax",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The context already provides the necessary information that 'len()' is used to get the length of a list in Python.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "no_time",
+    "case_id": "programming_syntax",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The information provided already contains the answer to the user's question about getting the length of a list in Python using 'len()'.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "no_time",
+    "case_id": "ceo_identity",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The information is already available and accurate.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "no_time",
+    "case_id": "ceo_identity",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The information is already provided and accurate.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "no_time",
+    "case_id": "software_version",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The latest version of Python is 3.12.1, which I already have confirmed.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "no_time",
+    "case_id": "software_version",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The latest version of Python is 3.12.1, which I can confidently provide based on the information I have.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "no_time",
+    "case_id": "medication_dose",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The user's prescribed dose of lisinopril is clearly stated as 10mg daily.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "no_time",
+    "case_id": "medication_dose",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The user's prescribed dose of lisinopril is clearly stated as 10mg daily.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "no_time",
+    "case_id": "meeting_in_5min",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The information about the meeting room is already available and accurate.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "no_time",
+    "case_id": "meeting_in_5min",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The information about the meeting room is already available and accurate.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "no_time",
+    "case_id": "auction_closing",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The current bid on the vintage camera is $234.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "no_time",
+    "case_id": "auction_closing",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The current bid on the vintage camera is $234.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "explicit",
+    "case_id": "flight_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The information about the gate is still current and accurate.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "explicit",
+    "case_id": "flight_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "explicit",
+    "case_id": "stock_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The stock price was just observed and is still relevant.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "explicit",
+    "case_id": "stock_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering - Stock prices can change frequently, so it's best to provide the most current information.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "explicit",
+    "case_id": "weather",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - Since the weather is currently sunny and there is no indication of rain, an umbrella is not needed.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "explicit",
+    "case_id": "weather",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering - Since the weather information is two days old, it's best to check for the most current conditions.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "explicit",
+    "case_id": "traffic",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The information about the drive time to the airport is still relevant and accurate.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "explicit",
+    "case_id": "traffic",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering - Since traffic conditions can change, it's best to verify the current travel time to provide an accurate estimate.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "explicit",
+    "case_id": "restaurant_availability",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The restaurant has a table available for 2 at 7:30 PM tonight, so you can confirm that it is still available.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "explicit",
+    "case_id": "restaurant_availability",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The restaurant had a table available for 2 at 7:30 PM tonight, and since it was only 5 hours ago, it is likely still available.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "explicit",
+    "case_id": "crypto_price",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above \u2014 the information is still current and accurate.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "explicit",
+    "case_id": "crypto_price",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering \u2014 the price of Bitcoin may have changed since the last observation 8 hours ago.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "explicit",
+    "case_id": "delivery_status",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The package is out for delivery and is currently 3 stops away.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "explicit",
+    "case_id": "delivery_status",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The package was out for delivery and 3 stops away, so it should be arriving soon.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "explicit",
+    "case_id": "sports_score",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The score is still 87-82 in favor of the Lakers since only a minute has passed.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "explicit",
+    "case_id": "sports_score",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering \u2014 the score may have changed since the last update three hours ago.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "explicit",
+    "case_id": "birthday",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The user's birthday was already mentioned as March 15th, so I can confidently provide that information.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "explicit",
+    "case_id": "birthday",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - I can confidently state that your birthday is March 15th based on the information provided.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "explicit",
+    "case_id": "home_address",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "explicit",
+    "case_id": "home_address",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The user's home address was previously provided and is still relevant.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "explicit",
+    "case_id": "capital_city",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The information is still fresh and accurate, so I can confidently state that the capital of France is Paris.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "explicit",
+    "case_id": "capital_city",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above \u2014 the information is still accurate and relevant.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "explicit",
+    "case_id": "programming_syntax",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The information is still fresh and accurate, so I can confidently tell the user to use 'len()' to get the length of a list in Python.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "explicit",
+    "case_id": "programming_syntax",
+    "is_stale": true,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The information about using 'len()' to get the length of a list in Python is still accurate and relevant.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "explicit",
+    "case_id": "ceo_identity",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above \u2014 the information is still current and relevant.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "explicit",
+    "case_id": "ceo_identity",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above \u2014 the information is still relevant as it pertains to the CEO of Twitter.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "explicit",
+    "case_id": "software_version",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above \u2014 the information is still recent and relevant.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "explicit",
+    "case_id": "software_version",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering \u2014 since the information is 8 months old, it's best to verify if there is a newer version available.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "explicit",
+    "case_id": "medication_dose",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The user's doctor prescribed 10mg of lisinopril daily for blood pressure, which is the information needed to answer the question.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "explicit",
+    "case_id": "medication_dose",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The user's doctor prescribed 10mg of lisinopril daily for blood pressure, which is the information needed to answer the question.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "explicit",
+    "case_id": "meeting_in_5min",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "explicit",
+    "case_id": "meeting_in_5min",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The information about the meeting room being B204 is still valid and relevant.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "explicit",
+    "case_id": "auction_closing",
+    "is_stale": false,
+    "correct_action": "answer_directly",
+    "predicted_action": "answer_directly",
+    "raw_response": "A) Answer directly from the context above - The current bid on the vintage camera is $234, as stated in the recent context.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "explicit",
+    "case_id": "auction_closing",
+    "is_stale": true,
+    "correct_action": "refresh",
+    "predicted_action": "refresh",
+    "raw_response": "B) Refresh/look up the information again before answering - Since the auction closes in 10 minutes, the bid may have changed since the last observation.",
+    "is_correct": true
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "explicit",
+    "case_id": "user_preference_old",
+    "is_stale": false,
+    "correct_action": "retrieve_memory",
+    "predicted_action": "ask_clarify",
+    "raw_response": "D) Ask the user a clarifying question \u2014 it's important to know if they prefer vegetarian options, fish dishes, or a mix of both for the restaurant recommendation.",
+    "is_correct": false
+  },
+  {
+    "model": "gpt-4o-mini",
+    "condition": "explicit",
+    "case_id": "user_preference_old",
+    "is_stale": true,
+    "correct_action": "retrieve_memory",
+    "predicted_action": "ask_clarify",
+    "raw_response": "D) Ask the user a clarifying question \u2014 it's important to know if they prefer vegetarian options, fish dishes, or a mix of both for the restaurant recommendation.",
+    "is_correct": false
+  }
+]

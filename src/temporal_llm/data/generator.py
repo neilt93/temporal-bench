@@ -252,26 +252,41 @@ class DatasetGenerator:
             biases = [self.rng.choice(["fresh", "borderline", "stale"])
                       for _ in range(self.cf_group_size)]
 
+        # Fix: sample context variables ONCE per group so only elapsed time varies
+        group_has_memory = self.include_memory and self.rng.random() < 0.7
+        group_has_refresh = self.rng.random() < 0.6
+        group_deadline = None
+        if self.include_deadline and self.rng.random() < 0.2:
+            group_deadline = self.rng.choice([10, 30, 60, 300, 3600, 86400])
+
+        # Generate memories once for the group (content is fixed, age will scale with elapsed)
+        # Use a representative elapsed time to generate memory content
+        representative_elapsed = sample_elapsed_time(fact_type.volatility, bias="borderline", rng=self.rng)
+        group_memories_template = self._generate_memories(template, slots, representative_elapsed, fact_type)
+
         examples = []
         for i, bias in enumerate(biases):
             elapsed = sample_elapsed_time(fact_type.volatility, bias=bias, rng=self.rng)
-            has_memory = self.include_memory and self.rng.random() < 0.7
-            has_refresh = self.rng.random() < 0.6
 
-            # Deadline: only sometimes, more likely for medium/high volatility
-            deadline = None
-            if self.include_deadline and self.rng.random() < 0.2:
-                deadline = self.rng.choice([10, 30, 60, 300, 3600, 86400])
-
-            memories = self._generate_memories(template, slots, elapsed, fact_type)
+            # Scale memory ages proportionally to elapsed time
+            memories = []
+            for mem_tmpl in group_memories_template:
+                age_ratio = mem_tmpl.age_seconds / representative_elapsed if representative_elapsed > 0 else 1.0
+                scaled_age = elapsed * age_ratio
+                memories.append(MemoryEntry(
+                    content=mem_tmpl.content,
+                    age_seconds=scaled_age,
+                    source=mem_tmpl.source,
+                    volatility=mem_tmpl.volatility,
+                ))
             memory_age = memories[0].age_seconds if memories else None
 
             correct = oracle_action(
                 elapsed_seconds=elapsed,
                 fact_type=fact_type,
-                has_memory=has_memory and len(memories) > 0,
-                has_refresh_tool=has_refresh,
-                deadline_seconds=deadline,
+                has_memory=group_has_memory and len(memories) > 0,
+                has_refresh_tool=group_has_refresh,
+                deadline_seconds=group_deadline,
                 memory_age_seconds=memory_age,
             )
 
@@ -285,10 +300,10 @@ class DatasetGenerator:
                 elapsed_human=seconds_to_human(elapsed),
                 fact_type=fact_type_name,
                 volatility=fact_type.volatility.value,
-                has_memory=has_memory and len(memories) > 0,
-                has_refresh_tool=has_refresh,
-                deadline_seconds=deadline,
-                memories=[asdict(m) for m in memories] if has_memory else [],
+                has_memory=group_has_memory and len(memories) > 0,
+                has_refresh_tool=group_has_refresh,
+                deadline_seconds=group_deadline,
+                memories=[asdict(m) for m in memories] if group_has_memory else [],
                 correct_action=correct.value,
                 counterfactual_group=group_id,
             )
