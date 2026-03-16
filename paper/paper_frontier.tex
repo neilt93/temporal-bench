@@ -27,7 +27,7 @@
 % ============================================================
 \begin{abstract}
 Across controlled stale-context decision tasks, language models show near-zero sensitivity (0--8\%) to elapsed time unless age is explicitly represented in the prompt.
-We evaluate seven models -- from Mistral-7B to GPT-5.4 and Claude Opus 4.6 -- on 20 counterfactual scenario pairs, each tested with and without elapsed-time annotations across four prompting conditions.
+We evaluate seven models -- from Mistral-7B to GPT-5.4 and Claude Opus 4.6 -- on 18 counterfactual scenario pairs, each tested with and without elapsed-time annotations across four prompting conditions.
 Without annotations, models produce the same action regardless of whether context is 30 seconds old or 4 hours old.
 Adding a single natural-language annotation (``Time since observed: 4 hours ago'') raises switch sensitivity to 31--100\% and reduces false trust in stale information to near zero for the most capable models.
 
@@ -46,7 +46,7 @@ Yet language models receive this context as flat text with no indication of age.
 The model has no way to know whether it is looking at information from moments ago or from last week.
 
 This paper demonstrates that this is not merely an inconvenience -- it is a consistent failure mode across every model and task we tested.
-We evaluate seven frontier and mid-tier models on 20 hand-crafted counterfactual scenarios, each tested with both fresh and stale elapsed times across four prompting conditions (922 API calls in total).
+We evaluate seven frontier and mid-tier models on 18 hand-crafted counterfactual scenarios, each tested with both fresh and stale elapsed times across four prompting conditions (922 API calls in total).
 Without elapsed-time annotations, all models exhibit near-zero switch sensitivity (0--8\%): given the same fact observed 30 seconds ago versus 4 hours ago, they almost always give the same answer.
 
 The fix is simple.
@@ -101,7 +101,7 @@ This design controls for prompt content and isolates the effect of temporal info
 
 \subsection{Test Scenarios}
 
-We construct 20 hand-crafted scenarios spanning five categories:
+We construct 18 hand-crafted scenarios spanning five categories:
 \begin{itemize}
     \item \textbf{High volatility} (8 cases): flight status, stock prices, weather, traffic, restaurant availability, crypto prices, delivery tracking, sports scores
     \item \textbf{Low volatility} (4 cases): birthday, home address, capital cities, programming syntax
@@ -373,7 +373,7 @@ A user who receives stale information presented as current may make costly decis
 \paragraph{Limitations.}
 Our evaluation has several limitations that should inform interpretation of the results.
 
-\emph{Scale:} We use 20 hand-crafted scenarios.
+\emph{Scale:} We use 18 hand-crafted scenarios.
 While the effect sizes are large (0\% $\to$ 100\% for the strongest models), a larger and more diverse evaluation set would provide tighter confidence intervals and better coverage of edge cases.
 
 \emph{Ecological validity:} Our scenarios are realistic but synthetic.

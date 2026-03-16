@@ -40,6 +40,7 @@ Usage:
 
 import json
 import os
+import sys
 import time
 from dataclasses import dataclass, field, asdict
 from typing import Optional
@@ -463,9 +464,11 @@ MODEL_CALLERS = {
     "gpt-4o": lambda p: call_openai(p, "gpt-4o"),
     "gpt-4o-mini": lambda p: call_openai(p, "gpt-4o-mini"),
     "gpt-5.4": lambda p: call_openai(p, "gpt-5.4"),
+    "gpt-5.2": lambda p: call_openai(p, "gpt-5.2"),
     "claude-sonnet": lambda p: call_anthropic(p, "claude-sonnet-4-20250514"),
     "claude-haiku": lambda p: call_anthropic(p, "claude-haiku-4-5-20251001"),
     "claude-opus": lambda p: call_anthropic(p, "claude-opus-4-20250514"),
+    "claude-opus-4.6": lambda p: call_anthropic(p, "claude-opus-4-6"),
     "mistral-local": call_mistral_local,
 }
 
@@ -795,6 +798,23 @@ if __name__ == "__main__":
         json.dump(raw, f, indent=2)
     print(f"\nRaw results saved to {args.output}")
 
+    # Completeness check: refuse to write metrics from partial runs
+    expected = 0
+    for model_name in args.models:
+        for condition_name in args.conditions:
+            for case in cases:
+                for is_stale in [False, True]:
+                    expected += 1
+    if args.smoke_test:
+        expected = min(expected, args.smoke_test * len(args.models) * 2)
+
+    actual = len(results)
+    if actual < expected and args.smoke_test == 0:
+        print(f"\nWARNING: Incomplete run ({actual}/{expected} calls).")
+        print("Metrics NOT saved -- rerun to complete all calls.")
+        print("Raw checkpoint saved; will resume on next run.")
+        sys.exit(1)
+
     # Compute and print metrics
     metrics = compute_metrics(results)
     print_results_table(metrics)
@@ -804,3 +824,4 @@ if __name__ == "__main__":
     with open(metrics_file, "w") as f:
         json.dump(metrics, f, indent=2)
     print(f"Metrics saved to {metrics_file}")
+    print(f"Completed: {actual}/{expected} calls")
