@@ -699,8 +699,26 @@ def fill_template(template_str: str, slot_values: dict[str, str]) -> str:
     return result
 
 
+# Correlated slot groups: these must be sampled together by index
+# Each entry maps a "primary" slot to its correlated slots.
+# All lists must have the same length.
+CORRELATED_SLOTS = {
+    "country": ["capital"],
+    "historical_event": ["historical_year", "historical_detail"],
+    "preference_statement": ["preference_topic"],
+    "constant_name": ["constant_value"],
+    "team_a": ["team_b", "score_a", "score_b", "game_time"],
+    "contact_name": ["contact_value"],
+    "ticker": ["price", "change"],
+}
+
+
 def sample_slots(fact_type: str, rng=None) -> dict[str, str]:
-    """Sample a consistent set of slot values for a given fact type."""
+    """Sample a consistent set of slot values for a given fact type.
+
+    Correlated slots (e.g., country/capital) are sampled together by index
+    to maintain factual consistency.
+    """
     import re
     rng = rng or random
 
@@ -719,7 +737,33 @@ def sample_slots(fact_type: str, rng=None) -> dict[str, str]:
             needed_slots.update(re.findall(r'\{(\w+)\}', m))
 
     values = {}
-    for slot in sorted(needed_slots):  # sorted for determinism
+    # Track which slots have been filled via correlation
+    filled = set()
+
+    # First pass: fill correlated slot groups together
+    for primary, dependents in CORRELATED_SLOTS.items():
+        if primary not in needed_slots or primary not in SLOT_FILLERS:
+            continue
+        # Check if any of the group is needed
+        group = [primary] + dependents
+        if not any(s in needed_slots for s in group):
+            continue
+        # Sample a shared index
+        primary_list = SLOT_FILLERS[primary]
+        idx = rng.randrange(len(primary_list))
+        values[primary] = primary_list[idx]
+        filled.add(primary)
+        for dep in dependents:
+            if dep in SLOT_FILLERS and dep in needed_slots:
+                dep_list = SLOT_FILLERS[dep]
+                # Use same index if lists are aligned, otherwise wrap
+                values[dep] = dep_list[idx % len(dep_list)]
+                filled.add(dep)
+
+    # Second pass: fill remaining slots independently
+    for slot in sorted(needed_slots):
+        if slot in filled:
+            continue
         if slot in SLOT_FILLERS:
             values[slot] = rng.choice(SLOT_FILLERS[slot])
         else:

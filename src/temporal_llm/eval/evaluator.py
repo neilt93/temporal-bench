@@ -646,9 +646,20 @@ class TemporalEvaluator:
                     return_tensors="pt",
                 ).to(self.device)
                 self.model.tokenizer.padding_side = prev_side
-                probs_list = self.model.predict_action_probs(
+                raw_probs = self.model.predict_action_probs(
                     enc["input_ids"], enc["attention_mask"],
                 )
+                # Convert tensor output to list of dicts
+                probs_list = []
+                for row in raw_probs:
+                    if isinstance(row, dict):
+                        probs_list.append(row)
+                    else:
+                        # row is a tensor of shape (num_actions,)
+                        probs_list.append({
+                            LABELS[i]: float(row[i])
+                            for i in range(min(len(LABELS), len(row)))
+                        })
             else:
                 # Fall back to hard predictions (uniform prob on predicted class)
                 preds = self._predict_all(texts)
@@ -666,7 +677,7 @@ class TemporalEvaluator:
                 if t_key not in results[vol]:
                     results[vol][t_key] = {a: [] for a in LABELS}
                 for action in LABELS:
-                    p = probs[action] if isinstance(probs, dict) else 0.0
+                    p = probs.get(action, 0.0)
                     results[vol][t_key][action].append(p)
 
         # Average probabilities across scenarios

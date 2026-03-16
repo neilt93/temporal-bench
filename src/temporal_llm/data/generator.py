@@ -83,9 +83,11 @@ class DatasetGenerator:
         self.cf_group_size = counterfactual_group_size
         self.include_memory = include_memory
         self.include_deadline = include_deadline
+        self._group_counter = 0
 
     def _make_group_id(self, fact_type: str, template_idx: int, slot_hash: str) -> str:
-        return f"{fact_type}_{template_idx}_{slot_hash}"
+        self._group_counter += 1
+        return f"{fact_type}_{template_idx}_{slot_hash}_{self._group_counter}"
 
     def _hash_slots(self, slots: dict) -> str:
         s = json.dumps(slots, sort_keys=True)
